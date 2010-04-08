@@ -8,4 +8,4 @@ copy /B /Y runtimes\mfc71.dll ..\..\..\build-VC90\newview\Universal\mfc71.dll
 
 copy /B /Y runtimes\Microsoft.VC80.CRT.manifest ..\..\..\build-VC90\newview\Universal
 cd packaged
-python ../../../viewer_manifest.py --build ../../../../build-VC90/newview --dest .
+python ../../viewer_manifest.py --build ../../../../build-VC90/newview --dest .

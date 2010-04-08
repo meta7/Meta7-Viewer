@@ -330,7 +330,7 @@ bool idle_startup()
 {
 	LLMemType mt1(LLMemType::MTYPE_STARTUP);
 
-	const F32 TIMEOUT_SECONDS = 5.f;
+	const F32 TIMEOUT_SECONDS = 10.f;
 	const S32 MAX_TIMEOUT_COUNT = 3;
 	static LLTimer timeout;
 	static S32 timeout_count = 0;

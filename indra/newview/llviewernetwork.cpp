@@ -51,7 +51,7 @@ static LLGridData gGridInfo[GRID_INFO_COUNT] =
 	{ "None", "", "", ""},
 	{ "Meta7", 
 	  "Meta7", 
-	  "http://login.meta7.com:8002/",
+	  "http://login.meta7.com/",
 	  "http://login.meta7.com/secure/" },
 	{ "Aditi", 
 	  "util.aditi.lindenlab.com", 

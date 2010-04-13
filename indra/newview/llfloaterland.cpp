@@ -2120,19 +2120,7 @@ void LLPanelLandOptions::refreshSearch()
 		// not large enough to include in search
 		if (can_change)
 		{
-			if (show_directory)
-			{
-				// parcels that are too small, but are still in search for
-				// legacy reasons, need to have the check box enabled so
-				// the owner can delist the parcel. JC
-				tooltip = getString("search_enabled_tooltip");
-				enable_show_directory = true;
-			}
-			else
-			{
-				tooltip = getString("search_disabled_small_tooltip");
-				enable_show_directory = false;
-			}
+			enable_show_directory = true;
 		}
 		else
 		{

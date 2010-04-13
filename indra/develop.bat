@@ -1,1 +1,1 @@
-python develop.py -G VC90 -t Release configure -DSSE2:BOOL=OFF
+python develop.py -G VC90 -t Release configure -DSSE2:BOOL=OFF -DSSE:BOOL=ON

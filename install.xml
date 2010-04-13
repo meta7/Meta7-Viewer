@@ -181,16 +181,16 @@
           <key>linux</key>
           <map>
             <key>md5sum</key>
-            <string>b9a943052e5525da5417d6f471d70bc5</string>
+            <string>ace0ed10e36ba0e111f109a5ec559cfc</string>
             <key>url</key>
-            <uri>http://s3.amazonaws.com/viewer-source-downloads/install_pkgs/boost-1.32.0-linux-20080812.tar.bz2</uri>
+            <uri>http://www.meta7.com/downloads/Linux-Boost-Patch.tgz</uri>
           </map>
           <key>linux64</key>
           <map>
             <key>md5sum</key>
-            <string>b97ae0855e77cc25b37ca63df093bb9b</string>
+            <string>bf4c67fa9992b8cd277b697090cd0669</string>
             <key>url</key>
-            <uri>http://s3.amazonaws.com/viewer-source-downloads/install_pkgs/boost-1.34.0-linux64-20080909.tar.bz2</uri>
+            <uri>http://www.meta7.com/downloads/Linux-Boost-Patch-x64.tgz</uri>
           </map>
           <key>windows</key>
           <map>

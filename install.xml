@@ -839,6 +839,13 @@ anguage Infrstructure (CLI) international standard</string>
             <key>url</key>
             <uri>http://s3.amazonaws.com/viewer-source-downloads/install_pkgs/llmozlib-linux64-20080909.tar.bz2</uri>
           </map>
+          <key>windows</key>
+          <map>
+            <key>md5sum</key>
+            <string>e9454e258b99668782d8570481b5eda1</string>
+            <key>url</key>
+            <uri>http://s3.amazonaws.com/viewer-source-downloads/install_pkgs/llmozlib-windows-20090306.tar.bz2</uri>
+          </map>
         </map>
       </map>
       <key>mesa</key>

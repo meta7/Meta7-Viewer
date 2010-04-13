@@ -1,1 +1,0 @@
-llMozLib2 must be built with the included patch in order to function with the meta7 inworld search!

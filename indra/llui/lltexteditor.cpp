@@ -4422,6 +4422,12 @@ BOOL LLTextEditor::findHTML(const std::string &line, S32 *begin, S32 *end) const
 		
 		if (strpos < 0)
 		{
+			m7urlID="slurl.com/secondlife/";
+			strpos = url.find(m7urlID);
+		}
+
+		if (strpos < 0)
+		{
 			m7urlID="secondlife://";
 			strpos = url.find(m7urlID);
 		}

@@ -55,6 +55,11 @@ const std::string M7URL_SL_PREFIX			= "sl://";
 const std::string M7URL_SECONDLIFE_PREFIX	= "meta7://";
 const std::string M7URL_M7URL_PREFIX		= "http://m7url.com/meta7/";
 
+const std::string M7URL_SL_HELP_PREFIX_2		= "secondlife://app.";
+const std::string M7URL_SL_PREFIX_2			= "m7://";
+const std::string M7URL_SECONDLIFE_PREFIX_2	= "secondlife://";
+const std::string M7URL_M7URL_PREFIX_2		= "http://slurl.com/secondlife/";
+
 const std::string M7URL_APP_TOKEN = "app/";
 
 class LLURLDispatcherImpl
@@ -118,6 +123,10 @@ bool LLURLDispatcherImpl::isM7URL(const std::string& url)
 	if (matchPrefix(url, M7URL_SL_PREFIX)) return true;
 	if (matchPrefix(url, M7URL_SECONDLIFE_PREFIX)) return true;
 	if (matchPrefix(url, M7URL_M7URL_PREFIX)) return true;
+	if (matchPrefix(url, M7URL_SL_HELP_PREFIX_2)) return true;
+	if (matchPrefix(url, M7URL_SL_PREFIX_2)) return true;
+	if (matchPrefix(url, M7URL_SECONDLIFE_PREFIX_2)) return true;
+	if (matchPrefix(url, M7URL_M7URL_PREFIX_2)) return true;
 	return false;
 }
 
@@ -126,7 +135,11 @@ bool LLURLDispatcherImpl::isM7URLCommand(const std::string& url)
 { 
 	if (matchPrefix(url, M7URL_SL_PREFIX + M7URL_APP_TOKEN)
 		|| matchPrefix(url, M7URL_SECONDLIFE_PREFIX + "/" + M7URL_APP_TOKEN)
-		|| matchPrefix(url, M7URL_M7URL_PREFIX + M7URL_APP_TOKEN) )
+		|| matchPrefix(url, M7URL_M7URL_PREFIX + M7URL_APP_TOKEN) 
+		|| matchPrefix(url, M7URL_SL_PREFIX_2 + M7URL_APP_TOKEN)
+		|| matchPrefix(url, M7URL_SECONDLIFE_PREFIX_2 + "/" + M7URL_APP_TOKEN)
+		|| matchPrefix(url, M7URL_M7URL_PREFIX_2 + M7URL_APP_TOKEN) 
+		)
 	{
 		return true;
 	}
@@ -364,6 +377,18 @@ std::string LLURLDispatcherImpl::stripProtocol(const std::string& url)
 	else if (matchPrefix(stripped, M7URL_M7URL_PREFIX))
 	{
 		stripped.erase(0, M7URL_M7URL_PREFIX.length());
+	}
+	else if (matchPrefix(stripped, M7URL_SL_PREFIX_2))
+	{
+		stripped.erase(0, M7URL_SL_PREFIX_2.length());
+	}
+	else if (matchPrefix(stripped, M7URL_SECONDLIFE_PREFIX_2))
+	{
+		stripped.erase(0, M7URL_SECONDLIFE_PREFIX_2.length());
+	}
+	else if (matchPrefix(stripped, M7URL_M7URL_PREFIX_2))
+	{
+		stripped.erase(0, M7URL_M7URL_PREFIX_2.length());
 	}
 	return stripped;
 }

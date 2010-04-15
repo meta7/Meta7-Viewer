@@ -5051,7 +5051,6 @@ bool LLAgent::canAccessAdult() const
 
 bool LLAgent::canAccessMaturityInRegion( U64 region_handle ) const
 {
-	//Fuck linden lab.
 	return true;
 
 	LLViewerRegion *regionp = LLWorld::getInstance()->getRegionFromHandle( region_handle );

@@ -93,8 +93,6 @@ public:
 	static LLTextureFetch* getTextureFetch() { return sTextureFetch; }
 
 	const std::string& getSerialNumber() { return mSerialNumber; }
-
-	const std::string& setSerialNumber(std::string value) { mSerialNumber = value; }
 	
 	bool getPurgeCache() const { return mPurgeCache; }
 	

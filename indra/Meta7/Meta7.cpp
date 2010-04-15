@@ -67,7 +67,7 @@ std::string EAscii85::encode(const std::vector<unsigned char> &in)
 
 	count = 0;
 	tuple = 0;
-	for(size_t i = 0; i < in.size(); ++i)
+	for(size_t i = 0; i < in.size(); i++)
 	{
 		tuple <<= 8;
 		tuple += in[i];

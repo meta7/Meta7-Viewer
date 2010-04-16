@@ -139,9 +139,10 @@ LLDir_Linux::~LLDir_Linux()
 // Implementation
 
 
-void LLDir_Linux::initAppDirs(const std::string &app_name)
+void LLDir_Linux::initAppDirs(const std::string &app_name_in)
 {
   	// Fix linux invocation when the "*Portable*" hack is being used.
+	std::string app_name(app_name_in);	// Make copy to minimize patch size.
 	if (app_name == "*Portable*")
 	{
 		app_name = "Meta7";

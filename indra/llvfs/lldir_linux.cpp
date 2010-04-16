@@ -141,6 +141,12 @@ LLDir_Linux::~LLDir_Linux()
 
 void LLDir_Linux::initAppDirs(const std::string &app_name)
 {
+  	// Fix linux invocation when the "*Portable*" hack is being used.
+	if (app_name == "*Portable*")
+	{
+		app_name = "Meta7";
+	}
+
 	mAppName = app_name;
 
 	std::string upper_app_name(app_name);

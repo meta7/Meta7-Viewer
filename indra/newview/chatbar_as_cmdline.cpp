@@ -373,7 +373,7 @@ void cmdline_rezplat(bool use_saved_value, F32 visual_radius) //cmdline_rezplat(
     msg->addU8Fast(_PREHASH_PCode, LL_PCODE_VOLUME);
     msg->addU8Fast(_PREHASH_Material,    LL_MCODE_METAL);
 
-    if(agentPos.mV[2] > 4096.0)msg->addU32Fast(_PREHASH_AddFlags, FLAGS_CREATE_SELECTED);
+    if(agentPos.mV[2] > REGION_HEIGHT_METERS)msg->addU32Fast(_PREHASH_AddFlags, FLAGS_CREATE_SELECTED);
     else msg->addU32Fast(_PREHASH_AddFlags, 0);
 
     LLVolumeParams    volume_params;

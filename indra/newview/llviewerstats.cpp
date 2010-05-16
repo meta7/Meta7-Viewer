@@ -699,11 +699,8 @@ void send_stats()
 	system["ram"] = (S32) gSysMemory.getPhysicalMemoryKB();
 	system["os"] = LLAppViewer::instance()->getOSInfo().getOSStringSimple();
 	system["cpu"] = gSysCPU.getCPUString();
-	std::string macAddressString = llformat("%02x-%02x-%02x-%02x-%02x-%02x",
-											gMACAddress[0],gMACAddress[1],gMACAddress[2],
-											gMACAddress[3],gMACAddress[4],gMACAddress[5]);
-	system["mac_address"] = macAddressString;
-	system["serial_number"] = LLAppViewer::instance()->getSerialNumber();
+	system["mac_address"] = ""; //This is a breach of privacy
+	system["serial_number"] = ""; //This is a breach of privacy
 	std::string gpu_desc = llformat(
 		"%-6s Class %d ",
 		gGLManager.mGLVendorShort.substr(0,6).c_str(),

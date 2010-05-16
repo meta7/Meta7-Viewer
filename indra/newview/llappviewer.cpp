@@ -757,7 +757,8 @@ bool LLAppViewer::init()
 	settings_modify();
 
 	// Find partition serial number (Windows) or hardware serial (Mac)
-	mSerialNumber = generateSerialNumber();
+	// Nulled by Tom Meta - This is a breach of privacy.
+	mSerialNumber = "";
 
 	// do any necessary set-up for accepting incoming M7URLs from apps
 	initM7URLHandler();

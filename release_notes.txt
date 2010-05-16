@@ -1,0 +1,66 @@
+This is a list of what changed since the last release.
+
+The non-SSE2 version is now non-SSE once more.  Some people have some
+ancient computers out there.  
+
+The Meta 7 viewer is really only for use in Meta 7, though it works well
+in other open sims, it SHOULD NOT be used in Second Life.  Since we
+don't care about the Second Life Third Party Viewer Policy, the Meta 7
+no longer reports the private information concerning your computer that
+Second Life insists on.  Second Life may ban people that use the Meta 7
+viewer on Second Life.  So don't use it there.  We made this change to
+protect your privacy.
+
+Classified adverts don't work yet, as they are not supported be the
+server side.  They do cost money though, so they have been disabled in
+the viewer.
+
+The maximum build height is now 65536 meters, 16 times the earlier 4096
+meters.  The use of oxygen tanks when you are 65 kms up is encouraged.
+
+
+Details -
+---------
+
+commit ae6438e4a84f978e81ffa168f757f97ab0e385ea
+Author: David Seikel
+Date:   Mon May 17 01:57:21 2010 +1000
+
+    Change maximum build height from 4096 to 65536.
+
+commit de5090bdcc417573023e0a942f3990ca83632e6c
+Author: Tom
+Date:   Fri Apr 16 02:08:50 2010 +0100
+
+    Restore classifieds to avatar panel only
+
+commit 7bb3e1e80a70b0f4357b038b4ffe5a9608b9029b
+Author: Tom
+Date:   Fri Apr 16 01:54:12 2010 +0100
+
+    Disable classifieds in profile and search, since it doesn't work and costs money!
+
+commit 14254c9faa2a7c2afb52f1ebe1542b86f93d2422
+Author: AlericInglewood
+Date:   Fri Apr 16 02:26:37 2010 +0200
+
+    Compile fix. Make app_name mutable.
+
+commit 85e616da4d6f57d791a45192562286281a5141a7
+Author: AlericInglewood
+Date:   Fri Apr 16 02:19:16 2010 +0200
+
+    Fix the use of the "*Portable*" app name hack for linux and solaris.
+
+commit 2a2a530db09a7886c393a50cca79faa55dc48af4
+Author: Tom
+Date:   Thu Apr 15 20:05:34 2010 +0100
+
+    Remove further MAC address and hardware serial number reporting from the viewer, since we no longer care about keeping the lindens happy (YAY TPV)
+
+commit dcdd1d67729e7f95db11f64a7047a6872ac1652a
+Author: Tom
+Date:   Thu Apr 15 20:04:20 2010 +0100
+
+    So it turns out people still have non-SSE processors. Go figure.
+

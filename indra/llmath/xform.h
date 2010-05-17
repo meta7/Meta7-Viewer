@@ -36,7 +36,7 @@
 #include "m4math.h"
 #include "llquaternion.h"
 
-const F32 MAX_OBJECT_Z 		= 65536.f; // should match REGION_HEIGHT_METERS, Pre-havok4: 768.f
+const F32 MAX_OBJECT_Z 		= 16383.f; // should match REGION_HEIGHT_METERS, Pre-havok4: 768.f
 const F32 MIN_OBJECT_Z 		= -256.f;
 const F32 DEFAULT_MAX_PRIM_SCALE = 10.f;
 const F32 DEFAULT_MAX_MEGAPRIM_SCALE = 1024.f;

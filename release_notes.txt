@@ -15,7 +15,7 @@ Classified adverts don't work yet, as they are not supported be the
 server side.  They do cost money though, so they have been disabled in
 the viewer.
 
-The maximum build height is now 65536 meters, 16 times the earlier 4096
+The maximum build height is now 16383 meters, 16 times the earlier 4096
 meters.  The use of oxygen tanks when you are 65 kms up is encouraged.
 
 

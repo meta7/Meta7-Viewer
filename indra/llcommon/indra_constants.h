@@ -59,7 +59,7 @@ static const F32 REGION_WIDTH_METERS = 256.f;
 static const S32 REGION_WIDTH_UNITS = 256;
 static const U32 REGION_WIDTH_U32 = 256;
 
-const F32 REGION_HEIGHT_METERS = 65536.f;
+const F32 REGION_HEIGHT_METERS = 16383.f;
 
 // Bits for simulator performance query flags
 enum LAND_STAT_FLAGS

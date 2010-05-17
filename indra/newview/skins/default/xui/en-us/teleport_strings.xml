@@ -54,6 +54,10 @@ in a few minutes.
 		<message name="no_inventory_host">
 			The inventory system is currently unavailable.
 		</message>
+		<message name="no_pants_pg">
+			Sorry, you cannot access that PG teleport destination without wearing 
+pants.  PG regions have a strict dress code.  Please put pants on and try again.
+		</message>
 	</message_set>
 	<message_set name="progress">
 		<message name="sending_dest">

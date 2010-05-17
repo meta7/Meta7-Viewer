@@ -1554,6 +1554,12 @@ Unable to find teleport destination. The destination may be temporarily unavaila
    type="alertmodal">
 The inventory system is currently unavailable.
   </notification>
+  <notification
+   icon="alertmodal.tga"
+   name="no_pants_pg"
+   type="alertmodal">
+Sorry, you cannot access that PG teleport destination without wearing pants.  PG regions have a strict dress code.  Please put pants on and try again.
+  </notification>
 
   <notification
    icon="alertmodal.tga"

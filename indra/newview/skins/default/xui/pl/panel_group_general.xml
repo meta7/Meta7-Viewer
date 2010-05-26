@@ -71,8 +71,6 @@ ustawienia grupy oraz opcje członkostwa.
 		Wyszukiwanie informacji o członku
 	</string>
 	<string name="confirm_group_create_str">
-		Koszt utworzenia tej grupy wynosi L$100. 
-Czy napewno jesteś PEWNY,że chcesz zapłacić L$100 by utworzyć grupę?
-Pamiętaj, jeżeli w ciągu 48h od utworzenia grupy nikt do niej nie dołączy, informacje o grupie zostaną usunięte z bazy, a nazwa grupy zablokowana do użycia w przyszłości.
+Czy napewno jesteś PEWNY,że chcesz zapłacić M$0 by utworzyć grupę?
 	</string>
 </panel>

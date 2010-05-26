@@ -69,8 +69,6 @@
 		Recuperando dados do membro
 	</string>
 	<string name="confirm_group_create_str">
-		Criar este grupo irá custar L$100. 
-Você está realmente, realmente, REALMENTE seguro que deseja gastar L$100 para criar este grupo? 
-Esteja consciente de que se ninguém mais se juntar a este grupo dentro de 48 horas, este será dissolvido e o nome não estará disponível para uso futuro.
+Você está realmente, realmente, REALMENTE seguro que deseja gastar M$0 para criar este grupo? 
 	</string>
 </panel>

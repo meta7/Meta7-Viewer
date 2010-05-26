@@ -73,8 +73,6 @@ Bevæg din mus over mulighederne for mere hjælp.
 		Henter medlemsinformationer
 	</string>
 	<string name="confirm_group_create_str">
-		Creating this group will cost L$100. 
-Er du virkelig, virkelig, VIRKELIG sikker på, at du vil bruge L$100 på at lave denne gruppe?
-Du skal være opmærksom på, at hvis ingen andre indmelder sig i denne gruppe indenfor 48 timer, så vil gruppen blive opløst, og gruppens navn vil ikke være tilgængelig i fremtiden.
+Er du virkelig, virkelig, VIRKELIG sikker på, at du vil bruge M$0 på at lave denne gruppe?
 	</string>
 </panel>

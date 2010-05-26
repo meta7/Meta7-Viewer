@@ -13,7 +13,7 @@ PWD=`pwd`
 # Where the sources of the client will be held (defaults to "./linden"):
 PATH_TO_SOURCES="$PWD/../.."
 # Where the patches of the client are stored
-PATH_TO_PATCHES="$PWD/patches"
+PATH_TO_PATCHES="$PWD/../../patches"
 # Where to store temporary files:
 TEMP_DIR="/tmp/SL-$USER"
 mkdir -p $TEMP_DIR

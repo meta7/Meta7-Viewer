@@ -10,7 +10,8 @@
 
 source config-SL-source
 
-PATCHES=`/bin/ls $PATH_TO_PATCHES/$1/slviewer-*patch.* 2>/dev/null`
+PATCHES=`/bin/ls $PATH_TO_PATCHES/$1/slviewer-*.patch* 2>/dev/null`
+PATCHES="$PATCHES `/bin/ls $PATH_TO_PATCHES/$1/slviewer-*.diff* 2>/dev/null`"
 if [ "$PATCHES" != "" ] ; then
     echo "Applying patches..."
     cd $PATH_TO_SOURCES

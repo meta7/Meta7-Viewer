@@ -115,6 +115,23 @@ LLFloaterAbout::LLFloaterAbout()
 	viewer_link_style->setColor(gSavedSettings.getColor4("HTMLLinkColor"));
 
 	// Version string
+#ifdef ONEFANG_SHOW_VERSION_RC  // Oh ICK!
+#ifdef Meta7_BRANCH
+#define LITERAL(x) #x
+#define ASSTRING(x) LITERAL(x)
+	std::string version = LLAppViewer::instance()->getSecondLifeTitle()
+		+ llformat(" %d.%d.%d (%d)-%s %s %s (%s) %s\n",
+			LL_VERSION_MAJOR, LL_VERSION_MINOR, LL_VERSION_PATCH, LL_VIEWER_BUILD, LL_VERSION_RC, 
+			__DATE__, __TIME__,
+			LL_CHANNEL, ASSTRING(Meta7_BRANCH));
+#else
+	std::string version = LLAppViewer::instance()->getSecondLifeTitle()
+		+ llformat(" %d.%d.%d (%d)-%s %s %s (%s)\n",
+			LL_VERSION_MAJOR, LL_VERSION_MINOR, LL_VERSION_PATCH, LL_VERSION_BUILD, LL_VERSION_RC, 
+			__DATE__, __TIME__,
+			LL_CHANNEL);
+#endif
+#else
 #ifdef Meta7_BRANCH
 #define LITERAL(x) #x
 #define ASSTRING(x) LITERAL(x)
@@ -129,6 +146,7 @@ LLFloaterAbout::LLFloaterAbout()
 			LL_VERSION_MAJOR, LL_VERSION_MINOR, LL_VERSION_PATCH, LL_VERSION_BUILD,
 			__DATE__, __TIME__,
 			LL_CHANNEL);
+#endif
 #endif
 	support_widget->appendColoredText(version, FALSE, FALSE, gColors.getColor("TextFgReadOnlyColor"));
 	support_widget->appendStyledText(LLTrans::getString("ReleaseNotes"), false, false, viewer_link_style);
@@ -310,10 +328,18 @@ void LLFloaterAbout::show(void*)
 static std::string get_viewer_release_notes_url()
 {
 	std::ostringstream version;
+#ifdef ONEFANG_SHOW_VERSION_RC
+	version << LL_VERSION_MAJOR << "."
+		<< LL_VERSION_MINOR << "."
+		<< LL_VERSION_PATCH << "."
+		<< LL_VERSION_BUILD << "-"
+		<< LL_VERSION_RC;
+#else
 	version << LL_VERSION_MAJOR << "."
 		<< LL_VERSION_MINOR << "."
 		<< LL_VERSION_PATCH << "."
 		<< LL_VERSION_BUILD;
+#endif
 
 	LLSD query;
 	query["channel"] = LL_CHANNEL;

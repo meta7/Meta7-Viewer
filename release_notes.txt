@@ -1,4 +1,8 @@
-This is a list of what changed since the last release.
+VERSION 1152-pre
+================
+
+This is a list of what changed since the last release.  The significant
+changes are -
 
 The non-SSE2 version is now non-SSE once more.  Some people have some
 ancient computers out there.  
@@ -16,11 +20,47 @@ server side.  They do cost money though, so they have been disabled in
 the viewer.
 
 The maximum build height is now 16383 meters, 16 times the earlier 4096
-meters.  The use of oxygen tanks when you are 65 kms up is encouraged.
+meters.  The use of oxygen tanks when you are 16 kms up is encouraged.
+
+A user can now easily see which groups they have hiddin in their
+profile.
+
+The scripts used to build the linux release are now included.  See
+scripts/linux.
 
 
 Details -
 ---------
+
+commit 1646b291085e303af9ae389bf45035b720d6f4be
+Author: David Seikel <won_fang@yahoo.com.au>
+Date:   Wed May 26 22:49:15 2010 +1000
+
+    Committing the build scripts I use to create the linux release.
+    
+commit 0e399db8bfd8387911a5284ce41c0902d87e0c08
+Author: David Seikel <won_fang@yahoo.com.au>
+Date:   Wed May 26 21:08:10 2010 +1000
+
+    Let users see which groups they hid (in blue).  Does not seem to affect anything else, but let me know if it does.
+
+commit 86d39a1d5bbbf171b3514e5cc97538a91411064f
+Author: David Seikel <won_fang@yahoo.com.au>
+Date:   Wed May 26 20:19:46 2010 +1000
+
+    Resident -> Metazen, and we don't need no stinkin' Linden Lab Employees.
+
+commit 058ae654a343123611524bf8bf2853bc4a652478
+Author: David Seikel <won_fang@yahoo.com.au>
+Date:   Wed May 26 12:37:09 2010 +1000
+
+    Fixes bug http://bugs.meta7.com/view.php?id=103, and related issues about the text shown during group creation.  Languages other than English where just guessed at crudely.
+
+commit 4cfa590f2917f4e3c1d01f649455891aa79a3e17
+Author: David Seikel <won_fang@yahoo.com.au>
+Date:   Mon May 17 23:24:21 2010 +1000
+
+    Change the build height limit to 16383, where prim jitter is on the edge of tolerable.
 
 commit ae6438e4a84f978e81ffa168f757f97ab0e385ea
 Author: David Seikel

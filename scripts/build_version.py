@@ -28,8 +28,11 @@ def get_version(filename):
     vals['patch'] = m.group(1)
     m = re.search('const S32 LL_VERSION_BUILD = (\d+);', data)
     vals['build'] = m.group(1)
+#    m = re.search('const char * LL_VERSION_RC = (\d+);', data)
+#    vals['rc'] = m.group(1)
 
     return "%(major)s.%(minor)s.%(patch)s.%(build)s" % vals
+#    return "%(major)s.%(minor)s.%(patch)s.%(build)s.%(rc)s" % vals
 
 if __name__ == '__main__':
     import sys

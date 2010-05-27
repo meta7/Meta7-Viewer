@@ -53,10 +53,9 @@ def get_version(version_type):
     VER_PATCH = m.group(1)
     m = re.search('const S32 LL_VERSION_BUILD = (\d+);', file_str)
     VER_BUILD = m.group(1)
-#    m = re.search('const char * LL_VERSION_RC = (\d+);', file_str)
-#    VER_RC = m.group(1)
-#    version = "%(VER_MAJOR)s.%(VER_MINOR)s.%(VER_PATCH)s.%(VER_BUILD)s.%(VER_RC)s" % locals()
-    version = "%(VER_MAJOR)s.%(VER_MINOR)s.%(VER_PATCH)s.%(VER_BUILD)s" % locals()
+    m = re.search('const char \* LL_VERSION_RC = \"(\w+)\";', file_str)
+    VER_RC = m.group(1)
+    version = "%(VER_MAJOR)s.%(VER_MINOR)s.%(VER_PATCH)s.%(VER_BUILD)s.%(VER_RC)s" % locals()
     return version
 
 def get_channel(version_type):

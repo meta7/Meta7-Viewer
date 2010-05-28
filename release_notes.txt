@@ -1,4 +1,8 @@
-This is a list of what changed since the last release.
+VERSION 1152-pre
+================
+
+This is a list of what changed since the last release.  The significant
+changes are -
 
 The non-SSE2 version is now non-SSE once more.  Some people have some
 ancient computers out there.  
@@ -16,14 +20,72 @@ server side.  They do cost money though, so they have been disabled in
 the viewer.
 
 The maximum build height is now 16383 meters, 16 times the earlier 4096
-meters.  The use of oxygen tanks when you are 65 kms up is encouraged.
+meters.  The use of oxygen tanks when you are 16 kms up is encouraged.
+
+A user can now easily see which groups they have hidden in their
+profile.
+
+The scripts used to build the linux release are now included.  See
+scripts/linux.
+
+The new Meta 7 beta grid has been added.  Metazens are encouraged to log
+onto it and help to test things.  The more testing we can do, the more
+likely it is to be a great server update.
 
 
 Details -
 ---------
 
+commit 2c927a5dd0b5652c0d19c373d6e2a4fa03bf3114
+Author: Dave
+Date:   Thu May 27 16:18:40 2010 +1000
+
+    Add the beta grid.
+
+commit dcfa0123105e1e0bf1585f2511bcb855f6868481
+Author: Dave
+Date:   Thu May 27 13:04:16 2010 +1000
+
+    Fix up the python release candidate version detection.  Still not perfect, but good enough for staff tests.  Dave needs to learn python.
+
+commit 71d0f1b9ec181c5651f80be566643df14f85af70
+Author: Dave
+Date:   Thu May 27 09:56:50 2010 +1000
+
+    Bump the release number, and add in the release candidate code.  Which is not working as it should.  The python is not picking up the RC.  Maybe some one that understands python can patch that up?  Also more release notes.
+
+commit 1646b291085e303af9ae389bf45035b720d6f4be
+Author: Dave
+Date:   Wed May 26 22:49:15 2010 +1000
+
+    Committing the build scripts I use to create the linux release.
+    
+commit 0e399db8bfd8387911a5284ce41c0902d87e0c08
+Author: Dave
+Date:   Wed May 26 21:08:10 2010 +1000
+
+    Let users see which groups they hid (in blue).  Does not seem to affect anything else, but let me know if it does.
+
+commit 86d39a1d5bbbf171b3514e5cc97538a91411064f
+Author: Dave
+Date:   Wed May 26 20:19:46 2010 +1000
+
+    Resident -> Metazen, and we don't need no stinkin' Linden Lab Employees.
+
+commit 058ae654a343123611524bf8bf2853bc4a652478
+Author: Dave
+Date:   Wed May 26 12:37:09 2010 +1000
+
+    Fixes bug http://bugs.meta7.com/view.php?id=103, and related issues about the text shown during group creation.  Languages other than English where just guessed at crudely.
+
+commit 4cfa590f2917f4e3c1d01f649455891aa79a3e17
+Author: Dave
+Date:   Mon May 17 23:24:21 2010 +1000
+
+    Change the build height limit to 16383, where prim jitter is on the edge of tolerable.
+
 commit ae6438e4a84f978e81ffa168f757f97ab0e385ea
-Author: David Seikel
+Author: Dave
 Date:   Mon May 17 01:57:21 2010 +1000
 
     Change maximum build height from 4096 to 65536.
@@ -41,13 +103,13 @@ Date:   Fri Apr 16 01:54:12 2010 +0100
     Disable classifieds in profile and search, since it doesn't work and costs money!
 
 commit 14254c9faa2a7c2afb52f1ebe1542b86f93d2422
-Author: AlericInglewood
+Author: Aleric
 Date:   Fri Apr 16 02:26:37 2010 +0200
 
     Compile fix. Make app_name mutable.
 
 commit 85e616da4d6f57d791a45192562286281a5141a7
-Author: AlericInglewood
+Author: Aleric
 Date:   Fri Apr 16 02:19:16 2010 +0200
 
     Fix the use of the "*Portable*" app name hack for linux and solaris.

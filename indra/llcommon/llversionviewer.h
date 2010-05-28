@@ -37,9 +37,14 @@ const S32 LL_VERSION_MAJOR = 1;
 const S32 LL_VERSION_MINOR = 23;
 const S32 LL_VERSION_PATCH = 5;
 #ifndef Meta7_SVN_VERSION
-const S32 LL_VERSION_BUILD = 1151;
+const S32 LL_VERSION_BUILD = 1152;
 #else
 const S32 LL_VERSION_BUILD = Meta7_SVN_VERSION;
+#endif
+
+#define ONEFANG_SHOW_VERSION_RC 1
+#ifdef ONEFANG_SHOW_VERSION_RC
+const char * const LL_VERSION_RC = "pre";
 #endif
 
 const char * const LL_CHANNEL = "Meta7 Viewer";

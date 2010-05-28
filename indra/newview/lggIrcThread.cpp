@@ -982,8 +982,13 @@ void lggIrcThread::displayPrivateIm(std::string msg, std::string name)
 		string command = std::string(msg.c_str()).substr(1, pos - 1);
 		if(command == "VERSION")
 		{
+		
 			char	version[45];
+#ifdef ONEFANG_SHOW_VERSION_RC
+			sprintf(version, "\001VERSION Meta7 Viewer %d.%d.%d (%d)-%s\001", LL_VERSION_MAJOR, LL_VERSION_MINOR, LL_VERSION_PATCH, LL_VERSION_BUILD, LL_VERSION_RC);
+#else
 			sprintf(version, "\001VERSION Meta7 Viewer %d.%d.%d (%d)\001", LL_VERSION_MAJOR, LL_VERSION_MINOR, LL_VERSION_PATCH, LL_VERSION_BUILD);
+#endif
 			conn->notice((char *)name.c_str(), (char *)version);
 			return;
 		}

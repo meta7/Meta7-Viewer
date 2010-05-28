@@ -8,7 +8,7 @@
 [AGEVERIFICATION]
 			</string>
 			<string name="AcctTypeResident">
-				Rezydent
+				Metazen
 			</string>
 			<string name="AcctTypeTrial">
 				Próbne
@@ -17,7 +17,7 @@
 				Członek-zalożyciel
 			</string>
 			<string name="AcctTypeEmployee">
-				Pracownik Linden Lab
+				Pracownik Meta 7
 			</string>
 			<string name="PaymentInfoUsed">
 				Dane Konta Używane

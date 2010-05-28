@@ -649,13 +649,23 @@ bool LLAppViewer::init()
     writeSystemInfo();
 
 	// Build a string representing the current version number.
+// onefang - This is wire protocol and settings file stuff, so be paranoid and don't fiddle with it for now.
+//#ifdef ONEFANG_SHOW_VERSION_RC
+//    gCurrentVersion = llformat("%s %d.%d.%d.%d-%s", 
+//		LL_CHANNEL, 
+//        LL_VERSION_MAJOR, 
+//        LL_VERSION_MINOR, 
+//        LL_VERSION_PATCH, 
+//        LL_VERSION_BUILD
+//        LL_VERSION_RC);
+//#else
     gCurrentVersion = llformat("%s %d.%d.%d.%d", 
-
 		LL_CHANNEL, 
         LL_VERSION_MAJOR, 
         LL_VERSION_MINOR, 
         LL_VERSION_PATCH, 
         LL_VERSION_BUILD );
+//#endif
 
 	//////////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////////////////////////////////////////////////
@@ -2097,11 +2107,20 @@ bool LLAppViewer::initConfiguration()
 	gWindowTitle = gSecondLife + std::string(" ") + gArgs;
 #endif
 	//gWindowTitle += std::string(" ") + Meta7_BRANCH;
+#ifdef ONEFANG_SHOW_VERSION_RC
+	gWindowTitle += llformat(" %d.%d.%d.%d-%s",
+		LL_VERSION_MAJOR,
+		LL_VERSION_MINOR,
+		LL_VERSION_PATCH,
+		LL_VERSION_BUILD,
+		LL_VERSION_RC);
+#else
 	gWindowTitle += llformat(" %d.%d.%d.%d",
 		LL_VERSION_MAJOR,
 		LL_VERSION_MINOR,
 		LL_VERSION_PATCH,
 		LL_VERSION_BUILD);
+#endif
 	LLStringUtil::truncate(gWindowTitle, 255);
 
 	//RN: if we received a URL, hand it off to the existing instance.
@@ -2396,6 +2415,9 @@ void LLAppViewer::writeSystemInfo()
 	gDebugInfo["ClientInfo"]["MinorVersion"] = LL_VERSION_MINOR;
 	gDebugInfo["ClientInfo"]["PatchVersion"] = LL_VERSION_PATCH;
 	gDebugInfo["ClientInfo"]["BuildVersion"] = LL_VERSION_BUILD;
+#ifdef ONEFANG_SHOW_VERSION_RC
+	gDebugInfo["ClientInfo"]["RCVersion"] = LL_VERSION_RC;
+#endif
 
 	gDebugInfo["CAFilename"] = gDirUtilp->getCAFile();
 
@@ -2488,6 +2510,9 @@ void LLAppViewer::handleViewerCrash()
 	gDebugInfo["ClientInfo"]["MinorVersion"] = LL_VERSION_MINOR;
 	gDebugInfo["ClientInfo"]["PatchVersion"] = LL_VERSION_PATCH;
 	gDebugInfo["ClientInfo"]["BuildVersion"] = LL_VERSION_BUILD;
+#ifdef ONEFANG_SHOW_VERSION_RC
+	gDebugInfo["ClientInfo"]["RCVersion"] = LL_VERSION_RC;
+#endif
 
 	LLParcel* parcel = LLViewerParcelMgr::getInstance()->getAgentParcel();
 	if ( parcel && parcel->getMusicURL()[0])
@@ -4159,6 +4184,9 @@ void LLAppViewer::handleLoginComplete()
 	gDebugInfo["ClientInfo"]["MinorVersion"] = LL_VERSION_MINOR;
 	gDebugInfo["ClientInfo"]["PatchVersion"] = LL_VERSION_PATCH;
 	gDebugInfo["ClientInfo"]["BuildVersion"] = LL_VERSION_BUILD;
+#ifdef ONEFANG_SHOW_VERSION_RC
+	gDebugInfo["ClientInfo"]["RCVersion"] = LL_VERSION_RC;
+#endif
 
 	LLParcel* parcel = LLViewerParcelMgr::getInstance()->getAgentParcel();
 	if ( parcel && parcel->getMusicURL()[0])

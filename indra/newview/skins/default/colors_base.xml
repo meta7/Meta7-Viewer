@@ -69,7 +69,7 @@
 <ScrollDisabledColor value="128, 128, 128, 204" />
 <ScrollSelectedBGColor value="100, 100, 188, 150" />
 <ScrollSelectedFGColor value="0, 0, 0, 204" />	            <!-- Text color -->
-<ScrollUnselectedColor value="0, 0, 0, 204" />	            <!-- Text color -->
+<ScrollUnselectedColor value="0, 0, 128, 204" />	            <!-- Text color -->
 <ScrollHighlightedColor value="183, 184, 188, 128" />	    <!-- Hover color -->
 <ScrollbarThumbColor value="60, 76, 124, 255" />            <!-- Scroll bar-->
 <ScrollbarTrackColor value="153, 154, 158, 255" />          <!-- Scroll bar background-->

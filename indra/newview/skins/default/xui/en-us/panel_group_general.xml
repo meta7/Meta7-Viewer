@@ -143,8 +143,6 @@ Hover your mouse over the options for more help.
 		Retrieving member data
 	</string>
 	<string name="confirm_group_create_str">
-		Creating this group will cost M$100. 
-Are you really, really, REALLY sure you want to spend M$100 to create this group?
-Be aware that if nobody else joins this group within 48 hours, it will be disbanded and the group&apos;s name will be unavailable for future use.
+Are you sure you want to create this group?
 	</string>
 </panel>

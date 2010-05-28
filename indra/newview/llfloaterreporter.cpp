@@ -740,6 +740,17 @@ LLSD LLFloaterReporter::gatherReport()
 
 	if ( mReportType == BUG_REPORT)
 	{
+// onefang - wire protocol I think, don't add the RC.
+//#ifdef ONEFANG_SHOW_VERSION_RC
+//		summary << short_platform << " V" << LL_VERSION_MAJOR << "."
+//			<< LL_VERSION_MINOR << "."
+//			<< LL_VERSION_PATCH << "."
+//			<< LL_VERSION_BUILD << "-"
+//			<< LL_VERSION_RC
+//			<< " (" << regionp->getName() << ")"
+//			<< "[" << category_name << "] "
+//			<< "\"" << childGetValue("summary_edit").asString() << "\"";
+//#else
 		summary << short_platform << " V" << LL_VERSION_MAJOR << "."
 			<< LL_VERSION_MINOR << "."
 			<< LL_VERSION_PATCH << "."
@@ -747,6 +758,7 @@ LLSD LLFloaterReporter::gatherReport()
 			<< " (" << regionp->getName() << ")"
 			<< "[" << category_name << "] "
 			<< "\"" << childGetValue("summary_edit").asString() << "\"";
+//#eendif
 	}
 	else
 	{
@@ -761,10 +773,18 @@ LLSD LLFloaterReporter::gatherReport()
 	std::ostringstream details;
 	if (mReportType != BUG_REPORT)
 	{
+#ifdef ONEFANG_SHOW_VERSION_RC
+		details << "V" << LL_VERSION_MAJOR << "."								// client version moved to body of email for abuse reports
+			<< LL_VERSION_MINOR << "."
+			<< LL_VERSION_PATCH << "."
+			<< LL_VERSION_BUILD << "-"
+			<< LL_VERSION_RC << std::endl << std::endl;
+#else
 		details << "V" << LL_VERSION_MAJOR << "."								// client version moved to body of email for abuse reports
 			<< LL_VERSION_MINOR << "."
 			<< LL_VERSION_PATCH << "."
 			<< LL_VERSION_BUILD << std::endl << std::endl;
+#endif
 	}
 	std::string object_name = childGetText("object_name");
 	std::string owner_name = childGetText("owner_name");

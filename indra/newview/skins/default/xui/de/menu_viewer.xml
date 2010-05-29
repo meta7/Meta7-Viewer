@@ -160,6 +160,7 @@
 			<menu_item_call label="Mitternacht" name="Midnight"/>
 			<menu_item_call label="Auf Regionsstandard zurücksetzen" name="Revert to Region Default"/>
 			<menu_item_separator label="-----------" name="separator"/>
+			<menu_item_check label="LightShare" name="LightShare"/>
 			<menu_item_call label="Umwelt-Editor" name="Environment Editor"/>
       <menu_item_call label="Himmel-Editor" name="Sky Settings"/>
 			<menu_item_call label="Wasser-Editor" name="Water Settings"/>

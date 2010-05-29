@@ -139,6 +139,7 @@
 			<menu_item_call label="Minuit" name="Midnight"/>
 			<menu_item_call label="Revenir aux options par défaut" name="Revert to Region Default"/>
 			<menu_item_separator label="-----------" name="separator"/>
+			<menu_item_check label="LightShare" name="LightShare"/>
 			<menu_item_call label="Éditeur d&apos;environnement" name="Environment Editor"/>
 		</menu>
 	</menu>

@@ -4,6 +4,8 @@ VERSION 1152-pre
 This is a list of what changed since the last release.  The significant
 changes are -
 
+Various bug fixes.
+
 The non-SSE2 version is now non-SSE once more.  Some people have some
 ancient computers out there.  
 
@@ -32,9 +34,23 @@ The new Meta 7 beta grid has been added.  Metazens are encouraged to log
 onto it and help to test things.  The more testing we can do, the more
 likely it is to be a great server update.
 
+Users can now disable the use of LightShare.  You might need to move to
+a different sim to see the change.
+
 
 Details -
 ---------
+commit 7feee15ad23a4384ab9676b566d467c55f8622cd
+Author: Dave
+Date:   Sat May 29 11:25:18 2010 +1000
+
+    Menu item to togglo LightShare.  The logical place is World -> Environment settings.
+
+commit bf6c80f1188cbac6cc53d908d59b8e38093b3f21
+Author: Tom
+Date:   Fri May 28 11:23:14 2010 +0100
+
+    Make LightShare optional, and add support for water normal map UUID's.
 
 commit 2c927a5dd0b5652c0d19c373d6e2a4fa03bf3114
 Author: Dave

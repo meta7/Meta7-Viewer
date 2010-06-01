@@ -207,6 +207,19 @@
 			<menu_item_separator label="-----------" name="separator9"/>
 			<menu_item_call label="Informar de un fallo..." name="Report Bug..."/>
 		</menu>
-		<menu_item_call label="Acerca de Second Life..." name="About Second Life..."/>
+		<menu label="Meta 7 web site" name="Meta 7 web site"">
+		     <menu_item_call label="Meta 7 home page..." name="Meta 7 home page..."/>
+		     <menu_item_call label="Buy M$..." name="Buy M$..."/>
+		     <menu_item_call label="Downloads..." name="Downloads..."/>
+		     <menu_item_call label="Meta 7 wiki..." name="Meta 7 wiki..."/>
+		     <menu_item_call label="Official forums..." name="Official forums..."/>
+		     <menu_item_call label="Terms of service..." name="Terms of service..."/>
+		     <menu_item_call label="Community standards..." name="Community standards..."/>
+		     <menu_item_call label="Maturity ratings..." name="Maturity ratings..."/>
+		     <menu_item_call label="Privacy policy..." name="Privacy policy..."/>
+		     <menu_item_call label="Submit a bug report..." name="Submit a bug report..."/>
+		     <menu_item_call label="Submit a support ticket..." name="Submit a support ticket..."/>
+		</menu>
+		<menu_item_call label="Acerca de Meta 7..." name="About Meta 7..."/>
 	</menu>
 </menu_bar>

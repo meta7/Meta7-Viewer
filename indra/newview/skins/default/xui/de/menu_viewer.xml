@@ -241,7 +241,7 @@
 		     <menu_item_call label="Offizielle Foren..." name="Official forums..."/>
 		     <menu_item_call label="Nutzungsbedingungen..." name="Terms of service..."/>
 		     <menu_item_call label="Community-Standards..." name="Community standards..."/>
-		     <menu_item_call label="Altersfreigabe..." name="Maturity ratings..."/>
+		     <menu_item_call label="Inhaltseinstufung..." name="Maturity ratings..."/>
 		     <menu_item_call label="Datenschutz..." name="Privacy policy..."/>
 		     <menu_item_call label="Fehlermeldung senden..." name="Submit a bug report..."/>
 		     <menu_item_call label="Support-Anfrage senden..." name="Submit a support ticket..."/>

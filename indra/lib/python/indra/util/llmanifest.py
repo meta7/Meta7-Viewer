@@ -85,8 +85,9 @@ def get_default_version(srctree):
             minor = re.search("LL_VERSION_MINOR\s=\s([0-9]+)", contents).group(1)
             patch = re.search("LL_VERSION_PATCH\s=\s([0-9]+)", contents).group(1)
             build = re.search("LL_VERSION_BUILD\s=\s([0-9]+)", contents).group(1)
-            rc = re.search("LL_VERSION_RC\s=\s\"(\w+)\"", contents).group(1)
-            return major, minor, patch, build, rc
+#            rc = re.search("LL_VERSION_RC\s=\s\"(\w+)\"", contents).group(1)
+            return major, minor, patch, build
+#            return major, minor, patch, build, rc
 
 def get_channel(srctree):
     # look up llversionserver.h and parse out the version info

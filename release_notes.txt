@@ -1,4 +1,4 @@
-VERSION 1152-pre
+VERSION 1152
 ================
 
 This is a list of what changed since the last release.  The significant
@@ -17,7 +17,7 @@ Second Life insists on.  Second Life may ban people that use the Meta 7
 viewer on Second Life.  So don't use it there.  We made this change to
 protect your privacy.
 
-Classified adverts don't work yet, as they are not supported be the
+Classified adverts don't work yet, as they are not supported by the
 server side.  They do cost money though, so they have been disabled in
 the viewer.
 
@@ -37,9 +37,36 @@ likely it is to be a great server update.
 Users can now disable the use of LightShare.  You might need to move to
 a different sim to see the change.
 
+Some of the parts of the Meta 7 web site are now directly accesible from
+the help menu.
+
 
 Details -
 ---------
+commit b28387537fd2c515cbb7d6e9dacb2780e4bdf3d7
+Author: David
+Date:   Fri Jun 4 02:51:04 2010 +1000
+
+    Bugfix from snowglobe - stops the build system from trying to build the viewer with 6 extra computers I don't have.
+
+commit d35f522e4274b591492ce6c6575e75338ce6c45b
+Author: David
+Date:   Thu Jun 3 20:37:40 2010 +1000
+
+    Portuguese and Spanish translations of help menu, plus a minor update to the German one, all thanks to Ben.
+
+commit 4b066de0822697e28e81f04b453c49f54c0c38aa
+Author: David
+Date:   Wed Jun 2 23:41:02 2010 +1000
+
+    German translation of help menu thanks to Daniel.
+
+commit aeee5a7009e5335295d7a6677cbf00433dc79242
+Author: David
+Date:   Tue Jun 1 12:43:37 2010 +1000
+
+    Add meta 7 web site pages to the help menu.
+
 commit 7feee15ad23a4384ab9676b566d467c55f8622cd
 Author: Dave
 Date:   Sat May 29 11:25:18 2010 +1000

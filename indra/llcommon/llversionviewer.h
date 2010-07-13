@@ -47,6 +47,6 @@ const S32 LL_VERSION_BUILD = Meta7_SVN_VERSION;
 const char * const LL_VERSION_RC = "";
 #endif
 
-const char * const LL_CHANNEL = "Meta7 Viewer";
+const char * const LL_CHANNEL = "Virtual Highway Viewer";
 
 #endif

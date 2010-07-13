@@ -554,12 +554,12 @@
 		<menu_item_call bottom="-232" enabled="true" height="19" label="Account History..." left="0"
 		     mouse_opaque="true" name="Account History..." width="185">
 			<on_click function="PromptShowURL" name="AccountHistory_url"
-			     userdata="WebLaunchAccountHistory,http://meta7.com/account/transactions.php" />
+			     userdata="WebLaunchAccountHistory,http://virtualhighway.us/account/transactions.php" />
 		</menu_item_call>r
 		<menu_item_call bottom="-267" enabled="true" height="19" label="Manage My Account..." left="0"
 		     mouse_opaque="true" name="Manage My Account..." width="166">
 			<on_click function="PromptShowURL" name="ManageMyAccount_url"
-			     userdata="WebLaunchJoinNow,http://meta7.com/account/" />
+			     userdata="WebLaunchJoinNow,http://virtualhighway.us/account/" />
 		</menu_item_call>
 		<menu_item_separator bottom="-213" enabled="true" height="8" label="-----------" left="0"
 		     mouse_opaque="true" name="separator5" width="185" />
@@ -858,67 +858,67 @@
 		             hidden="false" label="Meta 7 home page..." left="0"
 			     mouse_opaque="true" name="Meta 7 home page..." width="169">
 			<on_click function="PromptShowURL" name="Meta7homePage_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Buy M$..." left="0"
 			     mouse_opaque="true" name="Buy M$..." width="169">
 			<on_click function="PromptShowURL" name="BuyCredits_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/buycredits.php" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/buycredits.php" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Downloads..." left="0"
 			     mouse_opaque="true" name="Downloads..." width="169">
 			<on_click function="PromptShowURL" name="Downloads_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/download.php" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/download.php" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Meta 7 wiki..." left="0"
 			     mouse_opaque="true" name="Meta 7 wiki..." width="169">
 			<on_click function="PromptShowURL" name="wiki_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com//wiki.php?page=wiki" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us//wiki.php?page=wiki" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Official forums..." left="0"
 			     mouse_opaque="true" name="Official forums..." width="169">
 			<on_click function="PromptShowURL" name="Forums_url"
-			     userdata="WebLaunchExternalTarget,http://forum.meta7.com/" />
+			     userdata="WebLaunchExternalTarget,http://forum.virtualhighway.us/" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Terms of service..." left="0"
 			     mouse_opaque="true" name="Terms of service..." width="169">
 			<on_click function="PromptShowURL" name="TOS_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/wiki.php?page=Terms Of Service" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/wiki.php?page=Terms Of Service" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Community standards..." left="0"
 			     mouse_opaque="true" name="Community standards..." width="169">
 			<on_click function="PromptShowURL" name="CommunityStandards_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/wiki.php?page=Community+Standards" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/wiki.php?page=Community+Standards" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Maturity ratings..." left="0"
 			     mouse_opaque="true" name="Maturity ratings..." width="169">
 			<on_click function="PromptShowURL" name="MaturityRatings_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/wiki.php?page=maturity ratings" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/wiki.php?page=maturity ratings" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Privacy policy..." left="0"
 			     mouse_opaque="true" name="Privacy policy..." width="169">
 			<on_click function="PromptShowURL" name="PrivacyPolicy_url"
-			     userdata="WebLaunchExternalTarget,http://www.meta7.com/privacy.php" />
+			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/privacy.php" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
 		             hidden="false" label="Submit a bug report..." left="0"
 			     mouse_opaque="true" name="Submit a bug report..." width="169">
 			<on_click function="PromptShowURL" name="SubmitBugReport_url"
-			     userdata="WebLaunchExternalTarget,http://bugs.meta7.com/" />
+			     userdata="WebLaunchExternalTarget,http://bugs.virtualhighway.us/" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-48" enabled="true" height="19" 
 		             hidden="false" label="Submit a support ticket..." left="0"
 			     mouse_opaque="true" name="Submit a support ticket..." width="169">
 			<on_click function="PromptShowURL" name="SubmitTicket_url"
-			     userdata="WebLaunchPublicIssue,http://support.meta7.com/" />
+			     userdata="WebLaunchPublicIssue,http://support.virtualhighway.us/" />
 		     </menu_item_call>
 		</menu>
 		<menu_item_call bottom="-313" enabled="true" height="19" label="About Meta 7..." left="0"

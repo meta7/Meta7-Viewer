@@ -8211,7 +8211,7 @@ void handle_web_browser_test(void*)
 	const bool open_links_externally = false;
 	const bool open_app_m7urls = true;
 	LLFloaterHtml::getInstance()->show(
-		"http://meta7.com/app/search/m7urls.html",
+		"http://virtualhighway.us/app/search/m7urls.html",
 		"Web Browser Test", 
 		open_links_externally, 
 		open_app_m7urls);

@@ -155,19 +155,19 @@ void LLDir_Win32::initAppDirs(const std::string &app_name)
 {
 	if(app_name == "*Portable*")
 	{
-		mAppName = "Meta7";
+		mAppName = "Virtual Highway";
 		mOSUserAppDir = mExecutableDir;
 		mOSUserAppDir += "\\";
 		mOSUserAppDir += "UserData";
 		mPortable = true;
-		mCacheDir = mTempDir + "\\Meta7.cache";
+		mCacheDir = mTempDir + "\\VH.cache";
 	}
 	else
 	{
 		mAppName = app_name;
 		mOSUserAppDir = mOSUserDir;
 		mOSUserAppDir += "\\";
-		mOSUserAppDir += "Meta7";
+		mOSUserAppDir += "VirtualHighway";
 		mPortable = false;
 	}
 

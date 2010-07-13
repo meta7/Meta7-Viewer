@@ -78,7 +78,7 @@ extern "C" {
 #endif
 #endif
 
-const std::string LLAppViewerWin32::sWindowClass = "Meta7 Viewer";
+const std::string LLAppViewerWin32::sWindowClass = "Virtual Highway Viewer";
 
 LONG WINAPI viewer_windows_exception_handler(struct _EXCEPTION_POINTERS *exception_infop)
 {

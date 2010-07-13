@@ -293,7 +293,7 @@ static BOOL gDoDisconnect = FALSE;
 static std::string gLaunchFileOnQuit;
 
 // Used on Win32 for other apps to identify our window (eg, win_setup)
-const char* const VIEWER_WINDOW_CLASSNAME = "Meta7 Viewer";
+const char* const VIEWER_WINDOW_CLASSNAME = "Virtual Highway Viewer";
 
 //----------------------------------------------------------------------------
 // File scope definitons
@@ -1861,7 +1861,7 @@ bool LLAppViewer::initConfiguration()
 
 		std::ostringstream msg;
 		msg << "Second Life found an error parsing the command line. \n" 
-			<< "Please see: http://wiki.meta7.com/wiki/Client_parameters \n"
+			<< "Please see: http://wiki.virtualhighway.us/wiki/Client_parameters \n"
 			<< "Error: " << clp.getErrorMessage();
 
 		OSMessageBox(
@@ -2043,7 +2043,7 @@ bool LLAppViewer::initConfiguration()
     mYieldTime = gSavedSettings.getS32("YieldTime");
              
 	// XUI:translate
-	gSecondLife = "Meta7 Viewer";
+	gSecondLife = "Virtual Highway Viewer";
 
 	// Read skin/branding settings if specified.
 	//if (! gDirUtilp->getSkinDir().empty() )
@@ -3241,7 +3241,7 @@ void LLAppViewer::badNetworkHandler()
 		"the issue. \n"
 		" \n"
 		"If the problem continues, see the Tech Support FAQ at: \n"
-		"www.meta7.com/support";
+		"www.virtualhighway.us/support";
 	forceDisconnect(message.str());
 }
 

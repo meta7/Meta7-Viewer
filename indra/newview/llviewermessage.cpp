@@ -1988,7 +1988,7 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 	{
 	case IM_CONSOLE_AND_CHAT_HISTORY:
 		// These are used for system messages, hence don't need the name,
-		// as it is always "Meta7 Viewer".
+		// as it is always "Virtual Highway Viewer".
 	  	// *TODO:translate
 		args["MESSAGE"] = message;
 
@@ -2075,7 +2075,7 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 		}
 		else if (from_id.isNull())
 		{
-			// Messages from "Meta7 Viewer" ID don't go to IM history
+			// Messages from "Virtual Highway Viewer" ID don't go to IM history
 			// messages which should be routed to IM window come from a user ID with name=SYSTEM_NAME
 			chat.mText = name + ": " + message;
 			LLFloaterChat::addChat(chat, FALSE, FALSE);

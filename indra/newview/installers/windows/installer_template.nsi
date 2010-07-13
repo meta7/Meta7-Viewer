@@ -220,7 +220,7 @@ Function CloseSecondLife
 FunctionEnd
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Test our connection to meta7.com
+; Test our connection to virtualhighway.us
 ; Also allows us to count attempted installs by examining web logs.
 ; *TODO: Return current SL version info and have installer check
 ; if it is up to date.
@@ -239,7 +239,7 @@ Function CheckNetworkConnection
     ; Don't show secondary progress bar, this will be quick.
     NSISdl::download_quiet \
         /TIMEOUT=${HTTP_TIMEOUT} \
-        "http://install.meta7.com/check/?stubtag=$2&version=${VERSION_LONG}" \
+        "http://install.virtualhighway.us/check/?stubtag=$2&version=${VERSION_LONG}" \
         $0
     Pop $1 ; Return value, either "success", "cancel" or an error message
     ; MessageBox MB_OK "Download result: $1"
@@ -376,13 +376,13 @@ Push $2
 	; Otherwise (preview/dmz etc) just remove cache
     StrCmp $INSTFLAGS "" RM_ALL RM_CACHE
       RM_ALL:
-        RMDir /r "$2\Application Data\Meta7"
+        RMDir /r "$2\Application Data\VirtualHighway"
       RM_CACHE:
         # Local Settings directory is the cache, there is no "cache" subdir
-        RMDir /r "$2\Local Settings\Application Data\Meta7"
+        RMDir /r "$2\Local Settings\Application Data\VirtualHighway"
         # Vista version of the same
-        RMDir /r "$2\AppData\Local\Meta7"
-        Delete "$2\Application Data\Meta7\user_settings\settings_windlight.xml"
+        RMDir /r "$2\AppData\Local\VirtualHighway"
+        Delete "$2\Application Data\VirtualHighway\user_settings\settings_windlight.xml"
 
   CONTINUE:
     IntOp $0 $0 + 1
@@ -393,17 +393,17 @@ Pop $2
 Pop $1
 Pop $0
 
-; Delete files in Documents and Settings\All Users\Meta7
+; Delete files in Documents and Settings\All Users\VirtualHighway
 Push $0
   ReadRegStr $0 HKEY_LOCAL_MACHINE "SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" "Common AppData"
   StrCmp $0 "" +2
-  RMDir /r "$0\Meta7"
+  RMDir /r "$0\VirtualHighway"
 Pop $0
 
-; Delete filse in C:\Windows\Application Data\Meta7
+; Delete filse in C:\Windows\Application Data\VirtualHighway
 ; If the user is running on a pre-NT system, Application Data lives here instead of
 ; in Documents and Settings.
-RMDir /r "$WINDIR\Application Data\Meta7"
+RMDir /r "$WINDIR\Application Data\VirtualHighway"
 
 FunctionEnd
 
@@ -446,7 +446,7 @@ Function un.RemovePassword
 DetailPrint "Removing Second Life password"
 
 SetShellVarContext current
-Delete "$APPDATA\Meta7\user_settings\password.dat"
+Delete "$APPDATA\VirtualHighway\user_settings\password.dat"
 SetShellVarContext all
 
 FunctionEnd
@@ -719,7 +719,7 @@ Call CheckWindowsVersion		; warn if on Windows 98/ME
 Call CheckIfAdministrator		; Make sure the user can install/uninstall
 Call CheckIfAlreadyCurrent		; Make sure that we haven't already installed this version
 Call CloseSecondLife			; Make sure we're not running
-Call CheckNetworkConnection		; ping meta7.com
+Call CheckNetworkConnection		; ping virtualhighway.us
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Don't remove cache files during a regular install, removing the inventory cache on upgrades results in lots of damage to the servers.
@@ -755,12 +755,12 @@ CreateShortCut	"$SMPROGRAMS\$INSTSHORTCUT\$INSTSHORTCUT.lnk" \
 				"$INSTDIR\$INSTEXE" "$INSTFLAGS $SHORTCUT_LANG_PARAM"
 
 
-WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\Meta7 Create Account.url" \
+WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\VirtualHighway Create Account.url" \
 				"InternetShortcut" "URL" \
-				"http://www.meta7.com/registration/"
-WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\Meta7 Your Account.url" \
+				"http://www.virtualhighway.us/registration/"
+WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\VirtualHighway Your Account.url" \
 				"InternetShortcut" "URL" \
-				"http://www.meta7.com/account/"
+				"http://www.virtualhighway.us/account/"
 CreateShortCut	"$SMPROGRAMS\$INSTSHORTCUT\Uninstall $INSTSHORTCUT.lnk" \
 				'"$INSTDIR\uninst.exe"' ''
 

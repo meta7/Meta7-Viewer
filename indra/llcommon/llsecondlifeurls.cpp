@@ -34,55 +34,55 @@
 #include "llsecondlifeurls.h"
 
 const std::string CREATE_ACCOUNT_URL ( 
-	"http://meta7.com/registration/");
+	"http://virtualhighway.us/registration/");
 
 const std::string MANAGE_ACCOUNT ( 
-	"http://meta7.com/account/");
+	"http://virtualhighway.us/account/");
 
 const std::string AUCTION_URL ( 
-	"http://meta7.com/auctions/auction-detail.php?id=");
+	"http://virtualhighway.us/auctions/auction-detail.php?id=");
 
 const std::string EVENTS_URL ( 
-	"http://meta7.com/events/");
+	"http://virtualhighway.us/events/");
 
 const std::string TIER_UP_URL ( 
-	"http://meta7.com/app/landtier");
+	"http://virtualhighway.us/app/landtier");
 
 const std::string LAND_URL ( 
-	"http://meta7.com/app/landtier");
+	"http://virtualhighway.us/app/landtier");
 
 const std::string UPGRADE_TO_PREMIUM_URL (
-	"http://meta7.com/app/upgrade/");
+	"http://virtualhighway.us/app/upgrade/");
 
 const std::string DIRECTX_9_URL ( 
-	"http://meta7.com/support/");
+	"http://virtualhighway.us/support/");
 
 const std::string AMD_AGP_URL ( 
-	"http://meta7.com/support/");
+	"http://virtualhighway.us/support/");
 
 const std::string VIA_URL ( 
-	"http://meta7.com/support/");
+	"http://virtualhighway.us/support/");
 
 const std::string SUPPORT_URL ( 
-    "http://meta7.com/support/");
+    "http://virtualhighway.us/support/");
 
 const std::string INTEL_CHIPSET_URL ( 
-	"http://meta7.com/support/");
+	"http://virtualhighway.us/support/");
 
 const std::string SIS_CHIPSET_URL ( 
-	"http://meta7.com/support/");
+	"http://virtualhighway.us/support/");
 
 const std::string BLOGS_URL ( 
-	"http://blog.meta7.com/");
+	"http://virtualhighway.us/");
 
 const std::string BUY_CURRENCY_URL (
-	"http://meta7.com/app/currency/");
+	"http://virtualhighway.us/app/currency/");
 
 const std::string LSL_DOC_URL (
-	"http://meta7.com/app/lsldoc/");
+	"http://virtualhighway.us/app/lsldoc/");
 
 const std::string SL_KB_URL (
-	"http://meta7.com/knowledgebase/");
+	"http://virtualhighway.us/knowledgebase/");
 
 const std::string RELEASE_NOTES_BASE_URL (
-	"http://meta7.com/app/releasenotes/");
+	"http://virtualhighway.us/app/releasenotes/");

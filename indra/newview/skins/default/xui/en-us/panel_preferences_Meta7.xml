@@ -804,9 +804,10 @@ Recommended Settings are:          Time: 1          Count: 4</text>
 						 name="Eyelid State" radio_style="false" width="128" control_name="Meta7GUSEyelidState"/>
 				</panel>
 				<text bottom_delta="-40" follows="left|top" font="SansSerifSmall" height="16" left_delta="-146"
-					 name="rofltxt3" width="512">        EXPERIMENTAL: The Greenlife Utility Stream is used for
-streaming information from the Meta7 viewer into
-the simulator for scripts to access.</text>
+					 name="rofltxt3" width="512">
+          EXPERIMENTAL: The Greenlife Utility Stream is used for
+          streaming information from the Virtual Highway Viewer into
+          the simulator for scripts to access.</text>
 				<check_box bottom_delta="-60" enabled="true" follows="left|top" font="SansSerifSmall" height="16"
 					 initial_value="false" label="Enable transmission of selection beam end position"
 					 left="15" mouse_opaque="true" name="lol-toggle!" radio_style="false" width="270"

@@ -128,7 +128,7 @@ void LLUserAuth::authenticate(
 	XMLRPC_VectorAppendString(params, "web_login_key", web_login_key.getString().c_str(), 0);
 	XMLRPC_VectorAppendString(params, "start", start.c_str(), 0);
 	XMLRPC_VectorAppendString(params, "version", gCurrentVersion.c_str(), 0); // Includes channel name
-	XMLRPC_VectorAppendString(params, "channel","Meta7 Viewer", 0);
+	XMLRPC_VectorAppendString(params, "channel","Virtual Highway Viewer", 0);
 	XMLRPC_VectorAppendString(params, "platform", PLATFORM_STRING, 0);
 
 	std::string digestSource =  firstname + lastname;

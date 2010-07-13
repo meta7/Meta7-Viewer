@@ -247,7 +247,7 @@ std::string LLDir::buildSLOSCacheDir() const
 	}
 	else
 	{
-		res = getOSCacheDir() + mDirDelimiter + "Meta7";
+		res = getOSCacheDir() + mDirDelimiter + "VirtualHighway";
 	}
 	return res;
 }

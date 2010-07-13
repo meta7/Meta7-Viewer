@@ -1055,7 +1055,7 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>http://home.meta7.com</string>
+			<string>http://home.virtualhighway.us</string>
 		</map>
 		<key>BlockAvatarAppearanceMessages</key>
 		<map>
@@ -7769,7 +7769,7 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>http://wiki.meta7.com/wiki/[LSL_STRING]</string>
+			<string>http://wiki.virtualhighway.us/wiki/[LSL_STRING]</string>
 		</map>
 		<key>LagMeterShrunk</key>
 		<map>
@@ -10646,7 +10646,7 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>http://search.meta7.com/client_search.php?</string>
+			<string>http://search.virtualhighway.us/client_search.php?</string>
 		</map>
 		<key>SearchURLQuery</key>
 		<map>
@@ -10659,7 +10659,7 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>http://search.meta7.com/client_search.php?q=[QUERY]&amp;s=[COLLECTION]&amp;</string>
+			<string>http://search.virtualhighway.us/client_search.php?q=[QUERY]&amp;s=[COLLECTION]&amp;</string>
 		</map>
 		<key>SearchURLSuffix2</key>
 		<map>
@@ -13777,7 +13777,7 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>Meta7 Viewer</string>
+			<string>Virtual Highway Viewer</string>
 		</map>
 		<key>VertexShaderEnable</key>
 		<map>

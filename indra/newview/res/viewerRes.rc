@@ -155,12 +155,12 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "CompanyName", "Linden Lab"
-            VALUE "FileDescription", "Second Life Open Source [Meta7 Viewer]"
+            VALUE "FileDescription", "Second Life Open Source [Virtual Highway Viewer]"
             VALUE "FileVersion", "1.23.5.1101"
-            VALUE "InternalName", "Meta7 Viewer"
+            VALUE "InternalName", "Virtual Highway Viewer"
             VALUE "LegalCopyright", "Copyright © 2001-2009, Linden Research, Inc."
             VALUE "OriginalFilename", "SecondLife.exe"
-            VALUE "ProductName", "Meta7 Viewer"
+            VALUE "ProductName", "Virtual Highway Viewer"
             VALUE "ProductVersion", "1.23.5.1101"
         END
     END

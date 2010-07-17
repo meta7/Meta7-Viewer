@@ -723,7 +723,7 @@ void LLTaskInvFVBridge::buildContextMenu(LLMenuGL& menu, U32 flags)
 		else
 		{
 			std::ostringstream info;
-			info << "Buy for M$" << price;
+			info << "Buy for G$" << price;
 			label.assign(info.str());
 		}
 
@@ -1101,7 +1101,7 @@ void LLTaskSoundBridge::buildContextMenu(LLMenuGL& menu, U32 flags)
 		else
 		{
 			std::ostringstream info;
-			info << "Buy for M$" << price;
+			info << "Buy for G$" << price;
 			label.assign(info.str());
 		}
 

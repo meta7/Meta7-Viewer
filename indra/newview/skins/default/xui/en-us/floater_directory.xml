@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <floater can_close="true" can_drag_on_left="false" can_minimize="true"
      can_resize="true" height="570" min_height="570" min_width="780"
-     name="directory" rect_control="FloaterFindRect2" title="Search Meta7"
+     name="directory" rect_control="FloaterFindRect2" title="Search VirtualHighway"
      width="780">
 	<tab_container bottom="-570" follows="left|top|right|bottom" height="550" left="0"
 	     mouse_opaque="false" name="Directory Tabs" tab_position="top" width="780">
@@ -24,7 +24,7 @@
 			     font="SansSerif" handle_edit_keys_directly="false" height="18"
 			     label="Search" left_delta="56" max_length="254" mouse_opaque="true"
 			     name="search_editor" select_all_on_focus_received="false"
-			     select_on_focus="false" tab_group="1" tool_tip="Search Meta7"
+			     select_on_focus="false" tab_group="1" tool_tip="Search VirtualHighway"
 			     width="160" />
 			<button bottom="-26" follows="top|right" font="SansSerifSmall" height="20" label="Back"
 			     left="230" name="back_btn" width="70" />
@@ -255,7 +255,7 @@
 				None Found.
 			</string>
 			<string name="land_help_text">
-				Land can be bought direct for Meta7 Dollars (M$) or at auction for either M$ or US$.
+				Land can be bought direct for Cyber Coins (G$) or at auction for either G$ or US$.
 To buy direct, visit the land and click on the place name in the title bar.
 			</string>
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false"
@@ -298,7 +298,7 @@ To buy direct, visit the land and click on the place name in the title bar.
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false" follows="left|top"
 			     bottom="-24" font="SansSerifSmall" halign="left" height="16" left="116" mouse_opaque="true"
 			     name="pricecheck_symbol" width="15">
-				M$
+				G$
 			</text>
 			<check_box bottom_delta="-18" control_name="FindLandArea" follows="left|top"
 			     font="SansSerifSmall" height="16" initial_value="true"
@@ -325,9 +325,9 @@ To buy direct, visit the land and click on the place name in the title bar.
 				<column label="" name="type" width="-1" />
 				<column dynamicwidth="true" label="Name" name="name" />
 				<column label="Type" name="landtype" width="50" />
-				<column label="M$ Price" name="price" width="65" />
+				<column label="G$ Price" name="price" width="65" />
 				<column label="Area" name="area" width="50" />
-				<column label="M$/m²" name="per_meter" width="65" />
+				<column label="G$/m²" name="per_meter" width="65" />
 			</scroll_list>
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false"
 			     bottom_delta="-20" drop_shadow_visible="true" follows="left|bottom"
@@ -551,7 +551,7 @@ To buy direct, visit the land and click on the place name in the title bar.
 						select_all_on_focus_received="false"
 						select_on_focus="false"
 						tab_group="1"
-						tool_tip="Search Meta7" />
+						tool_tip="Search VirtualHighway" />
 			<button bottom="-26" follows="top|right" font="SansSerifSmall" height="20" label="Back"
 			     left="230" name="back_btn" width="70" />
 			<button bottom="-26" follows="top|right" font="SansSerifSmall" height="20"

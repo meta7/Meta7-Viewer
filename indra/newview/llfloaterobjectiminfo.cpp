@@ -252,7 +252,7 @@ void LLFloaterObjectIMInfo::onClickMap(void* data)
 	LLFloaterObjectIMInfo* self = (LLFloaterObjectIMInfo*)data;
 
 	std::ostringstream link;
-	link << "meta7://" << self->mM7URL;
+	link << "secondlife://" << self->mM7URL;
 	LLURLDispatcher::dispatch(link.str(), NULL, true);
 }
 

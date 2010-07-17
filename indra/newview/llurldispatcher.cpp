@@ -50,13 +50,13 @@
 // library includes
 #include "llsd.h"
 
-const std::string M7URL_SL_HELP_PREFIX		= "meta7://app.";
+const std::string M7URL_SL_HELP_PREFIX		= "secondlife://app.";
 const std::string M7URL_SL_PREFIX			= "sl://";
-const std::string M7URL_SECONDLIFE_PREFIX	= "meta7://";
-const std::string M7URL_M7URL_PREFIX		= "http://m7url.com/meta7/";
+const std::string M7URL_SECONDLIFE_PREFIX	= "secondlife://";
+const std::string M7URL_M7URL_PREFIX		= "http://slurl.com/secondlife/";
 
 const std::string M7URL_SL_HELP_PREFIX_2		= "secondlife://app.";
-const std::string M7URL_SL_PREFIX_2			= "m7://";
+const std::string M7URL_SL_PREFIX_2			= "sl://";
 const std::string M7URL_SECONDLIFE_PREFIX_2	= "secondlife://";
 const std::string M7URL_M7URL_PREFIX_2		= "http://slurl.com/secondlife/";
 

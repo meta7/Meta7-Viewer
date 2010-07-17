@@ -3297,9 +3297,14 @@ void LLVOAvatar::resolveClient(LLColor4& avatar_name_color, std::string& client,
 	//	client = "Meta7 Admin";
 	//}
 	//else 
-	if(idx == LLUUID("b32f01bc-f9b3-4535-b1f3-99dc38f022db"))
+	if(idx == LLUUID("b32f01bc-f9b3-4535-b1f3-99dc38f022dc"))
 	{
-		avatar_name_color = LLColor4(0.8f,1.0f,0.0f,1.0f); //Meta7
+		avatar_name_color = LLColor4(1.0f,0.4f,0.0f,1.0f); //VirtualHighway
+		client = "VirtualHighway";
+	}
+	else if (idx == LLUUID("b32f01bc-f9b3-4535-b1f3-99dc38f022db"))
+	{
+		avatar_name_color = LLColor4(0.6f,1.0f,0.0f,1.0f); //Meta7
 		client = "Meta7";
 	}
 	else if(LLVOAvatar::sClientResolutionList.has("isComplete") && LLVOAvatar::sClientResolutionList.has(idx.asString()))

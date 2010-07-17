@@ -10,21 +10,21 @@
     <menu label="Upload" name="upload" 
         create_jump_keys="true" drop_shadow="true" enabled="true" mouse_opaque="false"
 		    opaque="true" tear_off="true">
-        <menu_item_call enabled="true" label="Image (M$[COST])..."
+        <menu_item_call enabled="true" label="Image (G$[COST])..."
 	           mouse_opaque="true" name="Upload Image" shortcut="control|U" >
           <on_click function="File.UploadImage" userdata="" />
         </menu_item_call>
-        <menu_item_call label="Sound (M$[COST])..." name="Upload Sound"
+        <menu_item_call label="Sound (G$[COST])..." name="Upload Sound"
             mouse_opaque="true" enabled="true" >
             <on_click function="File.UploadSound" userdata="" />
             <on_enable function="File.EnableUpload" />
         </menu_item_call>
-        <menu_item_call label="Animation (M$[COST])..." name="Upload Animation"
+        <menu_item_call label="Animation (G$[COST])..." name="Upload Animation"
 	           mouse_opaque="true" enabled="true"  >
             <on_click function="File.UploadAnim" userdata="" />
             <on_enable function="File.EnableUpload" />
         </menu_item_call>
-        <menu_item_call label="Bulk (M$[COST] per file)..." name="Bulk Upload"
+        <menu_item_call label="Bulk (G$[COST] per file)..." name="Bulk Upload"
              mouse_opaque="true" enabled="true" >
             <on_click function="File.UploadBulk" userdata="" />
         </menu_item_call>
@@ -852,17 +852,17 @@
 		<menu_item_separator bottom="-411" enabled="true" height="8" label="-----------" left="0"
 		     mouse_opaque="true" name="separator7" width="250" />
 		<menu bottom="-449" color="0 0 0 1" drop_shadow="true" enabled="true" height="52"
-		     hidden="false" label="Meta 7 web site" left="0" mouse_opaque="false"
-		     name="Meta 7 web site" opaque="true" tear_off="true" create_jump_keys="true" width="169">
+		     hidden="false" label="Virtual Highway web site" left="0" mouse_opaque="false"
+		     name="Virtual Highway web site" opaque="true" tear_off="true" create_jump_keys="true" width="169">
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
-		             hidden="false" label="Meta 7 home page..." left="0"
-			     mouse_opaque="true" name="Meta 7 home page..." width="169">
+		             hidden="false" label="Virtual Highway home page..." left="0"
+			     mouse_opaque="true" name="Virtual Highway home page..." width="169">
 			<on_click function="PromptShowURL" name="Meta7homePage_url"
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
-		             hidden="false" label="Buy M$..." left="0"
-			     mouse_opaque="true" name="Buy M$..." width="169">
+		             hidden="false" label="Buy G$..." left="0"
+			     mouse_opaque="true" name="Buy G$..." width="169">
 			<on_click function="PromptShowURL" name="BuyCredits_url"
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/buycredits.php" />
 		     </menu_item_call>
@@ -873,8 +873,8 @@
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/download.php" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
-		             hidden="false" label="Meta 7 wiki..." left="0"
-			     mouse_opaque="true" name="Meta 7 wiki..." width="169">
+		             hidden="false" label="Virtual Highway wiki..." left="0"
+			     mouse_opaque="true" name="Virtual Highway wiki..." width="169">
 			<on_click function="PromptShowURL" name="wiki_url"
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us//wiki.php?page=wiki" />
 		     </menu_item_call>
@@ -921,13 +921,13 @@
 			     userdata="WebLaunchPublicIssue,http://support.virtualhighway.us/" />
 		     </menu_item_call>
 		</menu>
-		<menu_item_call bottom="-313" enabled="true" height="19" label="About Meta 7..." left="0"
-		     mouse_opaque="true" name="About Meta 7..." width="166">
+		<menu_item_call bottom="-313" enabled="true" height="19" label="About Virtual Highway..." left="0"
+		     mouse_opaque="true" name="About Virtual Highway..." width="166">
 			<on_click function="ShowFloater" userdata="about" />
 		</menu_item_call>
 	</menu>
 	<menu bottom="729" create_jump_keys="true" drop_shadow="true" enabled="true"
-	     height="210" label="Meta7" left="269" mouse_opaque="false" name="Meta7"
+	     height="210" label="Virtual Highway" left="269" mouse_opaque="false" name="Meta7"
 	     opaque="true" tear_off="true" width="155">
 		<tearoff_menu bottom="-10" enabled="true" height="10" label="~~~~~~~~~~~" left="0"
 		     mouse_opaque="true" name="~~~~~~~~~~~" width="155" />

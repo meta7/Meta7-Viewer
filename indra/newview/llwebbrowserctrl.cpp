@@ -464,7 +464,7 @@ bool LLWebBrowserCtrl::clr404RedirectUrl()
 void LLWebBrowserCtrl::navigateTo( std::string urlIn )
 {
 	// don't browse to anything that starts with meta7:// or sl://
-	const std::string protocol1 = "meta7://";
+	const std::string protocol1 = "secondlife://";
 	const std::string protocol2 = "sl://";
 	if ((LLStringUtil::compareInsensitive(urlIn.substr(0, protocol1.length()), protocol1) == 0) ||
 	    (LLStringUtil::compareInsensitive(urlIn.substr(0, protocol2.length()), protocol2) == 0))

@@ -3033,7 +3033,7 @@ void process_chat_from_simulator(LLMessageSystem *msg, void **user_data)
 //        std::string ownername;
 //        if(gCacheName->getFullName(owner_id,ownername))
 //            from_name += (" (" + ownername + ")");
-        chat.mURL = llformat("meta7:///app/agent/%s/about",owner_id.asString().c_str());
+        chat.mURL = llformat("secondlife:///app/agent/%s/about",owner_id.asString().c_str());
     }
 
 // end twisted
@@ -4993,7 +4993,7 @@ void process_money_balance_reply( LLMessageSystem* msg, void** )
 	msg->getS32("MoneyData", "SquareMetersCredit", credit);
 	msg->getS32("MoneyData", "SquareMetersCommitted", committed);
 	msg->getStringFast(_PREHASH_MoneyData, _PREHASH_Description, desc);
-	LL_INFOS("Messaging") << "M$, credit, committed: " << balance << " " << credit << " "
+	LL_INFOS("Messaging") << "G$, credit, committed: " << balance << " " << credit << " "
 			<< committed << LL_ENDL;
 
 	if (gStatusBar)
@@ -5396,7 +5396,7 @@ void process_economy_data(LLMessageSystem *msg, void** /*user_data*/)
 
 	S32 upload_cost = LLGlobalEconomy::Singleton::getInstance()->getPriceUpload();
 
-	LL_INFOS_ONCE("Messaging") << "EconomyData message arrived; upload cost is M$" << upload_cost << LL_ENDL;
+	LL_INFOS_ONCE("Messaging") << "EconomyData message arrived; upload cost is G$" << upload_cost << LL_ENDL;
 
 	LLFloaterImagePreview::setUploadAmount(upload_cost);
 	LLFloaterAnimPreview::setUploadAmount(upload_cost);

@@ -161,7 +161,7 @@ std::string LLURLSimString::getURL()
 	std::string url;
 	if (sInstance.mParseState == PARSE_OK)
 	{
-		url = llformat("meta7://%s/%d/%d/%d/",
+		url = llformat("secondlife://%s/%d/%d/%d/",
 					sInstance.mSimName.c_str(),
 					sInstance.mX,
 					sInstance.mY,

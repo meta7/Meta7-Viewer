@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <panel border="true" bottom="-409" enabled="true" follows="left|top|right|bottom" height="408"
-	 label="Meta7" left="102" mouse_opaque="true" name="Meta7 panel" width="517">
-	<tab_container label="Meta7 Prefs" bottom="0" height="408" left="0" mouse_opaque="false"
+	 label="Virtual Highway" left="102" mouse_opaque="true" name="Meta7 panel" width="517">
+	<tab_container label="Virtual Highway Prefs" bottom="0" height="408" left="0" mouse_opaque="false"
 		 name="tabs" tab_min_width="50" tab_position="top" width="500" bg_opaque_color="0,0,0,0.0">
 		<tab_container label="Page 1" bottom="0" height="408" left="0" mouse_opaque="false"
 			 name="tab" tab_min_width="50" tab_position="top" width="500" bg_opaque_color="0,0,0,0.0">

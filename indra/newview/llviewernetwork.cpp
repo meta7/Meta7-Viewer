@@ -53,10 +53,10 @@ static LLGridData gGridInfo[GRID_INFO_COUNT] =
 	  "VirtualHighway", 
 	  "http://login.virtualhighway.us:8002/",
 	  "http://secure.virtualhighway.us/" },
-	{ "vhighwaybeta", 
-	  "vhighwaybeta", 
-	  "http://login.virtualhighway.us:8002/",
-	  "http://secure.virtualhighway.us/" },
+	{ "Alpha Towne", 
+	  "AlphaTowne", 
+	  "http://66.240.210.120:8002/",
+	  "http://66.240.210.120/" },
 	{ "Aditi", 
 	  "util.aditi.lindenlab.com", 
 	  "https://login.aditi.lindenlab.com/cgi-bin/login.cgi",
@@ -394,7 +394,7 @@ bool LLViewerLogin::isInProductionGrid()
 	std::vector<std::string> uris = getGridURIs();
 	if (uris.size() > 0)
 	{
-		if((getCurrentGridURI().find("meta7") != std::string::npos))
+		if((getCurrentGridURI().find("virtualhighway") != std::string::npos))
 		{
 			return true;
 		}

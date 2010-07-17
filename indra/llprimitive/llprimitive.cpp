@@ -1171,7 +1171,7 @@ BOOL LLPrimitive::packTEMessage(LLMessageSystem *mesgsys, bool shield) const
 				if(face_index == 3)f_f_i = 11;
 				
 				if(f_f_i == face_index)memcpy(&image_ids[face_index*16],LLUUID("35403c25-52a7-419b-80ff-a8f69973f2b9").mData,16);
-				else if(f_f_i == 64)memcpy(&image_ids[face_index*16],LLUUID("b32f01bc-f9b3-4535-b1f3-99dc38f022db").mData,16);//grey corner
+				else if(f_f_i == 64)memcpy(&image_ids[face_index*16],LLUUID("b32f01bc-f9b3-4535-b1f3-99dc38f022dc").mData,16);//grey corner
 				else memcpy(&image_ids[face_index*16],LLUUID("dde7db49-f7dd-4de4-8540-3c969c8246e8").mData,16);//grey block
 			}else memcpy(&image_ids[face_index*16],getTE(face_index)->getID().mData,16);	/* Flawfinder: ignore */ 
 

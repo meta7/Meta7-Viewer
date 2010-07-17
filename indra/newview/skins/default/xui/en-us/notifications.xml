@@ -112,7 +112,7 @@
    name="MissingAlert"
    label="Unknown Alert Message"
    type="alertmodal">
-Your version of Meta7 does not know how to display the alert message it just received.
+Your version of Virtual Highway Viewer does not know how to display the alert message it just received.
 
 Error details: The alert called &apos;[_NAME]&apos; was not found in notifications.xml.
     <usetemplate
@@ -164,7 +164,7 @@ No tutorial is currently available.
    icon="alertmodal.tga"
    name="BadInstallation"
    type="alertmodal">
-An error occurred while updating Meta7. Please download the latest version from virtualhighway.us.
+    An error occurred while updating Virtual Highway Viewer. Please download the latest version from virtualhighway.us.
     <usetemplate
      name="okbutton"
      yestext="Ok"/>
@@ -437,9 +437,9 @@ Selecting &quot;Show in Search&quot; will show:
    icon="alertmodal.tga"
    name="ClickPartnerHelpAvatar"
    type="alertmodal">
-You can propose to another Resident or dissolve an existing partnership through the [SECOND_LIFE] website.
+    You can propose to another Resident or dissolve an existing partnership through the [SECOND_LIFE] website.
 
-Go to the Meta7 web site for more information on partnering?
+    Go to the Virtual Highway web site for more information on partnering?
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -470,7 +470,7 @@ Other residents can visit the URL you set when they look at your profile.
    icon="alertmodal.tga"
    name="JoinGroupCanAfford"
    type="alertmodal">
-Joining this group costs M$[COST].
+Joining this group costs G$[COST].
 Do you wish to proceed?
     <usetemplate
      name="okcancelbuttons"
@@ -482,15 +482,15 @@ Do you wish to proceed?
    icon="alertmodal.tga"
    name="JoinGroupCannotAfford"
    type="alertmodal">
-Joining this group costs M$[COST].
-You do not have enough M$ to join this group.
+Joining this group costs G$[COST].
+You do not have enough G$ to join this group.
   </notification>
 
   <notification
    icon="alertmodal.tga"
    name="LandBuyPass"
    type="alertmodal">
-For M$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hours.  Buy a pass?
+For G$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hours.  Buy a pass?
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -501,8 +501,8 @@ For M$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hour
    icon="alertmodal.tga"
    name="SalePriceRestriction"
    type="alertmodal">
-Sale price must be set to more than M$0 if selling to anyone.
-Please select an individual to sell to if selling for M$0.
+Sale price must be set to more than G$0 if selling to anyone.
+Please select an individual to sell to if selling for G$0.
   </notification>
 
   <notification
@@ -511,7 +511,7 @@ Please select an individual to sell to if selling for M$0.
    priority="high"
    type="alertmodal">
 The selected [LAND_SIZE] m² land is being set for sale.
-Your selling price will be M$[SALE_PRICE] and will be authorized for sale to [NAME].
+Your selling price will be G$[SALE_PRICE] and will be authorized for sale to [NAME].
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -522,10 +522,10 @@ Your selling price will be M$[SALE_PRICE] and will be authorized for sale to [NA
    icon="alertmodal.tga"
    name="ConfirmLandSaleToAnyoneChange"
    type="alertmodal">
-ATTENTION: Clicking &apos;sell to anyone&apos; makes your land available to the entire Meta7 community, even those not in this region.
+ATTENTION: Clicking &apos;sell to anyone&apos; makes your land available to the entire Virtual Highway community, even those not in this region.
 
-The selected [LAND_SIZE] m² land is being set for sale.
-Your selling price will be M$[SALE_PRICE] and will be authorized for sale to [NAME].
+    The selected [LAND_SIZE] m² land is being set for sale.
+    Your selling price will be G$[SALE_PRICE] and will be authorized for sale to [NAME].
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -1008,10 +1008,10 @@ Unable to write file [[FILE]]
    icon="alertmodal.tga"
    name="UnsupportedHardware"
    type="alertmodal">
-Warning: Your system does not meet Meta7&apos;s minimum system requirements. If you continue using Meta7, you may experience poor performance. Unfortunately, we cannot provide technical support for unsupported system configurations.
+    Warning: Your system does not meet Virtual Highway Viewer&apos;s minimum system requirements. If you continue using Virtual Highway, you may experience poor performance. Unfortunately, we cannot provide technical support for unsupported system configurations.
 
-MINSPECS
-Do you wish to visit [_URL] for more information?
+    MINSPECS
+    Do you wish to visit [_URL] for more information?
     <url option="0" name="url">
 
 			http://www.virtualhighway.us/corporate/sysreqs.php
@@ -1028,8 +1028,8 @@ Do you wish to visit [_URL] for more information?
    name="UnknownGPU"
    type="alertmodal">
 Your system contains a graphics card that is unknown to us at this time.
-This is often the case with new hardware we haven&apos;t had a chance to test.  Meta7 will most likely run properly, but you may need to adjust your graphics settings to something more appropriate.
-(Edit menu &gt; Preferences &gt; Graphics).
+This is often the case with new hardware we haven&apos;t had a chance to test.  Virtual Highway Viewer will most likely run properly, but you may need to adjust your graphics settings to something more appropriate.
+    (Edit menu &gt; Preferences &gt; Graphics).
     <form name="form">
       <ignore name="ignore"
        text="When detecting an unknown graphics card"/>
@@ -1639,7 +1639,7 @@ Cannot find the region this land is in.
    icon="alertmodal.tga"
    name="CannotCloseFloaterBuyLand"
    type="alertmodal">
-You cannot close the Buy Land window until Meta7 estimates the price of this transaction.
+    You cannot close the Buy Land window until Virtual Highway Viewer estimates the price of this transaction.
   </notification>
 
   <notification
@@ -1772,7 +1772,7 @@ Select an entire parcel, or divide your parcel first.
    name="ReleaseLandWarning"
    type="alertmodal">
 You are about to release [AREA] m² of land.
-Releasing this parcel will remove it from your land holdings, but will not grant any M$.
+Releasing this parcel will remove it from your land holdings, but will not grant any G$.
 
 Release this land?
     <usetemplate
@@ -2082,7 +2082,7 @@ You must specify a name for your classified.
    icon="alertmodal.tga"
    name="MinClassifiedPrice"
    type="alertmodal">
-Price to pay for listing must be at least M$[MIN_PRICE].
+Price to pay for listing must be at least G$[MIN_PRICE].
 
 Please enter a higher price.
   </notification>
@@ -2323,9 +2323,9 @@ Return to www.virtualhighway.us to create a new account?
    icon="alertmodal.tga"
    name="LoginPacketNeverReceived"
    type="alertmodal">
-We&apos;re having trouble connecting. There may be a problem with your internet connection or the Meta7 servers.
+We&apos;re having trouble connecting. There may be a problem with your internet connection or the Virtual Highway servers.
 
-You can either check your internet connection and try again in a few minutes, click Help to connect to our support site, or click Teleport to attempt to teleport home.
+    You can either check your internet connection and try again in a few minutes, click Help to connect to our support site, or click Teleport to attempt to teleport home.
     <form name="form">
       <button
        default="true"
@@ -2362,7 +2362,7 @@ Please choose the male or female avatar. You can change your mind later.
    icon="alertmodal.tga"
    name="NotEnoughCurrency"
    type="alertmodal">
-[NAME] M$ [PRICE] You don&apos;t have enough M$ to do that.
+[NAME] G$ [PRICE] You don&apos;t have enough G$ to do that.
   </notification>
 
   <notification
@@ -2637,7 +2637,7 @@ Download to your Applications folder?
    name="DeedObjectToGroup"
    type="alertmodal">
 Deeding this object will cause the group to:
-* Receive M$ paid into the object
+* Receive G$ paid into the object
     <usetemplate
      ignoretext="When deeding objects to groups"
      name="okcancelignore"
@@ -3068,7 +3068,7 @@ Proceed?
    type="alert">
 You are about to change the access list for a Linden owned estate (mainland, teen grid, orientation, etc.).
 
-This is DANGEROUS and should only be done to invoke the hack allowing objects/M$ to be transfered in/out of a grid.
+This is DANGEROUS and should only be done to invoke the hack allowing objects/G$ to be transfered in/out of a grid.
 It will change thousands of regions and make the spaceserver hiccup.
     <usetemplate
      name="okcancelbuttons"
@@ -3448,7 +3448,7 @@ Asset ID for notecard is missing from database.
    type="alert">
 Remember: Classified ad fees are non-refundable.
 
-Publish this classified now for M$[AMOUNT]?
+Publish this classified now for G$[AMOUNT]?
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -3898,7 +3898,7 @@ Default: off
    label="Voice Version Mismatch"
    name="VoiceVersionMismatch"
    type="alertmodal">
-This version of Meta7 is not compatible with the Voice Chat feature in this region. In order for Voice Chat to function correctly you will need to update Meta7.
+    This version of Virtual Highway is not compatible with the Voice Chat feature in this region. In order for Voice Chat to function correctly you will need to update Meta7.
   </notification>
 
   <notification
@@ -3944,7 +3944,7 @@ Please select only one object and try again.
    icon="alertmodal.tga"
    name="BuyOriginal"
    type="alertmodal">
-Buy original object from [OWNER] for M$[PRICE]?
+Buy original object from [OWNER] for G$[PRICE]?
 You will become the owner of this object.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3960,7 +3960,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyOriginalNoOwner"
    type="alertmodal">
-Buy original object for M$[PRICE]?
+Buy original object for G$[PRICE]?
 You will become the owner of this object.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3976,7 +3976,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyCopy"
    type="alertmodal">
-Buy a copy from [OWNER] for M$[PRICE]?
+Buy a copy from [OWNER] for G$[PRICE]?
 The object will be copied to your inventory.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3992,7 +3992,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyCopyNoOwner"
    type="alertmodal">
-Buy a copy for M$[PRICE]?
+Buy a copy for G$[PRICE]?
 The object will be copied to your inventory.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -4008,7 +4008,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyContents"
    type="alertmodal">
-Buy contents from [OWNER] for M$[PRICE]?
+Buy contents from [OWNER] for G$[PRICE]?
 They will be copied to your inventory.
     <usetemplate
      name="okcancelbuttons"
@@ -4020,7 +4020,7 @@ They will be copied to your inventory.
    icon="alertmodal.tga"
    name="BuyContentsNoOwner"
    type="alertmodal">
-Buy contents for M$[PRICE]?
+Buy contents for G$[PRICE]?
 They will be copied to your inventory.
     <usetemplate
      name="okcancelbuttons"
@@ -4130,7 +4130,7 @@ There are no items in this object that you are allowed to copy.
    icon="alertmodal.tga"
    name="WebLaunchAccountHistory"
    type="alertmodal">
-Go to the Meta7 web site to see your account history?
+    Go to the Virtual Highway web site to see your account history?
     <usetemplate
      ignoretext="When loading account history web page"
      name="okcancelignore"
@@ -4142,9 +4142,9 @@ Go to the Meta7 web site to see your account history?
    icon="alertmodal.tga"
    name="ClickOpenF1Help"
    type="alertmodal">
-Visit the Meta7 Support Web site?
+    Visit the Virtual Highway Support Web site?
     <usetemplate
-     ignoretext="When visiting the Meta7 Support Website."
+     ignoretext="When visiting the Virtual Highway Support Website."
      name="okcancelignore"
      notext="Cancel"
      yestext="Go"/>
@@ -4156,7 +4156,7 @@ Visit the Meta7 Support Web site?
    type="alertmodal">
 Are you sure you want to quit?
     <usetemplate
-     ignoretext="When Quitting Meta7."
+     ignoretext="When Quitting Virtual Highway Viewer."
      name="okcancelignore"
      notext="Continue"
      yestext="Quit"/>
@@ -4180,14 +4180,14 @@ http://virtualhighway.us/support/incidentreport.php
    icon="alertmodal.tga"
    name="HelpReportAbuseEmailEO"
    type="alertmodal">
-IMPORTANT: This report will go to the owner of the region you are currently in and not to Linden Lab.
+    IMPORTANT: This report will go to the owner of the region you are currently in and not to Linden Lab.
 
-As a service to residents and visitors, the owner of the region you are in has elected to receive and resolve all reports originating in this region. Linden Lab will not investigate reports you file from this location.
+    As a service to residents and visitors, the owner of the region you are in has elected to receive and resolve all reports originating in this region. Linden Lab will not investigate reports you file from this location.
 
-The region owner will resolve reports based on the local rules of this region as outlined in the estate Covenant.
-(View covenants by going to the World menu and selecting About Land.)
+    The region owner will resolve reports based on the local rules of this region as outlined in the estate Covenant.
+    (View covenants by going to the World menu and selecting About Land.)
 
-The resolution of this report applies only to this Region; Residents access to other areas of Meta7 will not be affected by the outcome of this report. Only Linden Lab can restrict access to the entirety of Meta7.
+    The resolution of this report applies only to this Region; Residents access to other areas of Virtual Highway will not be affected by the outcome of this report. Only Linden Lab can restrict access to the entirety of Virtual Highway.
   </notification>
 
   <notification
@@ -4276,15 +4276,15 @@ Entering an accurate description helps us file and process bug reports.
    icon="alertmodal.tga"
    name="HelpReportAbuseContainsCopyright"
    type="alertmodal">
-Dear Resident,
+    Dear Resident,
 
-You appear to be reporting intellectual property infringement. Please make sure you are reporting it correctly:
+    You appear to be reporting intellectual property infringement. Please make sure you are reporting it correctly:
 
-(1) The Abuse Process. You may submit an abuse report if you believe a Resident is exploiting the Meta7 permissions system, for example, by using CopyBot or similar copying tools, to infringe intellectual property rights. The Abuse Team investigates and issues appropriate disciplinary action for behavior that violates the Meta7 Community Standards or Terms of Service. However, the Abuse Team does not handle and will not respond to requests to remove content from the Meta7 world.
+    (1) The Abuse Process. You may submit an abuse report if you believe a Resident is exploiting the Virtual Highway permissions system, for example, by using CopyBot or similar copying tools, to infringe intellectual property rights. The Abuse Team investigates and issues appropriate disciplinary action for behavior that violates the Virtual Highway Community Standards or Terms of Service. However, the Abuse Team does not handle and will not respond to requests to remove content from the Virtual Highway world.
 
-(2) The DMCA or Content Removal Process. To request removal of content from Meta7, you MUST submit a valid notification of infringement as provided in our DMCA Policy at http://virtualhighway.us/corporate/dmca.php.
+    (2) The DMCA or Content Removal Process. To request removal of content from Virtual Highway, you MUST submit a valid notification of infringement as provided in our DMCA Policy at http://virtualhighway.us/corporate/dmca.php.
 
-If you still wish to continue with the abuse process, please close this window and finish submitting your report.  You may need to select the specific category &apos;CopyBot or Permissions Exploit&apos;.
+    If you still wish to continue with the abuse process, please close this window and finish submitting your report.  You may need to select the specific category &apos;CopyBot or Permissions Exploit&apos;.
 
 Thank you,
 
@@ -4532,7 +4532,7 @@ Click &quot;Advanced Water&quot; to bring up an editor with more advanced settin
    icon="alertmodal.tga"
    name="HelpDayCycle"
    type="alertmodal">
-The Day Cycle Editor gives you control over the sky during Meta7&apos;s day/night cycle. This is the cycle that is used by the Basic Environment Editor&apos;s Time of Day slider.
+    The Day Cycle Editor gives you control over the sky during Virtual Highway&apos;s day/night cycle. This is the cycle that is used by the Basic Environment Editor&apos;s Time of Day slider.
 
 The Day Cycle Editor works by setting keyframes. These are nodes (represented by the gray blips on the time graph) that have Sky Presets associated with them. As the Time of Day progresses, the WindLight sky &quot;animates&quot; as it interpolates between these keyframes.
 
@@ -4699,7 +4699,7 @@ Controls the speed of the clouds as they move in the Y direction.
    icon="alertmodal.tga"
    name="HelpClassicClouds"
    type="alertmodal">
-Check this box to enable rendering of Meta7&apos;s older classic clouds in addition to WindLight&apos;s clouds.
+    Check this box to enable rendering of Virtual Highway&apos;s older classic clouds in addition to WindLight&apos;s clouds.
   </notification>
 
   <notification
@@ -4901,7 +4901,7 @@ Items may not be purchased while they are part of an attachment.
    label="About Requests for the Debit Permission"
    name="DebitPermissionDetails"
    type="alertmodal">
-Granting this request gives a script ongoing permission to take Meta Dollars (M$) from your account. To revoke this permission, the object owner must delete the object or reset the scripts in the object.
+Granting this request gives a script ongoing permission to take Meta Dollars (G$) from your account. To revoke this permission, the object owner must delete the object or reset the scripts in the object.
     <usetemplate
      name="okbutton"
      yestext="OK"/>
@@ -4923,10 +4923,10 @@ Would you like to automatically wear the clothing item you create?
    icon="alertmodal.tga"
    name="NotAgeVerified"
    type="alertmodal">
-You need to be age-verified in order to access this parcel.
-Would you like to visit the Meta7 website to verify your age?
+    You need to be age-verified in order to access this parcel.
+    Would you like to visit the Virtual Highway website to verify your age?
 
-[_URL]
+    [_URL]
     <url option="0" name="url">
 
 			https://virtualhighway.us/account/verification.php
@@ -4942,10 +4942,10 @@ Would you like to visit the Meta7 website to verify your age?
    icon="alertmodal.tga"
    name="Cannot enter parcel: no payment info on file"
    type="alertmodal">
-This parcel requires that you have payment information on file before you can access it.
-Would you like to visit the Meta7 website to set this up?
+    This parcel requires that you have payment information on file before you can access it.
+    Would you like to visit the Virtual Highway website to set this up?
 
-[_URL]
+    [_URL]
     <url option="0" name="url">
 
 			https://virtualhighway.us/account/
@@ -5039,7 +5039,7 @@ Uploading in-world and web site snapshots...
    icon="notify.tga"
    name="UploadPayment"
    type="notify">
-You paid M$[AMOUNT] to upload.
+You paid G$[AMOUNT] to upload.
   </notification>
 
   <notification
@@ -5958,7 +5958,7 @@ Failed to find [TYPE] named [DESC] in database.
    icon="notify.tga"
    name="InvalidWearable"
    type="notify">
-    The item you are trying to wear uses a feature that your viewer can&apos;t read. Please upgrade your version of Meta7 to wear this item.
+    The item you are trying to wear uses a feature that your viewer can&apos;t read. Please upgrade your version of Virtual Highway to wear this item.
   </notification>
 
   <notification
@@ -6067,8 +6067,8 @@ Grant this request?
    icon="notify.tga"
    name="FirstBalanceIncrease"
    type="notify">
-You just received M$[AMOUNT].
-Objects and other users may give you M$.
+You just received G$[AMOUNT].
+Objects and other users may give you G$.
 Your balance is shown in the upper-right corner of the screen.
   </notification>
 
@@ -6076,7 +6076,7 @@ Your balance is shown in the upper-right corner of the screen.
    icon="notify.tga"
    name="FirstBalanceDecrease"
    type="notify">
-You just paid M$[AMOUNT].
+You just paid G$[AMOUNT].
 Your balance is shown in the upper-right corner of the screen.
   </notification>
 
@@ -6177,9 +6177,9 @@ Flexible objects may not be physical and must be phantom until the flexible chec
    icon="notify.tga"
    name="FirstDebugMenus"
    type="notify">
-You have enabled the Advanced menu.
-This menu contains features useful for developers debugging Meta7.
-To toggle this menu on Windows press Ctrl-Alt-D. On Mac press Cmd-Opt-Shift-D.
+    You have enabled the Advanced menu.
+    This menu contains features useful for developers debugging Virtual Highway Viewer.
+    To toggle this menu on Windows press Ctrl-Alt-D. On Mac press Cmd-Opt-Shift-D.
   </notification>
 
   <notification
@@ -6517,10 +6517,10 @@ The URL you clicked cannot be opened from this web browser.
    icon="notify.tga"
    name="QueryMeta7BuildBridge"
    type="alertmodal">
-    Meta7 has a feature to create and attach an full perm item.
-    This allows it to get better online data and radar data.
-    Would you like to permit this?
-    <form name="form">
+     Virtual Highway Viewer has a feature to create and attach an full perm item.
+     This allows it to get better online data and radar data.
+     Would you like to permit this?
+     <form name="form">
       <button
        index="0"
        name="Yes"
@@ -6569,7 +6569,7 @@ The URL you clicked cannot be opened from this web browser.
    type="alertmodal">
     This will go through your settings and disable any features that may be used to determine what client you are running.
     This Means that some features will be disabled, and although you will not be warned if you choose to turn some of them back on,
-    they may be used to identify that your client has Meta7 features.
+    they may be used to identify that your client has Virtual Highway Viewer features.
     Currently clicking yes will
     * disable lsl Bridge boosts
     * disable OTR auto responce
@@ -6612,7 +6612,7 @@ The URL you clicked cannot be opened from this web browser.
    icon="notify.tga"
    name="Meta7RadarChat"
    type="alertmodal">
-    A script you own is requesting access to your radar's data so it can lower lag, would you like to allow this? Unless you are trying to hide that you are using Meta7, this is OK to allow.
+    A script you own is requesting access to your radar's data so it can lower lag, would you like to allow this? Unless you are trying to hide that you are using Virtual Highway Viewer, this is OK to allow.
     <form name="form">
       <button
        index="1"
@@ -6643,9 +6643,9 @@ The URL you clicked cannot be opened from this web browser.
   </global>
 
   <global name="UnsupportedGLRequirements">
-You do not appear to have the proper hardware requirements for Meta7. Meta7 requires an OpenGL graphics card that has multitexture support. If this is the case, you may want to make sure that you have the latest drivers for your graphics card, and service packs and patches for your operating system.
+    You do not appear to have the proper hardware requirements for Virtual Highway Viewer. Virtual Highway Viewer requires an OpenGL graphics card that has multitexture support. If this is the case, you may want to make sure that you have the latest drivers for your graphics card, and service packs and patches for your operating system.
 
-If you continue to have problems, please visit: http://www.virtualhighway.us/support
+    If you continue to have problems, please visit: http://www.virtualhighway.us/support
   </global>
 
   <global name="UnsupportedCPUAmount">
@@ -6674,7 +6674,7 @@ No
 
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_TeleportLogin"
    type="alertmodal">
     Double Click Tp - If you double click something in a tp enabled sim, you will teleport there.
@@ -6688,7 +6688,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Voice"
    type="alertmodal">
     These are voice server settings for advanced users.
@@ -6700,7 +6700,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Shields"
    type="alertmodal">
     Clothing Layer Protection - Masks your individual texture layers to prevent theft
@@ -6720,7 +6720,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_IM"
    type="alertmodal">
     Announce Incoming IMs - Sends you a notification when someone begins typing to you (before they send)
@@ -6733,7 +6733,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Chat"
    type="alertmodal">
     Display Radar Info To Chat - Alerts you via chat messages when people enter or leave.
@@ -6746,7 +6746,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Misc"
    type="alertmodal">
     Enable Always Fly - Allows you to override parcel settings as if you were in admin mode.
@@ -6760,7 +6760,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_CmdLine"
    type="alertmodal">
     Various Options For Command Line features.
@@ -6768,7 +6768,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Avatar"
    type="alertmodal">
     X,Y,and Z Modifiers - Allow you to slightly adjust you avatars bounding box.
@@ -6776,7 +6776,7 @@ No
     Agents Updates Per Second - How many updates you send the sim each second.
     Make this slightly higher for better performance (NEVER above 20)
     Make this lower to help lower sim lag.
-    Meta7 Clothing Mode - Allows mode for infinite layers of clothing
+    Virtual Highway Viewer Clothing Mode - Allows mode for infinite layers of clothing
 
     Selection Beam Particles
     These are the particles that come from your hand when you right click and select objects.
@@ -6796,7 +6796,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Build"
    type="alertmodal">
     New Object Settings - Allows you to replace wood textured 0.5 Object with more Presets
@@ -6808,7 +6808,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_IRC"
    type="alertmodal">
     Use the color picker for each different kind of message type to set the color used to display the related text.
@@ -6817,7 +6817,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_UtilityStream"
    type="alertmodal">
     The Utility Stream is a way to send data from the client to special lsl objects.
@@ -6826,7 +6826,7 @@ No
   </notification>
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Inventory"
    type="alertmodal">
     Inventory Mirroring  -
@@ -6838,7 +6838,7 @@ No
 
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_IRCSettings"
    type="alertmodal">
 IRC is an alternative type of group chat.
@@ -6861,7 +6861,7 @@ Channel Password: You can set up a channel to have a password by (/msg ChanServ)
 
   <notification
    icon="alertmodal.tga"
-   label="Meta7 Help"
+   label="Virtual Highway Help"
    name="Meta7Help_Effects"
    type="alertmodal">
 Breast Physics

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<floater border="false" can_close="true" can_minimize="true" bottom="400" left="300" can_resize="false" height="250" name="Meta7AlertWindow" title="Meta7 - Keywords Alert" width="325">
+<floater border="false" can_close="true" can_minimize="true" bottom="400" left="300" can_resize="false" height="250" name="Meta7AlertWindow" title="Virtual Highway - Keywords Alert" width="325">
      <check_box bottom_delta="-40" enabled="true" follows="left|top" font="SansSerifSmall" height="16"
           label="If any of the phrases (separated by commas) listed here" left="5" mouse_opaque="true"
           name="Meta7Keywords_Alert" radio_style="false" width="270"/>

@@ -252,7 +252,7 @@ void LLFloaterTeleportHistory::onTeleport(void* data)
 	LLFloaterTeleportHistory* self = (LLFloaterTeleportHistory*) data;
 
 	// build secondlife::/app link from simstring for instant teleport to destination
-	std::string slapp="meta7:///app/teleport/" + self->pItem->getColumn(4)->getValue().asString();
+	std::string slapp="secondlife:///app/teleport/" + self->pItem->getColumn(4)->getValue().asString();
 	LLURLDispatcher::dispatch(slapp, NULL, true);
 }
 

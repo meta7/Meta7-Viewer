@@ -1227,7 +1227,7 @@ void LLFloaterBuyLandUI::refreshUI()
 			
 		childSetText("purchase_action",
 			llformat(
-				"Pay M$ %d to %s for this land",
+				"Pay G$ %d to %s for this land",
 				mParcelPrice,
 				mParcelSellerName.c_str()
 				));

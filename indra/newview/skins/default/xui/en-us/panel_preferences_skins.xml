@@ -16,8 +16,8 @@
 		<radio_item bottom="-65" height="20" left="0" name="silver" width="480">
 			Silver
 		</radio_item>
-		<radio_item bottom="-105" height="20" left="0" name="Meta7" width="480">
-			Meta7
+		<radio_item bottom="-105" height="20" left="0" name="VirtualHighway" width="480">
+			VirtualHighway
 		</radio_item>
 		<radio_item bottom="-145" height="20" left="0" name="ruby" width="480">
 			Ruby

@@ -84,7 +84,7 @@ void LLLoginHandler::parse(const LLSD& queryMap)
 	{
 		grid_choice = GRID_INFO_AGNI;
 	}
-	else if (queryMap["grid"].asString() == "Meta7")
+	else if (queryMap["grid"].asString() == "VirtualHighway")
 	{
 		grid_choice = GRID_INFO_META7;
 	}

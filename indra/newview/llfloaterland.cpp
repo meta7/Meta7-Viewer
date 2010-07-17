@@ -354,7 +354,7 @@ BOOL LLPanelLandGeneral::postBuild()
 	
 	mSaleInfoNotForSale = getChild<LLTextBox>("Not for sale.");
 	
-	mSaleInfoForSale1 = getChild<LLTextBox>("For Sale: Price M$[PRICE].");
+	mSaleInfoForSale1 = getChild<LLTextBox>("For Sale: Price G$[PRICE].");
 
 	
 	mBtnSellLand = getChild<LLButton>("Sell Land...");

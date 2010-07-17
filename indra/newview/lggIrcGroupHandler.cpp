@@ -157,7 +157,7 @@ void lggIrcGroupHandler::startUpAutoRunIRC()
 	found=true;
 
 	//Setup meta7 IRC chat
-	std::string avfname("Meta7");
+	std::string avfname("VirtualHighway");
 	std::string avlname("User");
 	gAgent.getFirstName(avfname);
 	gAgent.getLastName(avlname);
@@ -311,9 +311,9 @@ void lggIrcGroupHandler::startUpIRCListener(lggIrcData dat)
 	llinfos << " add session..." << llendl;
 	make_ui_sound("UISndStartIM");
 	LLSD args;
-	gIMMgr->addMessage(dat.id,dat.id,std::string("Meta7"),
+	gIMMgr->addMessage(dat.id,dat.id,std::string("VirtualHighway"),
 		//gIMMgr->addSystemMessage(idat.id,
-		llformat("IRC Session Initiated on server: %s:%s \nYour nick is %s and you are on the channel: %s\nWARNING: THIS IS A IRC CHAT WINDOW, Chat can not be verified by Meta7 or Magne Metaverse Research, people may or may not have the same nick name as their Meta7 avatar, or may not even be human at all"
+		llformat("IRC Session Initiated on server: %s:%s \nYour nick is %s and you are on the channel: %s\nWARNING: THIS IS A IRC CHAT WINDOW, Chat can not be verified by Virtual Highway, people may or may not have the same nick name as their Virtual Highway avatar, or may not even be human at all"
 		, dat.server.c_str(), dat.port.c_str(),dat.nick.c_str(),dat.channel.c_str()));
 	
 	lggIrcThread* mThreadIRC = new lggIrcThread(dat);

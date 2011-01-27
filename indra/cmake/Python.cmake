@@ -6,9 +6,10 @@ if (WINDOWS)
   # On Windows, explicitly avoid Cygwin Python.
 
   find_program(PYTHON_EXECUTABLE
-    NAMES python25.exe python23.exe python.exe
+    NAMES python27.exe python25.exe python23.exe python.exe
     NO_DEFAULT_PATH # added so that cmake does not find cygwin python
     PATHS
+    [HKEY_LOCAL_MACHINE\\SOFTWARE\\Python\\PythonCore\\2.7\\InstallPath]
     [HKEY_LOCAL_MACHINE\\SOFTWARE\\Python\\PythonCore\\2.6\\InstallPath]
     [HKEY_LOCAL_MACHINE\\SOFTWARE\\Python\\PythonCore\\2.5\\InstallPath]
     [HKEY_LOCAL_MACHINE\\SOFTWARE\\Python\\PythonCore\\2.4\\InstallPath]
@@ -27,7 +28,7 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
   string(REPLACE ":" ";" PATH_LIST "$ENV{PATH}")
   find_program(PYTHON_EXECUTABLE
-    NAMES python python25 python24 python23
+    NAMES python python25 python24 python23 python27
     NO_DEFAULT_PATH # Avoid searching non-standard locations first
     PATHS
     /bin

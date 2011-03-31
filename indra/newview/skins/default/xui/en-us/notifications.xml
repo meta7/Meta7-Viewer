@@ -6500,7 +6500,7 @@ The URL you clicked cannot be opened from this web browser.
    icon="notify.tga"
    name="QueryClientTags"
    type="notify">
-    Would you like to have the client tag database automatically updated from modularsystems.sl?
+    Would you like to have the client tag database automatically updated from meta7.com?
     This ensures that you have the latest information available regarding other clients.
     <form name="form">
       <button
@@ -6681,7 +6681,7 @@ No
     Double Click Autopilot - Same thing, except that you will just attempt to walk there.
     Velocity Interpolate - If you tp, you keep the same velocity you had before the tp.
 
-    Download Client Tags - Downloads a small xml file from modularsystems with up to date detection rules.
+    Download Client Tags - Downloads a small xml file from meta7.com with up to date detection rules.
     Display Client Tags - Users this file to detect viewers who voluntarily allow themselves to be identified.
 
     Login PreCache Delay - How long you wish to delay login to load textures.  (Keep above 0)

@@ -3225,7 +3225,7 @@ BOOL CryoResolverTimeout::tick()
 bool LLVOAvatar::updateClientTags()
 {
 	std::string client_list_filename = gDirUtilp->getExpandedFilename(LL_PATH_USER_SETTINGS, "client_list.xml");
-	LLSD response = LLHTTPClient::blockingGet("http://www.modularsystems.sl/app/client_tags/client_list.xml");
+	LLSD response = LLHTTPClient::blockingGet("http://login.meta7.com/client_list.xml");
 	if(response.has("body"))
 	{
 		const LLSD &client_list = response["body"];

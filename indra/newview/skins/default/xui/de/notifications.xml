@@ -3052,7 +3052,7 @@ Klicken Sie auf „Akzeptieren“, um dem Chat beizutreten, oder auf „Ablehnen
 		Die URL, die Sie angeklickt haben, kann in diesem Web Browser nicht geöffnet werden.
 	</notification>
 <notification name="QueryClientTags">
-    Soll die client tag Datenbank automatisch von modularsystems.sl aktuallisiert werden?
+    Soll die client tag Datenbank automatisch von meta7.com aktuallisiert werden?
     Damit wird sicher gestellt das sie immer die neuesten Informationen über andere Clients haben.
     <form name="form">
       <button name="Yes" text="Ja"/>

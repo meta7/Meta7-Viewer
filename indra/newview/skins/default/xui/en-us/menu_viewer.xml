@@ -10,21 +10,21 @@
     <menu label="Upload" name="upload" 
         create_jump_keys="true" drop_shadow="true" enabled="true" mouse_opaque="false"
 		    opaque="true" tear_off="true">
-        <menu_item_call enabled="true" label="Image (G$[COST])..."
+        <menu_item_call enabled="true" label="Image (V$[COST])..."
 	           mouse_opaque="true" name="Upload Image" shortcut="control|U" >
           <on_click function="File.UploadImage" userdata="" />
         </menu_item_call>
-        <menu_item_call label="Sound (G$[COST])..." name="Upload Sound"
+        <menu_item_call label="Sound (V$[COST])..." name="Upload Sound"
             mouse_opaque="true" enabled="true" >
             <on_click function="File.UploadSound" userdata="" />
             <on_enable function="File.EnableUpload" />
         </menu_item_call>
-        <menu_item_call label="Animation (G$[COST])..." name="Upload Animation"
+        <menu_item_call label="Animation (V$[COST])..." name="Upload Animation"
 	           mouse_opaque="true" enabled="true"  >
             <on_click function="File.UploadAnim" userdata="" />
             <on_enable function="File.EnableUpload" />
         </menu_item_call>
-        <menu_item_call label="Bulk (G$[COST] per file)..." name="Bulk Upload"
+        <menu_item_call label="Bulk (V$[COST] per file)..." name="Bulk Upload"
              mouse_opaque="true" enabled="true" >
             <on_click function="File.UploadBulk" userdata="" />
         </menu_item_call>
@@ -861,8 +861,8 @@
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/" />
 		     </menu_item_call>
 		     <menu_item_call bottom="-29" enabled="true" height="19" 
-		             hidden="false" label="Buy G$..." left="0"
-			     mouse_opaque="true" name="Buy G$..." width="169">
+		             hidden="false" label="Buy V$..." left="0"
+			     mouse_opaque="true" name="Buy V$..." width="169">
 			<on_click function="PromptShowURL" name="BuyCredits_url"
 			     userdata="WebLaunchExternalTarget,http://www.virtualhighway.us/buycredits.php" />
 		     </menu_item_call>

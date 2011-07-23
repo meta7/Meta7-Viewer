@@ -470,7 +470,7 @@ Other residents can visit the URL you set when they look at your profile.
    icon="alertmodal.tga"
    name="JoinGroupCanAfford"
    type="alertmodal">
-Joining this group costs G$[COST].
+Joining this group costs V$[COST].
 Do you wish to proceed?
     <usetemplate
      name="okcancelbuttons"
@@ -482,15 +482,15 @@ Do you wish to proceed?
    icon="alertmodal.tga"
    name="JoinGroupCannotAfford"
    type="alertmodal">
-Joining this group costs G$[COST].
-You do not have enough G$ to join this group.
+Joining this group costs V$[COST].
+You do not have enough V$ to join this group.
   </notification>
 
   <notification
    icon="alertmodal.tga"
    name="LandBuyPass"
    type="alertmodal">
-For G$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hours.  Buy a pass?
+For V$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hours.  Buy a pass?
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -501,8 +501,8 @@ For G$[COST] you can enter this land (&apos;[PARCEL_NAME]&apos;) for [TIME] hour
    icon="alertmodal.tga"
    name="SalePriceRestriction"
    type="alertmodal">
-Sale price must be set to more than G$0 if selling to anyone.
-Please select an individual to sell to if selling for G$0.
+Sale price must be set to more than V$0 if selling to anyone.
+Please select an individual to sell to if selling for V$0.
   </notification>
 
   <notification
@@ -511,7 +511,7 @@ Please select an individual to sell to if selling for G$0.
    priority="high"
    type="alertmodal">
 The selected [LAND_SIZE] m² land is being set for sale.
-Your selling price will be G$[SALE_PRICE] and will be authorized for sale to [NAME].
+Your selling price will be V$[SALE_PRICE] and will be authorized for sale to [NAME].
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -525,7 +525,7 @@ Your selling price will be G$[SALE_PRICE] and will be authorized for sale to [NA
 ATTENTION: Clicking &apos;sell to anyone&apos; makes your land available to the entire Virtual Highway community, even those not in this region.
 
     The selected [LAND_SIZE] m² land is being set for sale.
-    Your selling price will be G$[SALE_PRICE] and will be authorized for sale to [NAME].
+    Your selling price will be V$[SALE_PRICE] and will be authorized for sale to [NAME].
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -1772,7 +1772,7 @@ Select an entire parcel, or divide your parcel first.
    name="ReleaseLandWarning"
    type="alertmodal">
 You are about to release [AREA] m² of land.
-Releasing this parcel will remove it from your land holdings, but will not grant any G$.
+Releasing this parcel will remove it from your land holdings, but will not grant any V$.
 
 Release this land?
     <usetemplate
@@ -2082,7 +2082,7 @@ You must specify a name for your classified.
    icon="alertmodal.tga"
    name="MinClassifiedPrice"
    type="alertmodal">
-Price to pay for listing must be at least G$[MIN_PRICE].
+Price to pay for listing must be at least V$[MIN_PRICE].
 
 Please enter a higher price.
   </notification>
@@ -2362,7 +2362,7 @@ Please choose the male or female avatar. You can change your mind later.
    icon="alertmodal.tga"
    name="NotEnoughCurrency"
    type="alertmodal">
-[NAME] G$ [PRICE] You don&apos;t have enough G$ to do that.
+[NAME] V$ [PRICE] You don&apos;t have enough V$ to do that.
   </notification>
 
   <notification
@@ -2637,7 +2637,7 @@ Download to your Applications folder?
    name="DeedObjectToGroup"
    type="alertmodal">
 Deeding this object will cause the group to:
-* Receive G$ paid into the object
+* Receive V$ paid into the object
     <usetemplate
      ignoretext="When deeding objects to groups"
      name="okcancelignore"
@@ -3068,7 +3068,7 @@ Proceed?
    type="alert">
 You are about to change the access list for a Linden owned estate (mainland, teen grid, orientation, etc.).
 
-This is DANGEROUS and should only be done to invoke the hack allowing objects/G$ to be transfered in/out of a grid.
+This is DANGEROUS and should only be done to invoke the hack allowing objects/V$ to be transfered in/out of a grid.
 It will change thousands of regions and make the spaceserver hiccup.
     <usetemplate
      name="okcancelbuttons"
@@ -3448,7 +3448,7 @@ Asset ID for notecard is missing from database.
    type="alert">
 Remember: Classified ad fees are non-refundable.
 
-Publish this classified now for G$[AMOUNT]?
+Publish this classified now for V$[AMOUNT]?
     <usetemplate
      name="okcancelbuttons"
      notext="Cancel"
@@ -3944,7 +3944,7 @@ Please select only one object and try again.
    icon="alertmodal.tga"
    name="BuyOriginal"
    type="alertmodal">
-Buy original object from [OWNER] for G$[PRICE]?
+Buy original object from [OWNER] for V$[PRICE]?
 You will become the owner of this object.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3960,7 +3960,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyOriginalNoOwner"
    type="alertmodal">
-Buy original object for G$[PRICE]?
+Buy original object for V$[PRICE]?
 You will become the owner of this object.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3976,7 +3976,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyCopy"
    type="alertmodal">
-Buy a copy from [OWNER] for G$[PRICE]?
+Buy a copy from [OWNER] for V$[PRICE]?
 The object will be copied to your inventory.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -3992,7 +3992,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyCopyNoOwner"
    type="alertmodal">
-Buy a copy for G$[PRICE]?
+Buy a copy for V$[PRICE]?
 The object will be copied to your inventory.
 You will be able to:
  Modify: [MODIFYPERM]
@@ -4008,7 +4008,7 @@ You will be able to:
    icon="alertmodal.tga"
    name="BuyContents"
    type="alertmodal">
-Buy contents from [OWNER] for G$[PRICE]?
+Buy contents from [OWNER] for V$[PRICE]?
 They will be copied to your inventory.
     <usetemplate
      name="okcancelbuttons"
@@ -4020,7 +4020,7 @@ They will be copied to your inventory.
    icon="alertmodal.tga"
    name="BuyContentsNoOwner"
    type="alertmodal">
-Buy contents for G$[PRICE]?
+Buy contents for V$[PRICE]?
 They will be copied to your inventory.
     <usetemplate
      name="okcancelbuttons"
@@ -4901,7 +4901,7 @@ Items may not be purchased while they are part of an attachment.
    label="About Requests for the Debit Permission"
    name="DebitPermissionDetails"
    type="alertmodal">
-Granting this request gives a script ongoing permission to take Meta Dollars (G$) from your account. To revoke this permission, the object owner must delete the object or reset the scripts in the object.
+Granting this request gives a script ongoing permission to take Meta Dollars (V$) from your account. To revoke this permission, the object owner must delete the object or reset the scripts in the object.
     <usetemplate
      name="okbutton"
      yestext="OK"/>
@@ -5039,7 +5039,7 @@ Uploading in-world and web site snapshots...
    icon="notify.tga"
    name="UploadPayment"
    type="notify">
-You paid G$[AMOUNT] to upload.
+You paid V$[AMOUNT] to upload.
   </notification>
 
   <notification
@@ -6067,8 +6067,8 @@ Grant this request?
    icon="notify.tga"
    name="FirstBalanceIncrease"
    type="notify">
-You just received G$[AMOUNT].
-Objects and other users may give you G$.
+You just received V$[AMOUNT].
+Objects and other users may give you V$.
 Your balance is shown in the upper-right corner of the screen.
   </notification>
 
@@ -6076,7 +6076,7 @@ Your balance is shown in the upper-right corner of the screen.
    icon="notify.tga"
    name="FirstBalanceDecrease"
    type="notify">
-You just paid G$[AMOUNT].
+You just paid V$[AMOUNT].
 Your balance is shown in the upper-right corner of the screen.
   </notification>
 

@@ -114,7 +114,7 @@ std::string build_transfer_message_to_source(
 	std::ostringstream ostr;
 	if(dest_id.isNull())
 	{
-		ostr << "You paid G$" << amount;
+		ostr << "You paid V$" << amount;
 		switch(transaction_type)
 		{
 		case TRANS_GROUP_CREATE:
@@ -132,7 +132,7 @@ std::string build_transfer_message_to_source(
 	}
 	else
 	{
-		ostr << "You paid " << dest_name << " G$" << amount;
+		ostr << "You paid " << dest_name << " V$" << amount;
 		append_reason(ostr, transaction_type, description);
 	}
 	ostr << ".";
@@ -160,7 +160,7 @@ std::string build_transfer_message_to_destination(
 		return description;
 	}
 	std::ostringstream ostr;
-	ostr << source_name << " paid you G$" << amount;
+	ostr << source_name << " paid you V$" << amount;
 	append_reason(ostr, transaction_type, description);
 	ostr << ".";
 	return ostr.str();

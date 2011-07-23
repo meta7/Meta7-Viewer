@@ -4993,7 +4993,7 @@ void process_money_balance_reply( LLMessageSystem* msg, void** )
 	msg->getS32("MoneyData", "SquareMetersCredit", credit);
 	msg->getS32("MoneyData", "SquareMetersCommitted", committed);
 	msg->getStringFast(_PREHASH_MoneyData, _PREHASH_Description, desc);
-	LL_INFOS("Messaging") << "G$, credit, committed: " << balance << " " << credit << " "
+	LL_INFOS("Messaging") << "V$, credit, committed: " << balance << " " << credit << " "
 			<< committed << LL_ENDL;
 
 	if (gStatusBar)
@@ -5396,7 +5396,7 @@ void process_economy_data(LLMessageSystem *msg, void** /*user_data*/)
 
 	S32 upload_cost = LLGlobalEconomy::Singleton::getInstance()->getPriceUpload();
 
-	LL_INFOS_ONCE("Messaging") << "EconomyData message arrived; upload cost is G$" << upload_cost << LL_ENDL;
+	LL_INFOS_ONCE("Messaging") << "EconomyData message arrived; upload cost is V$" << upload_cost << LL_ENDL;
 
 	LLFloaterImagePreview::setUploadAmount(upload_cost);
 	LLFloaterAnimPreview::setUploadAmount(upload_cost);

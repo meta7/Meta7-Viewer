@@ -10,7 +10,7 @@
 [AGEVERIFICATION]
 			</string>
 			<string name="AcctTypeResident">
-				Metazen
+				Resident
 			</string>
 			<string name="AcctTypeTrial">
 				Trial
@@ -19,7 +19,7 @@
 				Charter Member
 			</string>
 			<string name="AcctTypeEmployee">
-				Meta 7 staff
+				VH Staff
 			</string>
 			<string name="PaymentInfoUsed">
 				Payment Info Used

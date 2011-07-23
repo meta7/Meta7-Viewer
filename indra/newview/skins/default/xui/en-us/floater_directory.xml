@@ -255,7 +255,7 @@
 				None Found.
 			</string>
 			<string name="land_help_text">
-				Land can be bought direct for Cyber Coins (G$) or at auction for either G$ or US$.
+				Land can be bought direct for Cyber Coins (V$) or at auction for either V$ or US$.
 To buy direct, visit the land and click on the place name in the title bar.
 			</string>
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false"
@@ -298,7 +298,7 @@ To buy direct, visit the land and click on the place name in the title bar.
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false" follows="left|top"
 			     bottom="-24" font="SansSerifSmall" halign="left" height="16" left="116" mouse_opaque="true"
 			     name="pricecheck_symbol" width="15">
-				G$
+				V$
 			</text>
 			<check_box bottom_delta="-18" control_name="FindLandArea" follows="left|top"
 			     font="SansSerifSmall" height="16" initial_value="true"
@@ -325,9 +325,9 @@ To buy direct, visit the land and click on the place name in the title bar.
 				<column label="" name="type" width="-1" />
 				<column dynamicwidth="true" label="Name" name="name" />
 				<column label="Type" name="landtype" width="50" />
-				<column label="G$ Price" name="price" width="65" />
+				<column label="V$ Price" name="price" width="65" />
 				<column label="Area" name="area" width="50" />
-				<column label="G$/m²" name="per_meter" width="65" />
+				<column label="V$/m²" name="per_meter" width="65" />
 			</scroll_list>
 			<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false"
 			     bottom_delta="-20" drop_shadow_visible="true" follows="left|bottom"

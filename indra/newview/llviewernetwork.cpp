@@ -52,7 +52,7 @@ static LLGridData gGridInfo[GRID_INFO_COUNT] =
 	{ "VirtualHighway", 
 	  "VirtualHighway", 
 	  "http://login.virtualhighway.us:8002/",
-	  "http://secure.virtualhighway.us/" },
+	  "http://login.virtualhighway.us/griddal/" },
 	{ "Alpha Towne", 
 	  "AlphaTowne", 
 	  "http://66.240.210.120:8002/",

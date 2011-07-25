@@ -90,9 +90,9 @@ void JCExportTracker::init()
 	destination = "";
 	asset_dir = "";
 	requested_textures.clear();
-	export_properties = gSavedSettings.getBOOL("Meta7ExportProperties");
-	export_inventory = gSavedSettings.getBOOL("Meta7ExportInventory");
-	export_textures = gSavedSettings.getBOOL("Meta7ExportTextures");
+	export_properties = gSavedSettings.getBOOL("VHExportProperties");
+	export_inventory = gSavedSettings.getBOOL("VHExportInventory");
+	export_textures = gSavedSettings.getBOOL("VHExportTextures");
 	////cmdline_printchat("init()");
 	////cmdline_printchat(llformat("%d",export_properties));
 	////cmdline_printchat(llformat("%d",export_inventory));

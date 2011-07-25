@@ -2455,7 +2455,7 @@ class LLObjectDisable : public view_listener_t
 bool handle_go_to()
 {
 	LLVector3d pos = LLToolPie::getInstance()->getPick().mPosGlobal;
-	if(!gSavedSettings.getBOOL("Meta7DoubleClickTeleport"))
+	if(!gSavedSettings.getBOOL("VHDoubleClickTeleport"))
 	{
 // [RLVa:KB] - Alternate: Meta7 | Checked: 2009-07-06 (RLVa-1.0.0c)
 		if ( (rlv_handler_t::isEnabled()) && (gAgent.forwardGrabbed()) && (gRlvHandler.hasLockedAttachment(RLV_LOCK_REMOVE)) )
@@ -3579,7 +3579,7 @@ void reset_view_final( BOOL proceed, void* )
     {
         LLViewerJoystick::getInstance()->moveAvatar(true);
     }
-    if(gSavedSettings.getBOOL("Meta7ResetCamOnEscape"))
+    if(gSavedSettings.getBOOL("VHResetCamOnEscape"))
     {
         gAgent.resetView(TRUE,TRUE);
     }
@@ -8639,7 +8639,7 @@ class LLMeta7TogglePhantom: public view_listener_t
 {
 	bool handleEvent(LLPointer<LLEvent> event, const LLSD& userdata)
 	{
-		if(gSavedSettings.getBOOL("Meta7AllowPhantomToggle"))
+		if(gSavedSettings.getBOOL("VHAllowPhantomToggle"))
 		{
 			LLAgent::togglePhantom();
 			BOOL ph = LLAgent::getPhantom();
@@ -8676,8 +8676,8 @@ class LLMeta7ToggleDoubleClickTeleport: public view_listener_t
 {
 	bool handleEvent(LLPointer<LLEvent> event, const LLSD& userdata)
 	{
-			gSavedSettings.setBOOL("Meta7DoubleClickTeleport",!gSavedSettings.getBOOL("Meta7DoubleClickTeleport"));
-			BOOL tp = gSavedSettings.getBOOL("Meta7DoubleClickTeleport");
+			gSavedSettings.setBOOL("Meta7DoubleClickTeleport",!gSavedSettings.getBOOL("VHDoubleClickTeleport"));
+			BOOL tp = gSavedSettings.getBOOL("VHDoubleClickTeleport");
 			LLChat chat;
 			chat.mSourceType = CHAT_SOURCE_SYSTEM;
 			chat.mText = llformat("%s%s","Doubleclick Teleporting ",(tp ? "On" : "Off"));
@@ -8691,7 +8691,7 @@ class LLMeta7CheckDoubleClickTeleport: public view_listener_t
 {
 	bool handleEvent(LLPointer<LLEvent> event, const LLSD& userdata)
 	{
-		gMenuHolder->findControl(userdata["control"].asString())->setValue(gSavedSettings.getBOOL("Meta7DoubleClickTeleport"));
+		gMenuHolder->findControl(userdata["control"].asString())->setValue(gSavedSettings.getBOOL("VHDoubleClickTeleport"));
 		return true;
 	}
 };
@@ -8708,7 +8708,7 @@ class LLMeta7ToggleSit: public view_listener_t
 		}
 // [/RLVa:KB]
 
-		if(gSavedSettings.getBOOL("Meta7AllowSitToggle"))
+		if(gSavedSettings.getBOOL("VHAllowSitToggle"))
 		{
 			LLChat chat;
 			chat.mSourceType = CHAT_SOURCE_SYSTEM;

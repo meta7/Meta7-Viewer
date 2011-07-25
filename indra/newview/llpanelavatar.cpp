@@ -1419,7 +1419,7 @@ void LLPanelAvatar::setOnlineStatus(EOnlineStatus online_status)
 	}
 
 	mPanelSecondLife->childSetVisible("online_yes", (online_status == ONLINE_STATUS_YES));
-    if(gSavedSettings.getBOOL("Meta7UseBridgeOnline"))
+    if(gSavedSettings.getBOOL("VHUseBridgeOnline"))
 		JCLSLBridge::bridgetolsl("online_status|"+mAvatarID.asString(), new JCProfileCallback(mAvatarID));
 
 	// Since setOnlineStatus gets called after setAvatarID

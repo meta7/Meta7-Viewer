@@ -453,7 +453,7 @@ void LLChatBar::sendChat( EChatType type )
 			std::string utf8_revised_text;
 			if (0 == channel)
 			{
-				if (gSavedSettings.getBOOL("Meta7AutoCloseOOC"))
+				if (gSavedSettings.getBOOL("VHAutoCloseOOC"))
 				{
 					// Chalice - OOC autoclosing patch based on code by Henri Beauchamp
 					int needsClosingType=0;
@@ -501,7 +501,7 @@ void LLChatBar::sendChat( EChatType type )
 					}
 				}
 				// Convert MU*s style poses into IRC emotes here.
-				if (gSavedSettings.getBOOL("Meta7AllowMUpose") && utf8text.find(":") == 0 && utf8text.length() > 3)
+				if (gSavedSettings.getBOOL("VHAllowMUpose") && utf8text.find(":") == 0 && utf8text.length() > 3)
 				{
 					if (utf8text.find(":'") == 0)
 					{
@@ -554,7 +554,7 @@ void LLChatBar::sendChat( EChatType type )
 // static 
 void LLChatBar::startChat(const char* line)
 {
-	if (gSavedSettings.getBOOL("Meta7UseChatBar"))
+	if (gSavedSettings.getBOOL("VHUseChatBar"))
 	{
 	gChatBar->setVisible(TRUE);
 	gChatBar->setKeyboardFocus(TRUE);

@@ -84,7 +84,7 @@
 		     longdescription="Change streaming music and movie settings in About Land &gt; Media tab."
 		     name="land change media" value="20" />
 		<action description="Toggle &apos;Edit Terrain&apos;"
-		     longdescription="Toggle &apos;Edit Terrain&apos;. *WARNING* About Land &gt; Options tab &gt; Edit Terrain allows anyone to terraform your land&apos;s shape, and place and move Linden plants. Be sure you know what you&apos;re doing before assigning this Ability. Editing terrain is toggled in About Land &gt; Options tab."
+		     longdescription="Toggle &apos;Edit Terrain&apos;. *WARNING* About Land &gt; Options tab &gt; Edit Terrain allows anyone to terraform your land&apos;s shape, and place and move plants. Be sure you know what you&apos;re doing before assigning this Ability. Editing terrain is toggled in About Land &gt; Options tab."
 		     name="land edit" value="21" />
 		<action description="Toggle various About Land &gt; Options settings"
 		     longdescription="Toggle &apos;Safe (no damage)&apos;, &apos;Fly&apos;, and allow other Residents to: &apos;Create Objects&apos;, &apos;Edit Terrain&apos;, &apos;Create Landmarks&apos;, and &apos;Run Scripts&apos; on group-owned land in About Land &gt; Options tab."
@@ -137,8 +137,8 @@
 		<action description="Return non-group objects"
 		     longdescription="Return objects on group-owned parcels that are non-group in About Land &gt; Objects tab."
 		     name="land return non group" value="34" />
-		<action description="Landscaping using Linden plants"
-		     longdescription="Landscaping ability to place and move Linden trees, plants, and grasses. These items can be found in your inventory&apos;s Library &gt; Objects folder or they can be created via the Build button."
+		<action description="Landscaping using plants"
+		     longdescription="Landscaping ability to place and move trees, plants, and grasses. These items can be found in your inventory&apos;s Library &gt; Objects folder or they can be created via the Build button."
 		     name="land gardening" value="35" />
 	</action_set>
 	<action_set

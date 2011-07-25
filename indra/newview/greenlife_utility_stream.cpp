@@ -53,9 +53,9 @@ GUS::GUS()
 //static
 void GUS::initGUS()
 {
-	Enabled = gSavedSettings.getBOOL("Meta7GUSEnabled");
+	Enabled = gSavedSettings.getBOOL("VHGUSEnabled");
 	Refresh = gSavedSettings.getF32("Meta7GUSRefresh");
-	FEEnabled = gSavedSettings.getBOOL("Meta7GUSFastEventsEnabled");
+	FEEnabled = gSavedSettings.getBOOL("VHGUSFastEventsEnabled");
 	FERefresh = gSavedSettings.getF32("Meta7GUSFastEventsRefresh");
 	gSavedSettings.getControl("Meta7GUSEnabled")->getSignal()->connect(&gusEnabled);
 	gSavedSettings.getControl("Meta7GUSRefresh")->getSignal()->connect(&gusRefresh);
@@ -119,7 +119,7 @@ std::string GUS::genMessage()
 	
 	{//Entering vector stacking scope of goodness
 		//Stream the avatar's eyeball rotation
-		if(gSavedSettings.getBOOL("Meta7GUSEyeRot"))
+		if(gSavedSettings.getBOOL("VHGUSEyeRot"))
 		{
 			cmds.push_back("EYEROT");
 			cmds.push_back(sQuat(getEyeRot()));
@@ -127,7 +127,7 @@ std::string GUS::genMessage()
 	}
 
 	//send look at pos maybeh
-	if(gSavedSettings.getBOOL("Meta7GUSLookAt"))
+	if(gSavedSettings.getBOOL("VHGUSLookAt"))
 	{
 			cmds.push_back("LOOKAT");
 			cmds.push_back(getLookAtString());
@@ -150,7 +150,7 @@ std::string GUS::genFEMessage()
 	
 	{//Entering vector stacking scope of goodness
 		//Stream the avatar's eyelid state
-		if(gSavedSettings.getBOOL("Meta7GUSEyelidState"))
+		if(gSavedSettings.getBOOL("VHGUSEyelidState"))
 		{
 			cmds.push_back("EYELIDS");
 			cmds.push_back((getEyelidState()?"SHUT":"OPEN"));

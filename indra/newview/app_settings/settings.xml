@@ -120,7 +120,7 @@
 				<real>0.15</real>
 			</array>
 		</map>
-		<key>Meta7DisableMinZoomDist</key>
+		<key>VHDisableMinZoomDist</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable the constraint on the closest distance the camera is allowed to get to an object.</string>
@@ -3545,7 +3545,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7AddSecondsInLog</key>
+		<key>VHAddSecondsInLog</key>
 		<map>
 			<key>Comment</key>
 			<string>Add the seconds to the timestamp in the logs</string>
@@ -3556,7 +3556,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AddSecondsInHistory</key>
+		<key>VHAddSecondsInHistory</key>
 		<map>
 			<key>Comment</key>
 			<string>Add the seconds to the timestamp in all the chat windows</string>
@@ -3567,7 +3567,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AgentUpdatesPerSecond</key>
+		<key>VHAgentUpdatesPerSecond</key>
 		<map>
 			<key>Comment</key>
 			<string>Sets the amount of updates to send per second.</string>
@@ -3578,7 +3578,7 @@
 			<key>Value</key>
 			<real>10.0</real>
 		</map>
-		<key>Meta7AllowMUpose</key>
+		<key>VHAllowMUpose</key>
 		<map>
 			<key>Comment</key>
 			<string>Allow MU* pose style in chat and IM (with ':' as a synonymous to '/me ')</string>
@@ -3589,7 +3589,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AOEnabled</key>
+		<key>VHAOEnabled</key>
 		<map>
 			<key>Comment</key>
 			<string>Turn on Animation Overrider</string>
@@ -3600,7 +3600,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AOAdvanced</key>
+		<key>VHAOAdvanced</key>
 		<map>
 			<key>Comment</key>
 			<string>Advanced options</string>
@@ -3611,7 +3611,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AOSitsEnabled</key>
+		<key>VHAOSitsEnabled</key>
 		<map>
 			<key>Comment</key>
 			<string>Overrides sit animations.</string>
@@ -3622,7 +3622,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AONoStandsInMouselook</key>
+		<key>VHAONoStandsInMouselook</key>
 		<map>
 			<key>Comment</key>
 			<string>Disables stand anims during mouselook</string>
@@ -3633,7 +3633,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AOStandInterval</key>
+		<key>VHAOStandInterval</key>
 		<map>
 			<key>Comment</key>
 			<string>AO stand time in seconds</string>
@@ -3644,7 +3644,7 @@
 			<key>Value</key>
 			<real>20</real>
 		</map>
-		<key>Meta7AOStandRandomize</key>
+		<key>VHAOStandRandomize</key>
 		<map>
 			<key>Comment</key>
 			<string>Randomize stand anims</string>
@@ -3655,7 +3655,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AORect</key>
+		<key>VHAORect</key>
 		<map>
 			<key>Comment</key>
 			<string>Rectangle for AO window</string>
@@ -3671,7 +3671,7 @@
 				<integer>100</integer>
 			</array>
 		</map>
-		<key>Meta7AppearanceAnimate</key>
+		<key>VHAppearanceAnimate</key>
 		<map>
 			<key>Comment</key>
 			<string>Play appearance anim when entering appearance mode?</string>
@@ -3682,7 +3682,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AppearanceForceStand</key>
+		<key>VHAppearanceForceStand</key>
 		<map>
 			<key>Comment</key>
 			<string>Unsit avatar when entering appearance mode?</string>
@@ -3693,7 +3693,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AvatarAgeAlert</key>
+		<key>VHAvatarAgeAlert</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables the avatar age alert</string>
@@ -3704,7 +3704,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7AvatarAgeAlertDays</key>
+		<key>VHAvatarAgeAlertDays</key>
 		<map>
 			<key>Comment</key>
 			<string>You will be notified when an avatar younger than X days appears on the radar</string>
@@ -3715,7 +3715,7 @@
 			<key>Value</key>
 			<real>3</real>
 		</map>
-		<key>Meta7AvatarAgeAlertSoundUUID</key>
+		<key>VHAvatarAgeAlertSoundUUID</key>
 		<map>
 			<key>Comment</key>
 			<string>The signal sound for the avatar age alert</string>
@@ -3726,7 +3726,7 @@
 			<key>Value</key>
 			<string>5fcbee19-8dd4-2888-d6bf-14310d2f7c9f</string>
 		</map>
-		<key>Meta7CryoDetection</key>
+		<key>VHCryoDetection</key>
 		<map>
 			<key>Comment</key>
 			<string>Passivly scan for cryo life using advanced detection</string>
@@ -3737,7 +3737,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-    <key>Meta7ModerateAllEstates</key>
+    <key>VHModerateAllEstates</key>
     <map>
       <key>Comment</key>
       <string>wut</string>
@@ -3748,7 +3748,7 @@
       <key>Value</key>
       <real>0</real>
     </map>
-    <key>Meta7ModerateConfirm</key>
+    <key>VHModerateConfirm</key>
     <map>
       <key>Comment</key>
       <string>wut</string>
@@ -3759,7 +3759,7 @@
       <key>Value</key>
       <real>1</real>
     </map>
-		<key>Meta7AllowPhantomToggle</key>
+		<key>VHAllowPhantomToggle</key>
 		<map>
 			<key>Comment</key>
 			<string>Do you want to be able to hit ctrl alt p to become visably phantom?</string>
@@ -3770,7 +3770,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AllowSitToggle</key>
+		<key>VHAllowSitToggle</key>
 		<map>
 			<key>Comment</key>
 			<string>Do you want to be able to hit ctrl-alt-s to ground sit anywhere?</string>
@@ -3781,7 +3781,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7AlwaysFly</key>
+		<key>VHAlwaysFly</key>
 		<map>
 			<key>Comment</key>
 			<string>Do you want to always be able to fly, even in fly restricted zones?</string>
@@ -3792,7 +3792,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AutoCloseOOC</key>
+		<key>VHAutoCloseOOC</key>
 		<map>
 			<key>Comment</key>
 			<string>Auto-close OOC chat (i.e. add \"))\" if not found and \"((\" was used)</string>
@@ -3803,7 +3803,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AvatarListKeepOpen</key>
+		<key>VHAvatarListKeepOpen</key>
 		<map>
 			<key>Comment</key>
 			<string>Keeps Avatar List updates running in background</string>
@@ -3814,7 +3814,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7AvatarXModifier</key>
+		<key>VHAvatarXModifier</key>
 		<map>
 			<key>Comment</key>
 			<string>wat</string>
@@ -3825,7 +3825,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7AvatarYModifier</key>
+		<key>VHAvatarYModifier</key>
 		<map>
 			<key>Comment</key>
 			<string>wat</string>
@@ -3836,7 +3836,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7AvatarZModifier</key>
+		<key>VHAvatarZModifier</key>
 		<map>
 			<key>Comment</key>
 			<string>wat</string>
@@ -3847,7 +3847,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7BeamShape</key>
+		<key>VHBeamShape</key>
 		<map>
 			<key>Comment</key>
 			<string>Beam file for the shape of your beam</string>
@@ -3856,9 +3856,9 @@
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>Meta7</string>
+			<string>VH</string>
 		</map>
-    <key>Meta7PurgeInvCache</key>
+    <key>VHPurgeInvCache</key>
     <map>
       <key>Comment</key>
       <string>agent id to purge, if purge is desired</string>
@@ -3869,7 +3869,7 @@
       <key>Value</key>
       <string></string>
     </map>
-		<key>Meta7BeamColorFile</key>
+		<key>VHBeamColorFile</key>
 		<map>
 			<key>Comment</key>
 			<string>Beam file for the shape of your beam</string>
@@ -3880,7 +3880,7 @@
 			<key>Value</key>
 			<string>===OFF===</string>
 		</map>
-		<key>Meta7BeamShapeScale</key>
+		<key>VHBeamShapeScale</key>
 		<map>
 			<key>Comment</key>
 			<string>How Big You Want to let the beam be</string>
@@ -3891,7 +3891,7 @@
 			<key>Value</key>
 			<real>1.0</real>
 		</map>
-		<key>Meta7BlockClickSit</key>
+		<key>VHBlockClickSit</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to block left-click sitting on things</string>
@@ -3902,7 +3902,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BlockMapTps</key>
+		<key>VHBlockMapTps</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to block all script map tps</string>
@@ -3913,7 +3913,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BroadcastEffects</key>
+		<key>VHBroadcastEffects</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to broadcast your head and point at movements</string>
@@ -3924,7 +3924,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7BroadcastPointers</key>
+		<key>VHBroadcastPointers</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable to prevent broadcasting your Lookat target (Enabled by default)</string>
@@ -3935,7 +3935,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7BroadcastPointers2</key>
+		<key>VHBroadcastPointers2</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable to prevent broadcasting your Pointat target (Enabled by default)</string>
@@ -3946,7 +3946,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7BuildPrefs_Xsize</key>
+		<key>VHBuildPrefs_Xsize</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Size For New Objects to be created X</string>
@@ -3957,7 +3957,7 @@
 			<key>Value</key>
 			<real>0.5</real>
 		</map>
-		<key>Meta7BuildPrefs_Ysize</key>
+		<key>VHBuildPrefs_Ysize</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Size For New Objects to be created Y</string>
@@ -3968,7 +3968,7 @@
 			<key>Value</key>
 			<real>0.5</real>
 		</map>
-		<key>Meta7BuildPrefs_Zsize</key>
+		<key>VHBuildPrefs_Zsize</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Size For New Objects to be created Z</string>
@@ -3979,7 +3979,7 @@
 			<key>Value</key>
 			<real>0.5</real>
 		</map>
-		<key>Meta7BuildPrefs_Phantom</key>
+		<key>VHBuildPrefs_Phantom</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Setting For New Objects to be created, phantom flag</string>
@@ -3990,7 +3990,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BuildPrefs_Temporary</key>
+		<key>VHBuildPrefs_Temporary</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Setting For New Objects to be created, temp flag</string>
@@ -4001,7 +4001,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BuildPrefs_Physical</key>
+		<key>VHBuildPrefs_Physical</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Setting For New Objects to be created, physical flag</string>
@@ -4012,7 +4012,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BuildPrefs_Material</key>
+		<key>VHBuildPrefs_Material</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Setting For New Objects to be created, physical flag</string>
@@ -4023,7 +4023,7 @@
 			<key>Value</key>
 			<string>Wood</string>
 		</map>
-		<key>Meta7BuildPrefs_Color</key>
+		<key>VHBuildPrefs_Color</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4039,7 +4039,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7BuildPrefs_Texture</key>
+		<key>VHBuildPrefs_Texture</key>
 		<map>
 			<key>Comment</key>
 			<string>Texture used as 'Default' for new object created</string>
@@ -4050,7 +4050,7 @@
 			<key>Value</key>
 			<string>89556747-24cb-43ed-920b-47caed15465f</string>
 		</map>
-		<key>Meta7BuildPrefs_Alpha</key>
+		<key>VHBuildPrefs_Alpha</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Alpha For New Objects to be created</string>
@@ -4061,7 +4061,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7BuildPrefs_Glow</key>
+		<key>VHBuildPrefs_Glow</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Glow For New Objects to be created</string>
@@ -4072,7 +4072,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7BuildPrefs_FullBright</key>
+		<key>VHBuildPrefs_FullBright</key>
 		<map>
 			<key>Comment</key>
 			<string>Default Setting For New Objects to be created, whether textures are full bright</string>
@@ -4083,7 +4083,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7BuildPrefs_Shiny</key>
+		<key>VHBuildPrefs_Shiny</key>
 		<map>
 			<key>Comment</key>
 			<string>Shiny level used as 'Default' for new objects created</string>
@@ -4094,7 +4094,7 @@
 			<key>Value</key>
 			<string>None</string>
 		</map>
-		<key>Meta7BuildPrefs_PivotX</key>
+		<key>VHBuildPrefs_PivotX</key>
 		<map>
 			<key>Comment</key>
 			<string>Pivot point on the X axis</string>
@@ -4105,7 +4105,7 @@
 			<key>Value</key>
 			<real>50</real>
 		</map>
-		<key>Meta7BuildPrefs_PivotY</key>
+		<key>VHBuildPrefs_PivotY</key>
 		<map>
 			<key>Comment</key>
 			<string>Pivot point on the Y axis</string>
@@ -4116,7 +4116,7 @@
 			<key>Value</key>
 			<real>50</real>
 		</map>
-		<key>Meta7BuildPrefs_PivotZ</key>
+		<key>VHBuildPrefs_PivotZ</key>
 		<map>
 			<key>Comment</key>
 			<string>Pivot point on the Z axis</string>
@@ -4127,7 +4127,7 @@
 			<key>Value</key>
 			<real>50</real>
 		</map>
-		<key>Meta7BuildPrefs_PivotIsPercent</key>
+		<key>VHBuildPrefs_PivotIsPercent</key>
 		<map>
 			<key>Comment</key>
 			<string>Consider the Pivot points values as a percentage</string>
@@ -4138,7 +4138,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7BuildPrefs_ActualRoot</key>
+		<key>VHBuildPrefs_ActualRoot</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the axis on the actual root of a linkset instead of mass center</string>
@@ -4149,7 +4149,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7CardSpamEnabled</key>
+		<key>VHCardSpamEnabled</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables CallingCard Spam Prevention</string>
@@ -4160,7 +4160,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ChangeColorOnClient</key>
+		<key>VHChangeColorOnClient</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to change tag color based on client</string>
@@ -4171,7 +4171,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ClickSendTouchPos</key>
+		<key>VHClickSendTouchPos</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable sending clicked points</string>
@@ -4182,7 +4182,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7ClientTagDisplay</key>
+		<key>VHClientTagDisplay</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to change tag color based on client</string>
@@ -4193,7 +4193,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ClothingLayerProtection</key>
+		<key>VHClothingLayerProtection</key>
 		<map>
 			<key>Comment</key>
 			<string>Overwrites clothing layers to sim in order to protect your worn items from being as easily stolen</string>
@@ -4204,7 +4204,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7CmdLine</key>
+		<key>VHCmdLine</key>
 		<map>
 			<key>Comment</key>
 			<string>Would you like the chatbar to be able to be used for command line functions?</string>
@@ -4215,7 +4215,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7CmdLineAO</key>
+		<key>VHCmdLineAO</key>
 		<map>
 			<key>Comment</key>
 			<string>Turn AO on/off</string>
@@ -4226,7 +4226,7 @@
 			<key>Value</key>
 			<string>cao</string>
 		</map>
-		<key>Meta7CmdLineHeight</key>
+		<key>VHCmdLineHeight</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to height function command</string>
@@ -4237,7 +4237,7 @@
 			<key>Value</key>
 			<string>gth</string>
 		</map>
-		<key>Meta7CmdLinePos</key>
+		<key>VHCmdLinePos</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to position function command</string>
@@ -4248,7 +4248,7 @@
 			<key>Value</key>
 			<string>gtp</string>
 		</map>
-		<key>Meta7CmdLineGround</key>
+		<key>VHCmdLineGround</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to ground function command</string>
@@ -4259,7 +4259,7 @@
 			<key>Value</key>
 			<string>flr</string>
 		</map>
-		<key>Meta7CmdLineTeleportHome</key>
+		<key>VHCmdLineTeleportHome</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to home function command</string>
@@ -4270,7 +4270,7 @@
 			<key>Value</key>
 			<string>tph</string>
 		</map>
-		<key>Meta7CmdLineRezPlatform</key>
+		<key>VHCmdLineRezPlatform</key>
 		<map>
 			<key>Comment</key>
 			<string>Rez a platform underneath you</string>
@@ -4281,7 +4281,7 @@
 			<key>Value</key>
 			<string>rezplat</string>
 		</map>
-		<key>Meta7CopyObjKeySeparator</key>
+		<key>VHCopyObjKeySeparator</key>
 		<!-- Madgeek -->
 		<map>
 			<key>Comment</key>
@@ -4293,7 +4293,7 @@
 			<key>Value</key>
 			<string>,</string>
 		</map>
-		<key>Meta7PlatformSize</key>
+		<key>VHPlatformSize</key>
 		<map>
 			<key>Comment</key>
 			<string>How wide the rezzed platform will appear to be.</string>
@@ -4304,7 +4304,7 @@
 			<key>Value</key>
 			<real>30</real>
 		</map>
-		<key>Meta7CmdLineMapTo</key>
+		<key>VHCmdLineMapTo</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to a region by name rapidly</string>
@@ -4315,7 +4315,7 @@
 			<key>Value</key>
 			<string>mapto</string>
 		</map>
-		<key>Meta7CmdLineDrawDistance</key>
+		<key>VHCmdLineDrawDistance</key>
 		<map>
 			<key>Comment</key>
 			<string>Change draw distance quickly</string>
@@ -4326,7 +4326,7 @@
 			<key>Value</key>
 			<string>dd</string>
 		</map>
-		<key>Meta7CmdTeleportToCam</key>
+		<key>VHCmdTeleportToCam</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to your camera</string>
@@ -4337,7 +4337,7 @@
 			<key>Value</key>
 			<string>tp2cam</string>
 		</map>
-		<key>Meta7CmdLineKeyToName</key>
+		<key>VHCmdLineKeyToName</key>
 		<map>
 			<key>Comment</key>
 			<string>Use a fast key to name querry</string>
@@ -4348,7 +4348,7 @@
 			<key>Value</key>
 			<string>key2name</string>
 		</map>
-		<key>Meta7CmdLineOfferTp</key>
+		<key>VHCmdLineOfferTp</key>
 		<map>
 			<key>Comment</key>
 			<string>Offer a teleport to target avatar</string>
@@ -4359,7 +4359,7 @@
 			<key>Value</key>
 			<string>offertp</string>
 		</map>
-		<key>Meta7CmdLineCalc</key>
+		<key>VHCmdLineCalc</key>
 		<map>
 			<key>Comment</key>
 			<string>Calculates an expression</string>
@@ -4370,7 +4370,7 @@
 			<key>Value</key>
 			<string>calc</string>
 		</map>
-		<key>Meta7CmdLineTP2</key>
+		<key>VHCmdLineTP2</key>
 		<map>
 			<key>Comment</key>
 			<string>Teleport to a person by name, partials work.</string>
@@ -4381,7 +4381,7 @@
 			<key>Value</key>
 			<string>tp2</string>
 		</map>
-		<key>Meta7DialogSpamEnabled</key>
+		<key>VHDialogSpamEnabled</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables Dialog Spam Prevention</string>
@@ -4392,7 +4392,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7DisableLoginScreens</key>
+		<key>VHDisableLoginScreens</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable login screen progress bar</string>
@@ -4403,7 +4403,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DisableLogoutScreens</key>
+		<key>VHDisableLogoutScreens</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable logout screen progress bar</string>
@@ -4414,7 +4414,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DisableTeleportScreens</key>
+		<key>VHDisableTeleportScreens</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable teleport screens</string>
@@ -4425,7 +4425,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DoubleClickTeleport</key>
+		<key>VHDoubleClickTeleport</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable double click teleportation</string>
@@ -4436,7 +4436,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DoubleClickTeleportAvCalc</key>
+		<key>VHDoubleClickTeleportAvCalc</key>
 		<map>
 			<key>Comment</key>
 			<string>Add half of Avatar's height to doubleclick TP calculations</string>
@@ -4447,7 +4447,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7DoubleClickTeleportMode</key>
+		<key>VHDoubleClickTeleportMode</key>
 		<map>
 			<key>Comment</key>
 			<string>Double click teleport cam mode: 0 - Default, 1 - Use cam rotaton</string>
@@ -4458,7 +4458,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7DoubleClickWearInventoryObjects</key>
+		<key>VHDoubleClickWearInventoryObjects</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to automatically wear objects in your inventory you wear</string>
@@ -4469,7 +4469,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DoubleClickZOffset</key>
+		<key>VHDoubleClickZOffset</key>
 		<map>
 			<key>Comment</key>
 			<string>Sets the Z offset for double click teleport.</string>
@@ -4480,7 +4480,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7DownloadClientTags</key>
+		<key>VHDownloadClientTags</key>
 		<map>
 			<key>Comment</key>
 			<string>download tags</string>
@@ -4491,7 +4491,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7FlyAfterTeleport</key>
+		<key>VHFlyAfterTeleport</key>
 		<map>
 			<key>Comment</key>
 			<string>Fly after teleports</string>
@@ -4502,7 +4502,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7IgnoreSimulatorCameraConstraints</key>
+		<key>VHIgnoreSimulatorCameraConstraints</key>
 		<map>
 			<key>Comment</key>
 			<string>Ignores the 'push' the simulator applies to your camera to keep it out of objects.(Requires restart to work correctly)</string>
@@ -4513,10 +4513,10 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRCAutoJoinHelpChannel</key>
+		<key>VHIRCAutoJoinHelpChannel</key>
 		<map>
 			<key>Comment</key>
-			<string>Meta7IRCAutoJoinHelpChannel</string>
+			<string>VHIRCAutoJoinHelpChannel</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -4524,7 +4524,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ColorChannel</key>
+		<key>VHIRC_ColorChannel</key>
 		<map>
 			<key>Comment</key>
 			<string>IRC_ColorChannel</string>
@@ -4540,10 +4540,10 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorAction</key>
+		<key>VHIRC_ColorAction</key>
 		<map>
 			<key>Comment</key>
-			<string>Meta7IRC_ColorAction</string>
+			<string>VHIRC_ColorAction</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -4556,7 +4556,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorPrivate</key>
+		<key>VHIRC_ColorPrivate</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4572,7 +4572,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorNotice</key>
+		<key>VHIRC_ColorNotice</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4588,7 +4588,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorJoin</key>
+		<key>VHIRC_ColorJoin</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4604,7 +4604,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorQuit</key>
+		<key>VHIRC_ColorQuit</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4620,7 +4620,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorKick</key>
+		<key>VHIRC_ColorKick</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4636,7 +4636,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorNick</key>
+		<key>VHIRC_ColorNick</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4652,7 +4652,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ColorSystem</key>
+		<key>VHIRC_ColorSystem</key>
 		<map>
 			<key>Comment</key>
 			<string>Color of new objects textures</string>
@@ -4668,7 +4668,7 @@
 				<real>1.0</real>
 			</array>
 		</map>
-		<key>Meta7IRC_ShowChannel</key>
+		<key>VHIRC_ShowChannel</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4679,7 +4679,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowAction</key>
+		<key>VHIRC_ShowAction</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4690,7 +4690,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowPrivate</key>
+		<key>VHIRC_ShowPrivate</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4701,7 +4701,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowNotice</key>
+		<key>VHIRC_ShowNotice</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4712,7 +4712,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowJoin</key>
+		<key>VHIRC_ShowJoin</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4723,7 +4723,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowQuit</key>
+		<key>VHIRC_ShowQuit</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4734,7 +4734,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowKick</key>
+		<key>VHIRC_ShowKick</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4745,7 +4745,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowNick</key>
+		<key>VHIRC_ShowNick</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4756,7 +4756,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_ShowSystem</key>
+		<key>VHIRC_ShowSystem</key>
 		<map>
 			<key>Comment</key>
 			<string>Show the related IRC messages in the chat window.</string>
@@ -4767,7 +4767,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7IRC_AutoReJoin</key>
+		<key>VHIRC_AutoReJoin</key>
 		<map>
 			<key>Comment</key>
 			<string>Automaticly accempt to reconnect to the channel you were just in if kicked. Some networks dont like this and may ban you for doing so, be carefull.</string>
@@ -4778,7 +4778,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-    <key>Meta7IRC_AutoConnect</key>
+    <key>VHIRC_AutoConnect</key>
     <map>
       <key>Comment</key>
       <string>Automaticly connect to any IRC networks that you have set to auto connect to upon startup.</string>
@@ -4789,7 +4789,7 @@
       <key>Value</key>
       <integer>0</integer>
     </map>
-		<key>Meta7KeepUnpackedCacheFiles</key>
+		<key>VHKeepUnpackedCacheFiles</key>
 		<map>
 			<key>Comment</key>
 			<string>If TRUE, the viewer won't delete unpacked cache files when logging out (improves overall performance and fixes sound bugs)</string>
@@ -4800,7 +4800,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7LargeFriendslistNoSLim</key>
+		<key>VHLargeFriendslistNoSLim</key>
 		<map>
 			<key>Comment</key>
 			<string>Wipes SLim FriendsList [TESTING ONLY!]</string>
@@ -4811,7 +4811,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7LoadURL</key>
+		<key>VHLoadURL</key>
 		<map>
 			<key>Comment</key>
 			<string>Disable to prevent Load URL dialogs. (Enabled by default)</string>
@@ -4822,7 +4822,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7MapToKeepPos</key>
+		<key>VHMapToKeepPos</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether to use current local pos on tp to the new sim</string>
@@ -4833,7 +4833,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7Megaprims</key>
+		<key>VHMegaprims</key>
 		<map>
 			<key>Comment</key>
 			<string>Disables the 10m limit on prims</string>
@@ -4844,7 +4844,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7MiniMapPrimMaxRadius</key>
+		<key>VHMiniMapPrimMaxRadius</key>
 		<map>
 			<key>Comment</key>
 			<string>Radius of the largest prim to show on the MiniMap. Increasing beyond 256 may cause client lag.</string>
@@ -4855,7 +4855,7 @@
 			<key>Value</key>
 			<real>16.0</real>
 		</map>
-		<key>Meta7MaxBeamsPerSecond</key>
+		<key>VHMaxBeamsPerSecond</key>
 		<map>
 			<key>Comment</key>
 			<string>How many selection beam updates to send in a second</string>
@@ -4866,7 +4866,7 @@
 			<key>Value</key>
 			<real>40</real>
 		</map>
-		<key>Meta7MuteGroupWhenNoticesDisabled</key>
+		<key>VHMuteGroupWhenNoticesDisabled</key>
 		<map>
 			<key>Comment</key>
 			<string>When "Receive group notices" is disabled, mute also the group chat. (Muting means that it won't open new windows.)</string>
@@ -4877,7 +4877,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7MuteAllGroups</key>
+		<key>VHMuteAllGroups</key>
 		<map>
 			<key>Comment</key>
 			<string>Mute all groups at a time. (Muting means that it won't open new windows.)</string>
@@ -4888,7 +4888,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7DisplayTotalScriptJumps</key>
+		<key>VHDisplayTotalScriptJumps</key>
 		<map>
 			<key>Comment</key>
 			<string>Display significant changes to the sim's total script count</string>
@@ -4899,7 +4899,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7NewShiny</key>
+		<key>VHNewShiny</key>
 		<map>
 			<key>Comment</key>
 			<string>new shiny x.x</string>
@@ -4910,7 +4910,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7numscriptdiff</key>
+		<key>VHnumscriptdiff</key>
 		<map>
 			<key>Comment</key>
 			<string>The delta to spam you the script jump difference</string>
@@ -4921,7 +4921,7 @@
 			<key>Value</key>
 			<real>100.0</real>
 		</map>
-		<key>Meta7numscripts</key>
+		<key>VHnumscripts</key>
 		<map>
 			<key>Comment</key>
 			<string>temp..</string>
@@ -4932,7 +4932,7 @@
 			<key>Value</key>
 			<real>0.0</real>
 		</map>
-		<key>Meta7ParticleChat</key>
+		<key>VHParticleChat</key>
 		<map>
 			<key>Comment</key>
 			<string>Speak Particle Info on channel 9000</string>
@@ -4943,7 +4943,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7PlayTpSound</key>
+		<key>VHPlayTpSound</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to hear the tp sound</string>
@@ -4954,7 +4954,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7RadarAlertSim</key>
+		<key>VHRadarAlertSim</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether the radar emits chat alerts for entering / exiting sim</string>
@@ -4965,7 +4965,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RadarAlertDraw</key>
+		<key>VHRadarAlertDraw</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether the radar emits chat alerts for entering / exiting draw distance</string>
@@ -4976,7 +4976,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RadarAlertChatRange</key>
+		<key>VHRadarAlertChatRange</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether the radar emits chat alerts for entering / exiting chat range</string>
@@ -4987,7 +4987,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RadarChatAlerts</key>
+		<key>VHRadarChatAlerts</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether the radar emits chat alerts regarding the status of avatars it displays</string>
@@ -4998,7 +4998,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RadarChatKeys</key>
+		<key>VHRadarChatKeys</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable silent chat of avatar keys when they enter the region to boost lsl radars speed and range</string>
@@ -5009,7 +5009,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RadarChatKeysChannel</key>
+		<key>VHRadarChatKeysChannel</key>
 		<map>
 			<key>Comment</key>
 			<string>What channel you want the avatar key chat to go on, -777777777 is default</string>
@@ -5020,7 +5020,7 @@
 			<key>Value</key>
 			<integer>-777777777</integer>
 		</map>
-		<key>Meta7RenderHighlightSelections</key>
+		<key>VHRenderHighlightSelections</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to show selection highlight</string>
@@ -5031,7 +5031,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ResetCamOnEscape</key>
+		<key>VHResetCamOnEscape</key>
 		<map>
 			<key>Comment</key>
 			<string>Setting this value to False prevents the camera from resetting when escape is pressed.</string>
@@ -5042,7 +5042,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7RevokePerms</key>
+		<key>VHRevokePerms</key>
 		<map>
 			<key>Comment</key>
 			<string>Setting this option to 1 will revoke perms when you sit on an object, 2 will revoke perms when you get off an object, 3 will revoke perms when you sit and stand.</string>
@@ -5053,7 +5053,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7RotateCamAfterLocalTP</key>
+		<key>VHRotateCamAfterLocalTP</key>
 		<map>
 			<key>Comment</key>
 			<string>Setting this flag to TRUE, rotates your camera behind the avatar after using double-click teleport.</string>
@@ -5064,7 +5064,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7ShowLookAtNames</key>
+		<key>VHShowLookAtNames</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to show names over who looks at you</string>
@@ -5075,7 +5075,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ShowMoneyChangeInChat</key>
+		<key>VHShowMoneyChangeInChat</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not to chat out money events</string>
@@ -5086,7 +5086,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7SpamTime</key>
+		<key>VHSpamTime</key>
 		<map>
 			<key>Comment</key>
 			<string>ADVANCED SETTINGS: Time of Evalulating spam. RECOMMENDED NUMBER IS 1.000</string>
@@ -5097,10 +5097,10 @@
 			<key>Value</key>
 			<real>1.0</real>
 		</map>
-		<key>Meta7SpamCount</key>
+		<key>VHSpamCount</key>
 		<map>
 			<key>Comment</key>
-			<string>ADVANCED SETTINGS: Number of items spammed per time set in Meta7SpamTime. RECOMMENDED IS 4.000</string>
+			<string>ADVANCED SETTINGS: Number of items spammed per time set in VHSpamTime. RECOMMENDED IS 4.000</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -5108,7 +5108,7 @@
 			<key>Value</key>
 			<real>4.0</real>
 		</map>
-		<key>Meta7TemporaryUpload</key>
+		<key>VHTemporaryUpload</key>
 		<map>
 			<key>Comment</key>
 			<string>Whether or not a upload is temp</string>
@@ -5119,7 +5119,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7OOCPrefix</key>
+		<key>VHOOCPrefix</key>
 		<map>
 			<key>Comment</key>
 			<string>Prefix to mark OOC chat</string>
@@ -5130,7 +5130,7 @@
 			<key>Value</key>
 			<string>((</string>
 		</map>
-		<key>Meta7OOCPostfix</key>
+		<key>VHOOCPostfix</key>
 		<map>
 			<key>Comment</key>
 			<string>Prefix to mark OOC chat</string>
@@ -5141,7 +5141,7 @@
 			<key>Value</key>
 			<string>))</string>
 		</map>
-		<key>Meta7UseChatBar</key>
+		<key>VHUseChatBar</key>
 		<map>
 			<key>Comment</key>
 			<string>Set to FALSE to disable the chat bar and chat display in the bottom left. All chat will go to the Communicate window.</string>
@@ -5152,7 +5152,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7UseOTR</key>
+		<key>VHUseOTR</key>
 		<map>
 			<key>Comment</key>
 			<string>Setting this to 0 will require the use of OTR in every IM, 1 will try OTR when available, 2 will accept incoming OTR requests, and 3 will deny OTR usage</string>
@@ -5163,7 +5163,7 @@
 			<key>Value</key>
 			<integer>2</integer>
 		</map>
-		<key>Meta7OTRInTypingStop</key>
+		<key>VHOTRInTypingStop</key>
 		<map>
 			<key>Comment</key>
 			<string>Setting this to true will make all encrypted OTR messages be sent in an IM_TYPING_STOP packet.  This is non-standard behavior, but prevents OTR encrypted IM from being saved and delivered as offline IM.  Though it currently works LL may decide to disable the feature at any time.  This is incompatible with previous versions of OTR.</string>
@@ -5174,7 +5174,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7VelocityDoubleClickTeleport</key>
+		<key>VHVelocityDoubleClickTeleport</key>
 		<map>
 			<key>Comment</key>
 			<string>Interpolate double click teleportation</string>
@@ -5185,7 +5185,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7VerticalIMTabs</key>
+		<key>VHVerticalIMTabs</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable vertical layout for IM tabs</string>
@@ -5207,7 +5207,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7EnableInvMirror</key>
+		<key>VHEnableInvMirror</key>
 		<map>
 			<key>Comment</key>
 			<string>lolu</string>
@@ -5218,7 +5218,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7InvMirrorLocation</key>
+		<key>VHInvMirrorLocation</key>
 		<map>
 			<key>Comment</key>
 			<string>toast</string>
@@ -5229,7 +5229,7 @@
 			<key>Value</key>
 			<string/>
 		</map>
-		<key>Meta7InvMirrorGestures</key>
+		<key>VHInvMirrorGestures</key>
 		<map>
 			<key>Comment</key>
 			<string>lolu</string>
@@ -5240,7 +5240,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7InvMirrorNotecards</key>
+		<key>VHInvMirrorNotecards</key>
 		<map>
 			<key>Comment</key>
 			<string>lolu</string>
@@ -5251,7 +5251,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7InvMirrorScripts</key>
+		<key>VHInvMirrorScripts</key>
 		<map>
 			<key>Comment</key>
 			<string>lolu</string>
@@ -5262,7 +5262,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7ExportProperties</key>
+		<key>VHExportProperties</key>
 		<map>
 			<key>Comment</key>
 			<string>o.o</string>
@@ -5273,7 +5273,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ExportInventory</key>
+		<key>VHExportInventory</key>
 		<map>
 			<key>Comment</key>
 			<string>o.o</string>
@@ -5284,7 +5284,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7ExportTextures</key>
+		<key>VHExportTextures</key>
 		<map>
 			<key>Comment</key>
 			<string>o.o</string>
@@ -5295,7 +5295,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>Meta7BuildBridge</key>
+		<key>VHBuildBridge</key>
 		<map>
 			<key>Comment</key>
 			<string>whether or not to create the lsl bridge</string>
@@ -5306,7 +5306,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7UseBridgeRadar</key>
+		<key>VHUseBridgeRadar</key>
 		<map>
 			<key>Comment</key>
 			<string>whether or not to use the lsl bridge to boost radar</string>
@@ -5317,7 +5317,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7UseBridgeOnline</key>
+		<key>VHUseBridgeOnline</key>
 		<map>
 			<key>Comment</key>
 			<string>whether or not to use the lsl bridge to boost online info</string>
@@ -5328,7 +5328,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>WarnMeta7BuildBridge</key>
+		<key>WarnVHBuildBridge</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables bridge warning dialog</string>
@@ -5339,7 +5339,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>Meta7ClothingMode</key>
+		<key>VHClothingMode</key>
 		<map>
 			<key>Comment</key>
 			<string>now you fucked up</string>
@@ -5896,7 +5896,7 @@
 			<key>Value</key>
 			<real>0.65</real>
 		</map>
-		<key>Meta7BoobMass</key>
+		<key>VHBoobMass</key>
 		<map>
 			<key>Comment</key>
 			<string>Mass of boobs.</string>
@@ -5907,7 +5907,7 @@
 			<key>Value</key>
 			<real>54.0</real>
 		</map>
-		<key>Meta7BoobHardness</key>
+		<key>VHBoobHardness</key>
 		<map>
 			<key>Comment</key>
 			<string>Hardness (dampening) of boobs.</string>
@@ -5918,7 +5918,7 @@
 			<key>Value</key>
 			<real>51</real>
 		</map>
-		<key>Meta7BreastPhysicsToggle</key>
+		<key>VHBreastPhysicsToggle</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables/Disables breast physics</string>
@@ -5929,7 +5929,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-    <key>Meta7BreastSportsBra</key>
+    <key>VHBreastSportsBra</key>
     <map>
       <key>Comment</key>
       <string>allows disabling the physics for 1 av, in case their outfit looks wrong with it on</string>
@@ -5940,7 +5940,7 @@
       <key>Value</key>
       <integer>0</integer>
     </map>
-		<key>Meta7BoobVelMax</key>
+		<key>VHBoobVelMax</key>
 		<map>
 			<key>Comment</key>
 			<string>Max amount of velocity boobs can have</string>
@@ -5951,7 +5951,7 @@
 			<key>Value</key>
 			<real>64</real>
 		</map>
-		<key>Meta7BoobFriction</key>
+		<key>VHBoobFriction</key>
 		<map>
 			<key>Comment</key>
 			<string>Internal friction (brings boobs to rest). Shouldn't ever be above 1.</string>
@@ -5962,7 +5962,7 @@
 			<key>Value</key>
 			<real>80</real>
 		</map>
-		<key>Meta7BoobVelMin</key>
+		<key>VHBoobVelMin</key>
 		<map>
 			<key>Comment</key>
 			<string>Friction Fraction of FPS (used to keep friction uniform through FPS change).</string>
@@ -5973,7 +5973,7 @@
 			<key>Value</key>
 			<real>24</real>
 		</map>
-		<key>Meta7BoobXYInfluence</key>
+		<key>VHBoobXYInfluence</key>
 		<map>
 			<key>Comment</key>
 			<string>Amount of influence along the X and Y planes.</string>
@@ -6788,7 +6788,7 @@
 			<key>Value</key>
 			<real>13900</real>
 		</map>
-		<key>Meta7GUSEnabled</key>
+		<key>VHGUSEnabled</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable the Greenlife Utility Stream</string>
@@ -6799,7 +6799,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7GUSChannel</key>
+		<key>VHGUSChannel</key>
 		<map>
 			<key>Comment</key>
 			<string>Chat-channel to whisper GUS data</string>
@@ -6810,7 +6810,7 @@
 			<key>Value</key>
 			<real>16000</real>
 		</map>
-		<key>Meta7GUSRefresh</key>
+		<key>VHGUSRefresh</key>
 		<map>
 			<key>Comment</key>
 			<string>Frequency for updating standard GUS data</string>
@@ -6821,10 +6821,10 @@
 			<key>Value</key>
 			<real>5.0</real>
 		</map>
-		<key>Meta7GUSFastEventsEnabled</key>
+		<key>VHGUSFastEventsEnabled</key>
 		<map>
 			<key>Comment</key>
-			<string>Enable GUS Fast Events for rapidly-changing GUS variables (channel is one higher than Meta7GUSChannel)</string>
+			<string>Enable GUS Fast Events for rapidly-changing GUS variables (channel is one higher than VHGUSChannel)</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -6832,7 +6832,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7GUSFastEventsRefresh</key>
+		<key>VHGUSFastEventsRefresh</key>
 		<map>
 			<key>Comment</key>
 			<string>Frequency for updating rapidly-changing GUS varibles</string>
@@ -6843,7 +6843,7 @@
 			<key>Value</key>
 			<real>20.0</real>
 		</map>
-    <key>Meta7GUSLookAt</key>
+    <key>VHGUSLookAt</key>
     <map>
       <key>Comment</key>
       <string>Stream avatar look at position using the Greenlife Utility Stream (GUS)</string>
@@ -6854,7 +6854,7 @@
       <key>Value</key>
       <real>0</real>
     </map>
-    <key>Meta7GUSEyeRot</key>
+    <key>VHGUSEyeRot</key>
 		<map>
 			<key>Comment</key>
 			<string>Stream avatar eyeball mesh rotation using the Greenlife Utility Stream (GUS)</string>
@@ -6865,7 +6865,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7GUSEyelidState</key>
+		<key>VHGUSEyelidState</key>
 		<map>
 			<key>Comment</key>
 			<string>Stream avatar eyelid state using the Greenlife Utility Stream (GUS)</string>
@@ -6876,7 +6876,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7MoveLockDCT</key>
+		<key>VHMoveLockDCT</key>
 		<map>
 			<key>Comment</key>
 			<string>Enable magical move-lock teleporting system (requires bridge)</string>
@@ -6887,7 +6887,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7DoubleClickTeleportChat</key>
+		<key>VHDoubleClickTeleportChat</key>
 		<map>
 			<key>Comment</key>
 			<string>Send TP destination coordinates to channel?</string>
@@ -6898,7 +6898,7 @@
 			<key>Value</key>
 			<real>0</real>
 		</map>
-		<key>Meta7DoubleClickTeleportChannel</key>
+		<key>VHDoubleClickTeleportChannel</key>
 		<map>
 			<key>Comment</key>
 			<string>Channel for magical move-lock teleporting system</string>
@@ -8702,7 +8702,7 @@
 		<key>NumSessions</key>
 		<map>
 			<key>Comment</key>
-			<string>Number of successful logins to Meta7</string>
+			<string>Number of successful logins to VH</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -11546,7 +11546,7 @@
 		<key>SkyUseClassicClouds</key>
 		<map>
 			<key>Comment</key>
-			<string>Whether to use the old Meta7 particle clouds or not</string>
+			<string>Whether to use the old VH particle clouds or not</string>
 			<key>Persist</key>
 			<integer>1</integer>
 			<key>Type</key>
@@ -14087,7 +14087,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>WarnMeta7OTR</key>
+		<key>WarnVHOTR</key>
     <map>
 			<key>Comment</key>
 			<string>Enables OTR info dialog</string>
@@ -14098,7 +14098,7 @@
 			<key>Value</key>
 			<integer>0</integer>
 		</map>
-		<key>WarnMeta7NCreatorExport</key>
+		<key>WarnVHNCreatorExport</key>
 		<map>
 			<key>Comment</key>
 			<string>warns on creatorfayse</string>
@@ -14109,7 +14109,7 @@
 			<key>Value</key>
 			<integer>1</integer>
 		</map>
-		<key>WarnMeta7RadarChat</key>
+		<key>WarnVHRadarChat</key>
 		<map>
 			<key>Comment</key>
 			<string>Enables radarchat info dialog</string>
@@ -14833,7 +14833,7 @@
 	      <key>Value</key>
 	      <integer>1</integer>
 	    </map>
-	    <key>Meta7ShadowsToggle</key>
+	    <key>VHShadowsToggle</key>
 	    <map>
 	      <key>Comment</key>
 	      <string>Enable shadow rendering</string>

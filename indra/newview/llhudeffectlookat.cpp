@@ -537,7 +537,7 @@ void LLHUDEffectLookAt::render()
 			gGL.vertex3f(0.f, 0.f, 1.f);
 		} gGL.end();
 		gGL.popMatrix();
-		if( gSavedSettings.getBOOL("Meta7ShowLookAtNames") )
+		if( gSavedSettings.getBOOL("VHShowLookAtNames") )
 		{
 			//const LLFontGL* fontp = LLFontGL::sSansSerifSmall;
 			const LLFontGL* fontp = LLResMgr::getInstance()->getRes( LLFONT_SANSSERIF_SMALL );

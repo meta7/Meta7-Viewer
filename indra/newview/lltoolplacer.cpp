@@ -288,7 +288,7 @@ BOOL LLToolPlacer::addObject( LLPCode pcode, S32 x, S32 y, U8 use_physics )
 	gMessageSystem->addU8Fast(_PREHASH_Material,	material);
 
 	U32 flags = 0;		// not selected
-	if (use_physics || gSavedSettings.getBOOL("Meta7BuildPrefs_Physical"))
+	if (use_physics || gSavedSettings.getBOOL("VHBuildPrefs_Physical"))
 	{
 		flags |= FLAGS_USE_PHYSICS;
 	}

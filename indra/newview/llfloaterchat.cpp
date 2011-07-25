@@ -569,7 +569,7 @@ LLColor4 get_text_color(const LLChat& chat)
 	{
 		if(MfdKeywordFloaterStart::hasKeyword(chat.mText,1))
 		{
-			if(gSavedPerAccountSettings.getBOOL("Meta7KeywordChangeColor"))
+			if(gSavedPerAccountSettings.getBOOL("VHKeywordChangeColor"))
 				text_color = gSavedPerAccountSettings.getColor4("Meta7KeywordColor");
 		}
 	}

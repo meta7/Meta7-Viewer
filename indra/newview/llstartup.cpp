@@ -803,7 +803,7 @@ bool idle_startup()
 			// Load login history
 			std::string login_hist_filepath = gDirUtilp->getExpandedFilename(LL_PATH_USER_SETTINGS, "saved_logins.xml");
 			LLSavedLogins login_history = LLSavedLogins::loadFile(login_hist_filepath);
-			bool meta7irc = gSavedSettings.getBOOL("Meta7IRCAutoJoinHelpChannel");
+			bool meta7irc = gSavedSettings.getBOOL("VHIRCAutoJoinHelpChannel");
 			// Show the login dialog
 			login_show();
 			// connect dialog is already shown, so fill in the names
@@ -1047,7 +1047,7 @@ bool idle_startup()
 		}
 
 		// Display the startup progress bar.
-		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("Meta7DisableLoginScreens"));
+		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("VHDisableLoginScreens"));
 		gViewerWindow->setProgressCancelButtonVisible(TRUE, std::string("Quit")); // *TODO: Translate
 
 		// Poke the VFS, which could potentially block for a while if
@@ -1854,7 +1854,7 @@ bool idle_startup()
 		{
 			LLFloaterAvatarList::showInstance();
 		}
-		else if (gSavedSettings.getBOOL("Meta7AvatarListKeepOpen"))
+		else if (gSavedSettings.getBOOL("VHAvatarListKeepOpen"))
 		{
 			LLFloaterAvatarList::showInstance();
 			LLFloaterAvatarList::toggle(NULL);
@@ -2902,7 +2902,7 @@ bool first_run_dialog_callback(const LLSD& notification, const LLSD& response)
 std::string last_d;
 void set_startup_status(const F32 frac, const std::string& string, const std::string& msg)
 {
-	if(gSavedSettings.getBOOL("Meta7DisableLoginScreens"))
+	if(gSavedSettings.getBOOL("VHDisableLoginScreens"))
 	{
 		std::string new_d = string;
 		if(new_d != last_d)

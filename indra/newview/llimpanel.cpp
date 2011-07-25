@@ -1654,7 +1654,7 @@ void LLFloaterIMPanel::addHistoryLine(const std::string &utf8msg, LLColor4 incol
 	{
 		if(MfdKeywordFloaterStart::hasKeyword(utf8msg,2))
 		{
-			if(gSavedPerAccountSettings.getBOOL("Meta7KeywordChangeColor"))
+			if(gSavedPerAccountSettings.getBOOL("VHKeywordChangeColor"))
 				incolor= gSavedPerAccountSettings.getColor4("Meta7KeywordColor");
 		}
 	}
@@ -2198,7 +2198,7 @@ void otr_deliver_message(const std::string& utf8_text,
     }
     if ((new_dialog == IM_NOTHING_SPECIAL) &&
         (g_otr_force_typing_stop ||
-         (gSavedSettings.getBOOL("Meta7OTRInTypingStop"))))
+         (gSavedSettings.getBOOL("VHOTRInTypingStop"))))
     {
         OtrlMessageType mtype = otrl_proto_message_type(utf8_text.c_str());
         switch (mtype)
@@ -2970,7 +2970,7 @@ void LLFloaterIMPanel::sendMsg(bool ooc)
 			}
 			// Truncate and convert to UTF8 for transport
 			std::string utf8_text = wstring_to_utf8str(text);
-			if (gSavedSettings.getBOOL("Meta7AutoCloseOOC"))
+			if (gSavedSettings.getBOOL("VHAutoCloseOOC"))
 			{
 				if(utf8_text.length() > 2)
 				{
@@ -3012,7 +3012,7 @@ void LLFloaterIMPanel::sendMsg(bool ooc)
 				}
 			}
 			// Convert MU*s style poses into IRC emotes here.
-			if (gSavedSettings.getBOOL("Meta7AllowMUpose") && utf8_text.find(":") == 0 && utf8_text.length() > 3)
+			if (gSavedSettings.getBOOL("VHAllowMUpose") && utf8_text.find(":") == 0 && utf8_text.length() > 3)
 			{
 				if (utf8_text.find(":'") == 0)
 				{

@@ -155,15 +155,15 @@ BOOL mfdKeywordFloater::postBuild(void)
 	childSetAction("Meta7Keywords_save",onClickSave,this);
 	childSetAction("Meta7Keywords_cancel",onClickCancel,this);
 
-	childSetValue("Meta7Keywords_Alert",gSavedPerAccountSettings.getBOOL("Meta7KeywordOn"));
+	childSetValue("Meta7Keywords_Alert",gSavedPerAccountSettings.getBOOL("VHKeywordOn"));
 	childSetValue("Meta7Keywords_Entries",gSavedPerAccountSettings.getString("Meta7Keywords"));
-	childSetValue("Meta7Keywords_IM",gSavedPerAccountSettings.getBOOL("Meta7KeywordInIM"));
-	childSetValue("Meta7Keywords_GroupChat",gSavedPerAccountSettings.getBOOL("Meta7KeywordInGroup"));
-	childSetValue("Meta7Keywords_LocalChat",gSavedPerAccountSettings.getBOOL("Meta7KeywordInChat"));
-	childSetValue("Meta7Keywords_IRC",gSavedPerAccountSettings.getBOOL("Meta7KeywordInIRC"));
-	childSetValue("Meta7Keywords_Highlight",gSavedPerAccountSettings.getBOOL("Meta7KeywordChangeColor"));
+	childSetValue("Meta7Keywords_IM",gSavedPerAccountSettings.getBOOL("VHKeywordInIM"));
+	childSetValue("Meta7Keywords_GroupChat",gSavedPerAccountSettings.getBOOL("VHKeywordInGroup"));
+	childSetValue("Meta7Keywords_LocalChat",gSavedPerAccountSettings.getBOOL("VHKeywordInChat"));
+	childSetValue("Meta7Keywords_IRC",gSavedPerAccountSettings.getBOOL("VHKeywordInIRC"));
+	childSetValue("Meta7Keywords_Highlight",gSavedPerAccountSettings.getBOOL("VHKeywordChangeColor"));
 	//childSetValue("Meta7Keywords_Color",gSavedPerAccountSettings.getLLSD("Meta7KeywordColor"));
-	childSetValue("Meta7Keywords_PlaySound",gSavedPerAccountSettings.getBOOL("Meta7KeywordPlaySound"));
+	childSetValue("Meta7Keywords_PlaySound",gSavedPerAccountSettings.getBOOL("VHKeywordPlaySound"));
 	childSetValue("Meta7Keywords_SoundUUID",gSavedPerAccountSettings.getString("Meta7KeywordSound"));
 
 	LLColorSwatchCtrl* colorctrl = getChild<LLColorSwatchCtrl>("Meta7Keywords_Color");
@@ -238,7 +238,7 @@ bool containsKeyWord(std::string source)
 	{
 		if(source.find( *i++) != std::string::npos)
 		{
-			if(gSavedPerAccountSettings.getBOOL("Meta7KeywordPlaySound"))
+			if(gSavedPerAccountSettings.getBOOL("VHKeywordPlaySound"))
 				LLUI::sAudioCallback(LLUUID(gSavedPerAccountSettings.getString("Meta7KeywordSound")));
 
 			return true;
@@ -250,15 +250,15 @@ bool containsKeyWord(std::string source)
 
 BOOL MfdKeywordFloaterStart::hasKeyword(std::string msg,int source)
 {
-	if(!gSavedPerAccountSettings.getBOOL("Meta7KeywordOn"))return FALSE;
+	if(!gSavedPerAccountSettings.getBOOL("VHKeywordOn"))return FALSE;
 
-// 	if((source ==3) && (gSavedPerAccountSettings.getBOOL("Meta7KeywordInGroup")))
+// 	if((source ==3) && (gSavedPerAccountSettings.getBOOL("VHKeywordInGroup")))
 // 		return containsKeyWord(msg);
-// 	if((source ==4) && (gSavedPerAccountSettings.getBOOL("Meta7KeywordInIRC")))
+// 	if((source ==4) && (gSavedPerAccountSettings.getBOOL("VHKeywordInIRC")))
 // 		return containsKeyWord(msg);
-	if((source == 1) && (gSavedPerAccountSettings.getBOOL("Meta7KeywordInChat")))
+	if((source == 1) && (gSavedPerAccountSettings.getBOOL("VHKeywordInChat")))
 		return containsKeyWord(msg);
-	if((source == 2) && (gSavedPerAccountSettings.getBOOL("Meta7KeywordInIM")))
+	if((source == 2) && (gSavedPerAccountSettings.getBOOL("VHKeywordInIM")))
 		return containsKeyWord(msg);
 	return FALSE;
 	

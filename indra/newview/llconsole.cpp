@@ -417,7 +417,7 @@ LLConsole::Paragraph::Paragraph (LLWString str, const LLColor4 &color, F32 add_t
 	
 void LLConsole::addLine(const LLWString& wline, F32 size, const LLColor4 &color)
 {	
-	if (gSavedSettings.getBOOL("Meta7UseChatBar"))
+	if (gSavedSettings.getBOOL("VHUseChatBar"))
 	{
 	Paragraph paragraph(wline, color, mTimer.getElapsedTimeF32(), mFont,  (F32)getRect().getWidth() );
 	

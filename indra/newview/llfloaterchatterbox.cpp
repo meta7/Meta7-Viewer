@@ -104,7 +104,7 @@ LLFloaterChatterBox::LLFloaterChatterBox(const LLSD& seed) :
 
 // check if vertical tabs is selected (WoLf)
 	std::string chatterbox_layout;
-	if(gSavedSettings.getBOOL("Meta7VerticalIMTabs"))
+	if(gSavedSettings.getBOOL("VHVerticalIMTabs"))
 	{ chatterbox_layout = "floater_chatterbox_Meta7.xml"; }
 	else chatterbox_layout = "floater_chatterbox.xml";
 

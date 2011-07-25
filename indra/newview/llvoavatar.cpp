@@ -1019,7 +1019,7 @@ LLVOAvatar::LLVOAvatar(const LLUUID& id,
 	sBoobConfig.velMax           = Meta7BoobUtils::convertVelMax(gSavedSettings.getF32("Meta7BoobVelMax"));
 	sBoobConfig.velMin           = Meta7BoobUtils::convertVelMin(gSavedSettings.getF32("Meta7BoobVelMin"));
 	sBoobConfig.friction         = Meta7BoobUtils::convertFriction(gSavedSettings.getF32("Meta7BoobFriction"));
-	sBoobConfig.enabled          = gSavedSettings.getBOOL("Meta7BreastPhysicsToggle");
+	sBoobConfig.enabled          = gSavedSettings.getBOOL("VHBreastPhysicsToggle");
 	sBoobConfig.XYInfluence		 = gSavedSettings.getF32("Meta7BoobXYInfluence");
 
 
@@ -3464,7 +3464,7 @@ void LLVOAvatar::resolveClient(LLColor4& avatar_name_color, std::string& client,
 	}
 	if(avatar->mCheckingCryolife < 2 && !avatar->mIsCryolife)
     {
-		if(gSavedSettings.getBOOL("Meta7CryoDetection"))
+		if(gSavedSettings.getBOOL("VHCryoDetection"))
 		{
 			if(avatar->mCheckingCryolife < 1)
 			{
@@ -3593,11 +3593,11 @@ void LLVOAvatar::idleUpdateNameTag(const LLVector3& root_pos_last)
 				LLColor4 avatar_name_color = gColors.getColor( "AvatarNameColor" );
 				if(!mIsSelf)
 					resolveClient(avatar_name_color,client, this);
-				if(!gSavedSettings.getBOOL("Meta7ChangeColorOnClient"))
+				if(!gSavedSettings.getBOOL("VHChangeColorOnClient"))
 				{
 					avatar_name_color = gColors.getColor( "AvatarNameColor" );
 				}
-				if(!gSavedSettings.getBOOL("Meta7ClientTagDisplay"))
+				if(!gSavedSettings.getBOOL("VHClientTagDisplay"))
 				{
 					client = "";
 				}
@@ -3872,7 +3872,7 @@ void LLVOAvatar::idleUpdateTractorBeam()
 	if (!needsRenderBeam() || !mIsBuilt)
 	{
 		mBeam = NULL;
-		if(gSavedSettings.getBOOL("Meta7ParticleChat"))
+		if(gSavedSettings.getBOOL("VHParticleChat"))
 		{
 			if(sPartsNow != FALSE)
 			{
@@ -3914,7 +3914,7 @@ void LLVOAvatar::idleUpdateTractorBeam()
 			mBeam->setPositionGlobal(gAgent.mPointAt->getPointAtPosGlobal());
 
 			//lgg crap
-			if(gSavedSettings.getBOOL("Meta7ParticleChat"))
+			if(gSavedSettings.getBOOL("VHParticleChat"))
 			{
 				if(sPartsNow != TRUE)
 				{
@@ -5348,7 +5348,7 @@ void LLVOAvatar::processAnimationStateChanges()
 		{
 			if (mIsSelf)
 			{
-				if ((gSavedSettings.getBOOL("Meta7AOEnabled")) && LLFloaterAO::stopMotion(anim_it->first, FALSE)) // if the AO replaced this anim serverside then stop it serverside
+				if ((gSavedSettings.getBOOL("VHAOEnabled")) && LLFloaterAO::stopMotion(anim_it->first, FALSE)) // if the AO replaced this anim serverside then stop it serverside
 				{
 //					return TRUE; //no local stop needed
 				}
@@ -5375,7 +5375,7 @@ void LLVOAvatar::processAnimationStateChanges()
 
 				if (mIsSelf) // AO is only for ME
 				{
-					if (gSavedSettings.getBOOL("Meta7AOEnabled"))
+					if (gSavedSettings.getBOOL("VHAOEnabled"))
 					{
 						if (LLFloaterAO::startMotion(anim_it->first, 0,FALSE)) // AO overrides the anim if needed
 						{

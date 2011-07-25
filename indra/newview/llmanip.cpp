@@ -115,8 +115,8 @@ LLManip::LLManip( const std::string& name, LLToolComposite* composite )
 //static
 void LLManip::initPivot()
 {
-	sActualRoot = (bool)gSavedSettings.getBOOL("Meta7BuildPrefs_ActualRoot");
-	sPivotPerc  = (bool)gSavedSettings.getBOOL("Meta7BuildPrefs_PivotIsPercent");
+	sActualRoot = (bool)gSavedSettings.getBOOL("VHBuildPrefs_ActualRoot");
+	sPivotPerc  = (bool)gSavedSettings.getBOOL("VHBuildPrefs_PivotIsPercent");
 	sPivotX		= gSavedSettings.getF32("Meta7BuildPrefs_PivotX");
 	sPivotY		= gSavedSettings.getF32("Meta7BuildPrefs_PivotY");
 	sPivotZ		= gSavedSettings.getF32("Meta7BuildPrefs_PivotZ");

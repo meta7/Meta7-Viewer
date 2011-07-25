@@ -261,7 +261,7 @@ BOOL JCLSLBridge::tick()
 				/*
 				We're going to just completely disable this in code, it's shit - CW
 				
-				if(!gSavedSettings.getBOOL("Meta7BuildBridge"))
+				if(!gSavedSettings.getBOOL("VHBuildBridge"))
 				{
 				*/
 					sBridgeStatus = FAILED;

@@ -614,8 +614,8 @@ void LLIMMgr::addMessage(
 	// create IM window as necessary
 	if(!floater)
 	{
-		BOOL all_groups_muted = gSavedSettings.getBOOL("Meta7MuteAllGroups");
-		if (gSavedSettings.getBOOL("Meta7MuteGroupWhenNoticesDisabled")
+		BOOL all_groups_muted = gSavedSettings.getBOOL("VHMuteAllGroups");
+		if (gSavedSettings.getBOOL("VHMuteGroupWhenNoticesDisabled")
 			|| all_groups_muted)
 		{
 			LLGroupData *group_data = NULL;

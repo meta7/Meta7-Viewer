@@ -79,7 +79,7 @@ void LLHUDManager::updateEffects()
 
 void LLHUDManager::sendEffects()
 {
-	if(!gSavedSettings.getBOOL("Meta7BroadcastEffects"))return;
+	if(!gSavedSettings.getBOOL("VHBroadcastEffects"))return;
 	S32 i;
 	for (i = 0; i < mHUDEffects.count(); i++)
 	{

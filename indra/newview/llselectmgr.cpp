@@ -4549,7 +4549,7 @@ void LLSelectMgr::processForceObjectSelect(LLMessageSystem* msg, void**)
 
 void LLSelectMgr::enableSilhouette(BOOL enable)
 {
-	if(gSavedSettings.getBOOL("Meta7RenderHighlightSelections"))
+	if(gSavedSettings.getBOOL("VHRenderHighlightSelections"))
 	{
 		mRenderSilhouettes = enable;
 	}

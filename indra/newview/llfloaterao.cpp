@@ -70,7 +70,7 @@ AOInvTimer::~AOInvTimer()
 }
 BOOL AOInvTimer::tick()
 {
-	if (!(gSavedSettings.getBOOL("Meta7AOEnabled"))) return TRUE;
+	if (!(gSavedSettings.getBOOL("VHAOEnabled"))) return TRUE;
 	if(LLStartUp::getStartupState() >= STATE_INVENTORY_SEND)
 	{
 		if(gInventory.isEverythingFetched())
@@ -356,7 +356,7 @@ void LLFloaterAO::onComboBoxCommit(LLUICtrl* ctrl, void* userdata)
 			}
 			else if (box->getName() == "sits")
 			{
-				if (gAgent.getAvatarObject() && (gSavedSettings.getBOOL("Meta7AOEnabled")) && (gSavedSettings.getBOOL("Meta7AOSitsEnabled")))
+				if (gAgent.getAvatarObject() && (gSavedSettings.getBOOL("VHAOEnabled")) && (gSavedSettings.getBOOL("VHAOSitsEnabled")))
 				{
 					if ((gAgent.getAvatarObject()->mIsSitting) && (getAnimationState() == STATE_AGENT_SIT))
 					{
@@ -654,7 +654,7 @@ void LLFloaterAO::run()
 	int state = getAnimationState(); // check if sitting or hovering
 	if ((state == STATE_AGENT_IDLE) || (state == STATE_AGENT_STAND))
 	{
-		if (gSavedSettings.getBOOL("Meta7AOEnabled"))
+		if (gSavedSettings.getBOOL("VHAOEnabled"))
 		{
 			if (mAOStandTimer)
 			{
@@ -674,8 +674,8 @@ void LLFloaterAO::run()
 	}
 	else
 	{
-		if (state == STATE_AGENT_SIT) gAgent.sendAnimationRequest(GetAnimIDFromState(state), (gSavedSettings.getBOOL("Meta7AOEnabled") && gSavedSettings.getBOOL("Meta7AOSitsEnabled")) ? ANIM_REQUEST_START : ANIM_REQUEST_STOP);
-		else gAgent.sendAnimationRequest(GetAnimIDFromState(state), gSavedSettings.getBOOL("Meta7AOEnabled") ? ANIM_REQUEST_START : ANIM_REQUEST_STOP);
+		if (state == STATE_AGENT_SIT) gAgent.sendAnimationRequest(GetAnimIDFromState(state), (gSavedSettings.getBOOL("VHAOEnabled") && gSavedSettings.getBOOL("VHAOSitsEnabled")) ? ANIM_REQUEST_START : ANIM_REQUEST_STOP);
+		else gAgent.sendAnimationRequest(GetAnimIDFromState(state), gSavedSettings.getBOOL("VHAOEnabled") ? ANIM_REQUEST_START : ANIM_REQUEST_STOP);
 	}
 }
 
@@ -768,11 +768,11 @@ void LLFloaterAO::onClickNextStand(void* user_data)
 
 BOOL LLFloaterAO::ChangeStand()
 {
-	if (gSavedSettings.getBOOL("Meta7AOEnabled"))
+	if (gSavedSettings.getBOOL("VHAOEnabled"))
 	{
 		if (gAgent.getAvatarObject())
 		{
-			if (gSavedSettings.getBOOL("Meta7AONoStandsInMouselook") && gAgent.cameraMouselook()) return FALSE;
+			if (gSavedSettings.getBOOL("VHAONoStandsInMouselook") && gAgent.cameraMouselook()) return FALSE;
 
 			if (gAgent.getAvatarObject()->mIsSitting)
 			{
@@ -785,7 +785,7 @@ BOOL LLFloaterAO::ChangeStand()
 		if ((getAnimationState() == STATE_AGENT_IDLE) || (getAnimationState() == STATE_AGENT_STAND))// stands have lowest priority
 		{
 			if (!(mAOStands.size() > 0)) return TRUE;
-			if (gSavedSettings.getBOOL("Meta7AOStandRandomize"))
+			if (gSavedSettings.getBOOL("VHAOStandRandomize"))
 			{
 				stand_iterator = ll_rand(mAOStands.size()-1);
 			}
@@ -836,13 +836,13 @@ BOOL LLFloaterAO::startMotion(const LLUUID& id, F32 time_offset, BOOL stand)
 	}
 	else
 	{
-		if (GetAnimID(id).notNull() && gSavedSettings.getBOOL("Meta7AOEnabled"))
+		if (GetAnimID(id).notNull() && gSavedSettings.getBOOL("VHAOEnabled"))
 		{
 			stopMotion(getCurrentStandId(), FALSE, TRUE); //stop stand first then set state 
 			setAnimationState(GetStateFromAnimID(id));
 		
 //			llinfos << " state " << getAnimationState() << " start anim " << id << " overriding with " << GetAnimID(id) << llendl;
-			if ((GetStateFromAnimID(id) == STATE_AGENT_SIT) && !(gSavedSettings.getBOOL("Meta7AOSitsEnabled"))) return TRUE;
+			if ((GetStateFromAnimID(id) == STATE_AGENT_SIT) && !(gSavedSettings.getBOOL("VHAOSitsEnabled"))) return TRUE;
 			gAgent.sendAnimationRequest(GetAnimID(id), ANIM_REQUEST_START);
 			return TRUE;
 		}
@@ -860,7 +860,7 @@ BOOL LLFloaterAO::stopMotion(const LLUUID& id, BOOL stop_immediate, BOOL stand)
 	}
 	else
 	{
-		if (GetAnimID(id).notNull() && gSavedSettings.getBOOL("Meta7AOEnabled"))
+		if (GetAnimID(id).notNull() && gSavedSettings.getBOOL("VHAOEnabled"))
 		{
 //			llinfos << "  state " << getAnimationState() << "/" << GetStateFromAnimID(id) << "(now 0)  stop anim " << id << " overriding with " << GetAnimID(id) << llendl;
 			if (getAnimationState() == GetStateFromAnimID(id))

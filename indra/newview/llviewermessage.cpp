@@ -1793,10 +1793,10 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 	bool typing_init = false;
 	if( dialog == IM_TYPING_START && !is_muted )
 	{
-		if(!gIMMgr->hasSession(computed_session_id) && gSavedPerAccountSettings.getBOOL("Meta7InstantMessageAnnounceIncoming"))
+		if(!gIMMgr->hasSession(computed_session_id) && gSavedPerAccountSettings.getBOOL("VHInstantMessageAnnounceIncoming"))
 		{
 			typing_init = true;
-			if( gSavedPerAccountSettings.getBOOL("Meta7InstantMessageAnnounceStealFocus") )
+			if( gSavedPerAccountSettings.getBOOL("VHInstantMessageAnnounceStealFocus") )
 			{
 				/*LLUUID sess =*/ gIMMgr->addSession(name, IM_NOTHING_SPECIAL, from_id);
 				make_ui_sound("UISndNewIncomingIMSession");
@@ -1822,15 +1822,15 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 	}
 
 	bool do_auto_response = false;
-	if( gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseAnyone" ) )
+	if( gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseAnyone" ) )
 		do_auto_response = true;
 
 	// odd name for auto respond to non-friends
-	if( gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseFriends") &&
+	if( gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseFriends") &&
 		LLAvatarTracker::instance().getBuddyInfo(from_id) == NULL )
 		do_auto_response = true;
 
-	if( is_muted && !gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseMuted") )
+	if( is_muted && !gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseMuted") )
 		do_auto_response = false;
 
 	if( offline != IM_ONLINE )
@@ -1852,13 +1852,13 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 // [/RLVa:KB]
 	{
 		if((dialog == IM_NOTHING_SPECIAL && !is_auto_response) ||
-			(dialog == IM_TYPING_START && gSavedPerAccountSettings.getBOOL("Meta7InstantMessageShowOnTyping"))
+			(dialog == IM_TYPING_START && gSavedPerAccountSettings.getBOOL("VHInstantMessageShowOnTyping"))
 			)
 		{
 			BOOL has = gIMMgr->hasSession(computed_session_id);
-			if(!has || gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseRepeat") || typing_init)
+			if(!has || gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseRepeat") || typing_init)
 			{
-				BOOL show = !gSavedPerAccountSettings.getBOOL("Meta7InstantMessageShowResponded");
+				BOOL show = !gSavedPerAccountSettings.getBOOL("VHInstantMessageShowResponded");
 				if(!has && show)
 				{
 					gIMMgr->addSession(name, IM_NOTHING_SPECIAL, from_id);
@@ -1919,7 +1919,7 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 				}
 				//--> Personalized Autoresponse
 
-				if(gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseRepeat") && has && !typing_init) {
+				if(gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseRepeat") && has && !typing_init) {
 					// send as busy auto response instead to prevent endless repeating replies
 					// when other end is a bot or broken client that answers to every usual IM
 					// reasoning for this decision can be found in RFC2812 3.3.2 Notices
@@ -1953,7 +1953,7 @@ void process_improved_im(LLMessageSystem *msg, void **user_data)
 						session_id);
 				}
 				gAgent.sendReliableMessage();
-				if(gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseItem") && (!has || typing_init))
+				if(gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseItem") && (!has || typing_init))
 				{
 					LLUUID itemid = (LLUUID)gSavedPerAccountSettings.getString("Meta7InstantMessageResponseItemData");
 					LLViewerInventoryItem* item = gInventory.getItem(itemid);
@@ -3321,7 +3321,7 @@ void process_teleport_start(LLMessageSystem *msg, void**)
 	{
 		gTeleportDisplay = TRUE;
 		gAgent.setTeleportState( LLAgent::TELEPORT_START );
-		if(gSavedSettings.getBOOL("Meta7PlayTpSound")) {
+		if(gSavedSettings.getBOOL("VHPlayTpSound")) {
 			make_ui_sound("UISndTeleportOut");
 		}
 		
@@ -3674,7 +3674,7 @@ void process_agent_movement_complete(LLMessageSystem* msg, void**)
 	if( is_teleport )
 	{
 		// Force the camera back onto the agent, don't animate.
-		//if(!gSavedSettings.getBOOL("Meta7DisableTeleportScreens"))
+		//if(!gSavedSettings.getBOOL("VHDisableTeleportScreens"))
 		{
 		gAgent.setFocusOnAvatar(TRUE, FALSE);
 		gAgent.slamLookAt(look_at);
@@ -4446,7 +4446,7 @@ void process_sim_stats(LLMessageSystem *msg, void **user_data)
 			LLViewerStats::getInstance()->mSimChildAgents.addValue(stat_value);
 			break;
 		case LL_SIM_STAT_NUMSCRIPTSACTIVE:
-			if (gSavedSettings.getBOOL("Meta7DisplayTotalScriptJumps"))
+			if (gSavedSettings.getBOOL("VHDisplayTotalScriptJumps"))
 			{
 				S32 numscripts = (S32) stat_value - (S32) gSavedSettings.getF32("Meta7numscripts");
 				S32 numscriptdiff = (S32) gSavedSettings.getF32("Meta7numscriptdiff");
@@ -4670,7 +4670,7 @@ void process_avatar_appearance(LLMessageSystem *mesgsys, void **user_data)
 void process_camera_constraint(LLMessageSystem *mesgsys, void **user_data)
 {
 	//Zwag: THESE MAKE ME RAEG!!!!
-	if(gSavedSettings.getBOOL("Meta7IgnoreSimulatorCameraConstraints"))
+	if(gSavedSettings.getBOOL("VHIgnoreSimulatorCameraConstraints"))
 		return;
 	LLVector4 cameraCollidePlane;
 	mesgsys->getVector4Fast(_PREHASH_CameraCollidePlane, _PREHASH_Plane, cameraCollidePlane);
@@ -5032,7 +5032,7 @@ void process_money_balance_reply( LLMessageSystem* msg, void** )
 		args["MESSAGE"] = desc;
 		LLNotifications::instance().add("SystemMessage", args);
 		
-		if (gSavedSettings.getBOOL("Meta7ShowMoneyChangeInChat"))
+		if (gSavedSettings.getBOOL("VHShowMoneyChangeInChat"))
 		{
 			LLChat chat(desc);
 			LLFloaterChat::addChat(desc);
@@ -5883,7 +5883,7 @@ void process_teleport_failed(LLMessageSystem *msg, void**)
 		}
 	}
     
-	if(!gSavedSettings.getBOOL("Meta7MoveLockDCT") && !gSavedSettings.getBOOL("Meta7DoubleClickTeleportChat"))//dont throw error when move to target on
+	if(!gSavedSettings.getBOOL("VHMoveLockDCT") && !gSavedSettings.getBOOL("VHDoubleClickTeleportChat"))//dont throw error when move to target on
 		LLNotifications::instance().add("CouldNotTeleportReason", args);
 
 	if( gAgent.getTeleportState() != LLAgent::TELEPORT_NONE )
@@ -5917,7 +5917,7 @@ void process_teleport_local(LLMessageSystem *msg,void**)
 
 	// Sim tells us whether the new position is off the ground
 	//Chalice - Always fly after Teleport
-	if (gSavedSettings.getBOOL("Meta7FlyAfterTeleport"))
+	if (gSavedSettings.getBOOL("VHFlyAfterTeleport"))
 	{
 		gAgent.setFlying(TRUE);
 	}
@@ -5937,7 +5937,7 @@ void process_teleport_local(LLMessageSystem *msg,void**)
 	//Chalice - Enabled for Meta7DoubleClickTeleportMode
 	gAgent.slamLookAt(look_at);
 	
-	if (!gSavedSettings.getBOOL("Meta7RotateCamAfterLocalTP"))
+	if (!gSavedSettings.getBOOL("VHRotateCamAfterLocalTP"))
 	{
 		gAgent.resetView(FALSE);
 	}
@@ -6468,7 +6468,7 @@ void process_load_url(LLMessageSystem* msg, void**)
 	// Check if object or owner is muted
 	//Name Short - Added a debug for disabling load URL entirely.
 	if (LLMuteList::getInstance()->isMuted(object_id, object_name) ||
-		LLMuteList::getInstance()->isMuted(owner_id) || (!gSavedSettings.getBOOL("Meta7LoadURL") && (owner_id != gAgent.getID())))
+		LLMuteList::getInstance()->isMuted(owner_id) || (!gSavedSettings.getBOOL("VHLoadURL") && (owner_id != gAgent.getID())))
 	{
 		LL_INFOS("Messaging")<<"Ignoring load_url from muted object/owner."<<LL_ENDL;
 		return;
@@ -6523,7 +6523,7 @@ void process_initiate_download(LLMessageSystem* msg, void**)
 
 void process_script_teleport_request(LLMessageSystem* msg, void**)
 {
-	if(gSavedSettings.getBOOL("Meta7BlockMapTps"))return;
+	if(gSavedSettings.getBOOL("VHBlockMapTps"))return;
 	std::string object_name;
 	std::string sim_name;
 	LLVector3 pos;

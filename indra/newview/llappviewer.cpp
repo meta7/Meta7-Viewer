@@ -819,7 +819,7 @@ bool LLAppViewer::init()
 	initWindow();
 
 	{
-		BOOL download = gSavedSettings.getBOOL("Meta7DownloadClientTags");
+		BOOL download = gSavedSettings.getBOOL("VHDownloadClientTags");
 
 		if(download)
 		{
@@ -933,9 +933,9 @@ bool LLAppViewer::init()
 	TSStuff::init();
 
 	gSavedSettings.getControl("Meta7DialogSpamEnabled")->getSignal()->connect(&dSpam);
-	dialogSpamOn = gSavedSettings.getBOOL("Meta7DialogSpamEnabled");
+	dialogSpamOn = gSavedSettings.getBOOL("VHDialogSpamEnabled");
 	gSavedSettings.getControl("Meta7CardSpamEnabled")->getSignal()->connect(&cSpam);
-	callingSpamOn = gSavedSettings.getBOOL("Meta7CardSpamEnabled");
+	callingSpamOn = gSavedSettings.getBOOL("VHCardSpamEnabled");
 
 	return true;
 }
@@ -1308,7 +1308,7 @@ bool LLAppViewer::cleanup()
 
 	// delete some of the files left around in the cache.
 // skills - dont remove unpacked sounds etc
-	if (!gSavedSettings.getBOOL("Meta7KeepUnpackedCacheFiles"))
+	if (!gSavedSettings.getBOOL("VHKeepUnpackedCacheFiles"))
 	{
 		removeCacheFiles("*.wav");
 		removeCacheFiles("*.lso");
@@ -3792,7 +3792,7 @@ void LLAppViewer::idleShutdown()
 		static S32 total_uploads = 0;
 		// Sometimes total upload count can change during logout.
 		total_uploads = llmax(total_uploads, pending_uploads);
-		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("Meta7DisableLogoutScreens"));
+		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("VHDisableLogoutScreens"));
 		S32 finished_uploads = total_uploads - pending_uploads;
 		F32 percent = 100.f * finished_uploads / total_uploads;
 		gViewerWindow->setProgressPercent(percent);
@@ -3806,7 +3806,7 @@ void LLAppViewer::idleShutdown()
 		sendLogoutRequest();
 
 		// Wait for a LogoutReply message
-		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("Meta7DisableLogoutScreens"));
+		gViewerWindow->setShowProgress(!gSavedSettings.getBOOL("VHDisableLogoutScreens"));
 		gViewerWindow->setProgressPercent(100.f);
 		gViewerWindow->setProgressString("Logging out...");
 		return;

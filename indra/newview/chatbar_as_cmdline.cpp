@@ -72,7 +72,7 @@ LLUUID cmdline_partial_name2key(std::string name);
 
 bool cmd_line_chat(std::string revised_text, EChatType type)
 {
-	if(gSavedSettings.getBOOL("Meta7CmdLine"))
+	if(gSavedSettings.getBOOL("VHCmdLine"))
 	{
 		std::istringstream i(revised_text);
 		std::string command;
@@ -230,7 +230,7 @@ bool cmd_line_chat(std::string revised_text, EChatType type)
 					std::string region_name = LLWeb::escapeURL(revised_text.substr(command.length()+1));
 					std::string url;
 
-					if(!gSavedSettings.getBOOL("Meta7MapToKeepPos"))
+					if(!gSavedSettings.getBOOL("VHMapToKeepPos"))
 					{
 						agent_x = 128;
 						agent_y = 128;

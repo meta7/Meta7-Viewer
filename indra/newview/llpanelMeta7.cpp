@@ -249,7 +249,7 @@ BOOL LLPanelMeta7::postBuild()
 	childSetCommitCallback("X Modifier", onCommitSendAppearance);
 	childSetCommitCallback("Y Modifier", onCommitSendAppearance);
 	childSetCommitCallback("Z Modifier", onCommitSendAppearance);
-	childSetValue("Meta7DoubleClickTeleportMode", gSavedSettings.getBOOL("Meta7DoubleClickTeleportMode"));
+	childSetValue("Meta7DoubleClickTeleportMode", gSavedSettings.getBOOL("VHDoubleClickTeleportMode"));
 	childSetValue("Meta7UseOTR", LLSD((S32)gSavedSettings.getU32("Meta7UseOTR"))); // [$PLOTR$]
 	getChild<LLButton>("otr_help_btn")->setClickedCallback(onClickOtrHelp, this);      // [/$PLOTR$]
 
@@ -301,16 +301,16 @@ BOOL LLPanelMeta7::postBuild()
 	LLWStringUtil::replaceChar(auto_response, '^', '\n');
 	LLWStringUtil::replaceChar(auto_response, '%', ' ');
 	childSetText("im_response", wstring_to_utf8str(auto_response));
-	childSetValue("Meta7InstantMessageResponseFriends", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseFriends"));
-	childSetValue("Meta7InstantMessageResponseMuted", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseMuted"));
-	childSetValue("Meta7InstantMessageResponseAnyone", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseAnyone"));
-	childSetValue("Meta7InstantMessageShowResponded", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageShowResponded"));
-	childSetValue("Meta7InstantMessageShowOnTyping", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageShowOnTyping"));
-	childSetValue("Meta7InstantMessageResponseRepeat", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseRepeat" ));
-	childSetValue("Meta7InstantMessageResponseItem", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageResponseItem"));
-	childSetValue("Meta7InstantMessageAnnounceIncoming", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageAnnounceIncoming"));
-	childSetValue("Meta7InstantMessageAnnounceStealFocus", gSavedPerAccountSettings.getBOOL("Meta7InstantMessageAnnounceStealFocus"));
-	childSetValue("Meta7ShadowsON", gSavedSettings.getBOOL("Meta7ShadowsToggle"));
+	childSetValue("Meta7InstantMessageResponseFriends", gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseFriends"));
+	childSetValue("Meta7InstantMessageResponseMuted", gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseMuted"));
+	childSetValue("Meta7InstantMessageResponseAnyone", gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseAnyone"));
+	childSetValue("Meta7InstantMessageShowResponded", gSavedPerAccountSettings.getBOOL("VHInstantMessageShowResponded"));
+	childSetValue("Meta7InstantMessageShowOnTyping", gSavedPerAccountSettings.getBOOL("VHInstantMessageShowOnTyping"));
+	childSetValue("Meta7InstantMessageResponseRepeat", gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseRepeat" ));
+	childSetValue("Meta7InstantMessageResponseItem", gSavedPerAccountSettings.getBOOL("VHInstantMessageResponseItem"));
+	childSetValue("Meta7InstantMessageAnnounceIncoming", gSavedPerAccountSettings.getBOOL("VHInstantMessageAnnounceIncoming"));
+	childSetValue("Meta7InstantMessageAnnounceStealFocus", gSavedPerAccountSettings.getBOOL("VHInstantMessageAnnounceStealFocus"));
+	childSetValue("Meta7ShadowsON", gSavedSettings.getBOOL("VHShadowsToggle"));
 
 	childSetAction("set_mirror", onClickSetMirror, this);
 	childSetCommitCallback("mirror_location", onCommitApplyControl);

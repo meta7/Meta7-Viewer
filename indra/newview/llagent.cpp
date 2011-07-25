@@ -765,7 +765,7 @@ BOOL LLAgent::canFly()
 // [/RLVa:KB]
 	if (isGodlike()) return TRUE;
 	//LGG always fly code
-	if(gSavedSettings.getBOOL("Meta7AlwaysFly")) return TRUE;
+	if(gSavedSettings.getBOOL("VHAlwaysFly")) return TRUE;
 	LLViewerRegion* regionp = getRegion();
 	if (regionp && regionp->getBlockFly()) return FALSE;
 	
@@ -1721,7 +1721,7 @@ F32 LLAgent::getCameraZoomFraction()
 		// already [0,1]
 		return mHUDTargetZoom;
 	}
-	else if (gSavedSettings.getBOOL("Meta7DisableMinZoomDist"))
+	else if (gSavedSettings.getBOOL("VHDisableMinZoomDist"))
 	{
 		return mCameraZoomFraction;
 	}
@@ -1775,7 +1775,7 @@ void LLAgent::setCameraZoomFraction(F32 fraction)
 	// 0.f -> camera zoomed all the way out
 	// 1.f -> camera zoomed all the way in
 	LLObjectSelectionHandle selection = LLSelectMgr::getInstance()->getSelection();
-	BOOL disable_min = gSavedSettings.getBOOL("Meta7DisableMinZoomDist");
+	BOOL disable_min = gSavedSettings.getBOOL("VHDisableMinZoomDist");
 	if (selection->getObjectCount() && selection->getSelectType() == SELECT_TYPE_HUD)
 	{
 		mHUDTargetZoom = fraction;
@@ -1910,7 +1910,7 @@ void LLAgent::cameraZoomIn(const F32 fraction)
 	//~Zwag
 	// Don't move through focus point
 	
-	if (!gSavedSettings.getBOOL("Meta7DisableMinZoomDist"))
+	if (!gSavedSettings.getBOOL("VHDisableMinZoomDist"))
 	{
 		if (mFocusObject)
 		{
@@ -3678,7 +3678,7 @@ F32	LLAgent::calcCameraFOVZoomFactor()
 		// don't FOV zoom on mostly transparent objects
 		LLVector3 focus_offset = mFocusObjectOffset;
 		F32 obj_min_dist = 0.f;
-		if (!gSavedSettings.getBOOL("Meta7DisableMinZoomDist"))
+		if (!gSavedSettings.getBOOL("VHDisableMinZoomDist"))
 			calcCameraMinDistance(obj_min_dist);
 		F32 current_distance = llmax(0.001f, camera_offset_dir.magVec());
 
@@ -4090,7 +4090,7 @@ void LLAgent::changeCameraToMouselook(BOOL animate)
 	if( mCameraMode != CAMERA_MODE_MOUSELOOK )
 	{
 		gFocusMgr.setKeyboardFocus( NULL );
-		if (gSavedSettings.getBOOL("Meta7AONoStandsInMouselook"))	LLFloaterAO::stopMotion(LLFloaterAO::getCurrentStandId(), FALSE,TRUE);
+		if (gSavedSettings.getBOOL("VHAONoStandsInMouselook"))	LLFloaterAO::stopMotion(LLFloaterAO::getCurrentStandId(), FALSE,TRUE);
 		
 		mLastCameraMode = mCameraMode;
 		mCameraMode = CAMERA_MODE_MOUSELOOK;
@@ -4298,14 +4298,14 @@ void LLAgent::changeCameraToCustomizeAvatar(BOOL avatar_animate, BOOL camera_ani
 	}
 
 // [RLVa:KB] - Checked: 2009-07-10 (RLVa-1.0.0g)
-	if(gSavedSettings.getBOOL("Meta7AppearanceForceStand"))
+	if(gSavedSettings.getBOOL("VHAppearanceForceStand"))
 	if ( (gRlvHandler.hasBehaviour(RLV_BHVR_UNSIT)) && (mAvatarObject.notNull()) && (mAvatarObject->mIsSitting) )
 	{
 		return;
 	}
 // [/RLVa:KB]
 
-	if(gSavedSettings.getBOOL("Meta7AppearanceForceStand"))
+	if(gSavedSettings.getBOOL("VHAppearanceForceStand"))
 		setControlFlags(AGENT_CONTROL_STAND_UP); // force stand up
 	gViewerWindow->getWindow()->resetBusyCount();
 
@@ -4351,7 +4351,7 @@ void LLAgent::changeCameraToCustomizeAvatar(BOOL avatar_animate, BOOL camera_ani
 
 	if (mAvatarObject.notNull())
 	{
-		if(avatar_animate && gSavedSettings.getBOOL("Meta7AppearanceAnimate"))
+		if(avatar_animate && gSavedSettings.getBOOL("VHAppearanceAnimate"))
 		{
 			// Remove any pitch from the avatar
 			LLVector3 at = mFrameAgent.getAtAxis();
@@ -6251,7 +6251,7 @@ bool LLAgent::teleportCore(bool is_local)
 		//release geometry from old location
 		gPipeline.resetVertexBuffers();
 	}
-	if(gSavedSettings.getBOOL("Meta7PlayTpSound"))
+	if(gSavedSettings.getBOOL("VHPlayTpSound"))
 	{
 		make_ui_sound("UISndTeleportOut");
 	}
@@ -6296,7 +6296,7 @@ void LLAgent::teleportRequest(
 		msg->addVector3("Position", pos_local);
 		//Chalice - 2 dTP modes: 0 - standard, 1 - TP AV with cam Z axis rotation.
 		LLVector3 look_at;
-		if (gSavedSettings.getBOOL("Meta7DoubleClickTeleportMode") == 0)
+		if (gSavedSettings.getBOOL("VHDoubleClickTeleportMode") == 0)
 		{
 			LLVOAvatar* avatarp = gAgent.getAvatarObject();
 			look_at=avatarp->getRotation().packToVector3();
@@ -6404,10 +6404,10 @@ void LLAgent::teleportViaLocation(const LLVector3d& pos_global, bool go_to)
 	LLViewerRegion* regionp = getRegion();
 	LLSimInfo* info = LLWorldMap::getInstance()->simInfoFromPosGlobal(pos_global);
 	bool isLocal = regionp->getHandle() == to_region_handle_global((F32)pos_global.mdV[VX], (F32)pos_global.mdV[VY]);
-	bool ml = gSavedSettings.getBOOL("Meta7MoveLockDCT");
-	bool tpchat = gSavedSettings.getBOOL("Meta7DoubleClickTeleportChat");
-	bool calc = gSavedSettings.getBOOL("Meta7DoubleClickTeleportAvCalc");
-	bool vel = gSavedSettings.getBOOL("Meta7VelocityDoubleClickTeleport");
+	bool ml = gSavedSettings.getBOOL("VHMoveLockDCT");
+	bool tpchat = gSavedSettings.getBOOL("VHDoubleClickTeleportChat");
+	bool calc = gSavedSettings.getBOOL("VHDoubleClickTeleportAvCalc");
+	bool vel = gSavedSettings.getBOOL("VHVelocityDoubleClickTeleport");
 
 	F32 zo = gSavedSettings.getF32("Meta7DoubleClickZOffset");
 	LLVector3 offset = LLVector3(0.f,0.f,0.f);
@@ -6467,7 +6467,7 @@ void LLAgent::teleportViaLocation(const LLVector3d& pos_global, bool go_to)
 			pos.mV[VX] += 1;
 			LLVector3 look_at;
 			//Chalice - 2 dTP modes: 0 - standard, 1 - TP AV with cam Z axis rotation.
-			if (gSavedSettings.getBOOL("Meta7DoubleClickTeleportMode") == 0)
+			if (gSavedSettings.getBOOL("VHDoubleClickTeleportMode") == 0)
 			{
 				LLVOAvatar* avatarp = gAgent.getAvatarObject();
 				look_at=avatarp->getRotation().packToVector3();
@@ -7620,7 +7620,7 @@ void LLAgent::sendAgentSetAppearance()
 			msg->addU8Fast(_PREHASH_TextureIndex, (U8)texture_index);
 		}
 		msg->nextBlockFast(_PREHASH_ObjectData);
-		mAvatarObject->packTEMessage( gMessageSystem, gSavedSettings.getBOOL("Meta7ClothingLayerProtection") );
+		mAvatarObject->packTEMessage( gMessageSystem, gSavedSettings.getBOOL("VHClothingLayerProtection") );
 	}
 	else
 	{

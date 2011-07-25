@@ -52,7 +52,7 @@ lggIrcData lggIrcData::fromLLSD(LLSD inputData)
 	if(inputData.has("ircnickpassword")) toReturn.nickPassword = inputData["ircnickpassword"].asString();
 	if(inputData.has("ircchannelpassword")) toReturn.channelPassword = inputData["ircchannelpassword"].asString();
 	if(inputData.has("ircserverpassword")) toReturn.serverPassword = inputData["ircserverpassword"].asString();
-	if(inputData.has("ircautologin") && gSavedSettings.getBOOL("Meta7IRC_AutoConnect"))
+	if(inputData.has("ircautologin") && gSavedSettings.getBOOL("VHIRC_AutoConnect"))
 	{
 		toReturn.autoLogin = inputData["ircautologin"].asBoolean();
 	}

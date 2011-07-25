@@ -141,13 +141,13 @@ void chat_avatar_status(std::string name, LLUUID key, ERadarAlertType type, bool
 	}
 // [/RLVa:KB]
 
-	if(gSavedSettings.getBOOL("Meta7RadarChatAlerts"))
+	if(gSavedSettings.getBOOL("VHRadarChatAlerts"))
 	{
 		LLChat chat;
 		switch(type)
 		{
 		case ALERT_TYPE_SIM:
-			if(gSavedSettings.getBOOL("Meta7RadarAlertSim"))
+			if(gSavedSettings.getBOOL("VHRadarAlertSim"))
 			{
 				chat.mFromName = name;
 				chat.mURL = llformat("secondlife:///app/agent/%s/about",key.asString().c_str());
@@ -155,7 +155,7 @@ void chat_avatar_status(std::string name, LLUUID key, ERadarAlertType type, bool
 			}
 			break;
 		case ALERT_TYPE_DRAW:
-			if(gSavedSettings.getBOOL("Meta7RadarAlertDraw"))
+			if(gSavedSettings.getBOOL("VHRadarAlertDraw"))
 			{
 				chat.mFromName = name;
 				chat.mURL = llformat("secondlife:///app/agent/%s/about",key.asString().c_str());
@@ -163,7 +163,7 @@ void chat_avatar_status(std::string name, LLUUID key, ERadarAlertType type, bool
 			}
 			break;
 		case ALERT_TYPE_CHATRANGE:
-			if(gSavedSettings.getBOOL("Meta7RadarAlertChatRange"))
+			if(gSavedSettings.getBOOL("VHRadarAlertChatRange"))
 			{
 				chat.mFromName = name;
 				chat.mURL = llformat("secondlife:///app/agent/%s/about",key.asString().c_str());
@@ -171,7 +171,7 @@ void chat_avatar_status(std::string name, LLUUID key, ERadarAlertType type, bool
 			}
 			break;
 		case ALERT_TYPE_AGE:
-			if(gSavedSettings.getBOOL("Meta7AvatarAgeAlert"))
+			if(gSavedSettings.getBOOL("VHAvatarAgeAlert"))
 			{
 				chat.mFromName = name;
 				chat.mURL = llformat("secondlife:///app/agent/%s/about",key.asString().c_str());
@@ -507,7 +507,7 @@ void LLFloaterAvatarList::onClose(bool app_quitting)
 	{
 		gSavedSettings.setBOOL("ShowAvatarList", FALSE);
 	}
-	if ( !gSavedSettings.getBOOL("Meta7AvatarListKeepOpen") || app_quitting )
+	if ( !gSavedSettings.getBOOL("VHAvatarListKeepOpen") || app_quitting )
 	{
 		destroy();
 	}
@@ -578,7 +578,7 @@ BOOL LLFloaterAvatarList::postBuild()
 	childSetAction("estate_gtfo_btn", onClickGTFOFromEstate, this);
 
 	childSetCommitCallback("agealert", onClickAgeAlert,this);
-	childSetValue("agealert",gSavedSettings.getBOOL("Meta7AvatarAgeAlert"));
+	childSetValue("agealert",gSavedSettings.getBOOL("VHAvatarAgeAlert"));
 
 	childSetCommitCallback("AgeAlertDays",onClickAgeAlertDays,this);
 	childSetValue("AgeAlertDays",gSavedSettings.getF32("Meta7AvatarAgeAlertDays"));
@@ -1132,7 +1132,7 @@ void LLFloaterAvatarList::refreshAvatarList()
 	}
 	
 	//lgg send batch of names to bridge
-	if((toSendToBridge != "" ) && gSavedSettings.getBOOL("Meta7UseBridgeRadar"))
+	if((toSendToBridge != "" ) && gSavedSettings.getBOOL("VHUseBridgeRadar"))
 	{
 		F32 timeNow = gFrameTimeSeconds;
 		if( (timeNow - mlastBridgeCallTime) > 20)
@@ -1412,7 +1412,7 @@ void LLFloaterAvatarList::processSoundTrigger(LLMessageSystem* msg,void**)
 	if(owner_id == gAgent.getID() && sound_id == LLUUID("76c78607-93f9-f55a-5238-e19b1a181389"))
 	{
 		//lgg we need to auto turn on settings for ppl now that we know they has the thingy
-		if(gSavedSettings.getBOOL("Meta7RadarChatKeys"))
+		if(gSavedSettings.getBOOL("VHRadarChatKeys"))
 		{
 			LLFloaterAvatarList* self = getInstance();
 			if(self) self->clearAnnouncements();
@@ -2103,7 +2103,7 @@ void LLFloaterAvatarList::onClickFreeze(void *userdata)
 
 void LLFloaterAvatarList::onClickEject(void *userdata)
 {
-	if(gSavedSettings.getBOOL("Meta7ModerateConfirm"))
+	if(gSavedSettings.getBOOL("VHModerateConfirm"))
 	{
 		LLSD args;
 		args["AVATAR_NAME"] = ((LLFloaterAvatarList*)userdata)->getSelectedNames();
@@ -2273,7 +2273,7 @@ void LLFloaterAvatarList::checkAnnouncements()
 	int transact_num = (int)gFrameCount;
 	int num_ids = 0;
 
-	if(!gSavedSettings.getBOOL("Meta7RadarChatKeys"))
+	if(!gSavedSettings.getBOOL("VHRadarChatKeys"))
 	{
 		mAnnouncedAvatars.clear();
 		return;
